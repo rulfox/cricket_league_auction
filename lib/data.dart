@@ -1,10 +1,7 @@
 import 'dart:convert';
-import 'dart:math';
 
 import 'package:flutter/services.dart';
-import 'package:path/path.dart';
 
-import 'constants.dart';
 class Player {
   Player({
     this.id,
