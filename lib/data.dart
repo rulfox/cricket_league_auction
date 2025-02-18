@@ -7,61 +7,65 @@ import 'package:path/path.dart';
 import 'constants.dart';
 class Player {
   Player({
-    this.timestamp,
-    this.slNo,
+    this.id,
     this.name,
-    this.phoneNumber,
-    this.currentTeam,
+    this.department,
+    this.currentOffice,
+    this.permanentAddress,
     this.category,
-    this.photoUrl,
-    this.photoFileName,
+    this.photo,
     this.battingStyle,
     this.bowlingStyle,
-    this.bowlingArm,});
+    this.bowlingArm,
+    this.paymentStatus,
+    this.team,});
 
   Player.fromJson(dynamic json) {
-    timestamp = json['timestamp'];
-    slNo = json['sl_no'];
+    id = json['id'];
     name = json['name'];
-    phoneNumber = json['phone_number'];
-    currentTeam = json['current_team'];
+    department = json['department'];
+    currentOffice = json['current_office'];
+    permanentAddress = json['permanent_address'];
     category = json['category'];
-    photoUrl = json['photo_url'];
-    photoFileName = json['photo_file_name'];
+    photo = json['photo'];
     battingStyle = json['batting_style'];
     bowlingStyle = json['bowling_style'];
     bowlingArm = json['bowling_arm'];
+    paymentStatus = json['payment_status'];
+    team = json['team'];
   }
-  double? timestamp;
-  int? slNo;
+  int? id;
   String? name;
-  int? phoneNumber;
-  String? currentTeam;
+  String? department;
+  String? currentOffice;
+  String? permanentAddress;
   String? category;
-  String? photoUrl;
-  String? photoFileName;
+  String? photo;
   String? battingStyle;
   String? bowlingStyle;
   String? bowlingArm;
+  String? paymentStatus;
+  String? team;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
-    map['timestamp'] = timestamp;
-    map['sl_no'] = slNo;
+    map['id'] = id;
     map['name'] = name;
-    map['phone_number'] = phoneNumber;
-    map['current_team'] = currentTeam;
+    map['department'] = department;
+    map['current_office'] = currentOffice;
+    map['permanent_address'] = permanentAddress;
     map['category'] = category;
-    map['photo_url'] = photoUrl;
-    map['photo_file_name'] = photoFileName;
+    map['photo'] = photo;
     map['batting_style'] = battingStyle;
     map['bowling_style'] = bowlingStyle;
     map['bowling_arm'] = bowlingArm;
+    map['payment_status'] = paymentStatus;
+    map['team'] = team;
     return map;
   }
 
   String getPlayerPhoto(){
-    return "assets/images/player/$photoFileName";
+    return "assets/images/player/$photo";
   }
 
   String getPlayerName(){
@@ -69,7 +73,7 @@ class Player {
   }
 
   String getCurrentTeam() {
-    return currentTeam ?? "General County (Assumed)";
+    return department ?? "General County (Assumed)";
   }
 
   String getBattingStyle() {
@@ -89,7 +93,7 @@ class Player {
   }
 
   String getPlayerId() {
-    return slNo.toString();
+    return id.toString();
   }
 }
 
@@ -99,10 +103,11 @@ Player parsePlayerFromJson(String jsonString) {
 }
 
 Future<List<Player>> getPlayersData() async {
-  String playersJson = await rootBundle.loadString("lpl_players.json");
+  String playersJson = await rootBundle.loadString("players.json");
   List<Player> players = (jsonDecode(playersJson) as List)
       .map((json) => Player.fromJson(json))
       .toList();
+  print("Players Data: ${players.length}");
   for (Player player in players) {
     print("ID: ${player.getPlayerId()}, Player: ${player.name}, Category: ${player.category}, URL: ${player.getPlayerPhoto()}");
   }
