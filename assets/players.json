@@ -1,416 +1,2082 @@
 [
   {
-    "id": 1,
-    "name": "Ajith Komba",
-    "category": 1,
-    "photo": "ajith_komba.jpg"
+    "sl_no": 1,
+    "name": "Akhil Purushothaman",
+    "phone_number": 8111866326,
+    "current_team": "City Kings",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20241102-WA0073 - Akhil Purushothaman.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 2,
-    "name": "Akhil S N",
-    "category": 1,
-    "photo": "akhil_sn.jpg"
+    "sl_no": 2,
+    "name": "DEEPAK BOCHE",
+    "phone_number": 9995855209,
+    "current_team": "SPARTANS",
+    "category": "All Rounder",
+    "photo_file_name": "InShot_20241221_093846623 - Deepak Saji.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 3,
-    "name": "Amal Maddy",
-    "category": 3,
-    "photo": "amal_k_vasudev.png"
-  },
-  {
-    "id": 4,
-    "name": "Amal Unni",
-    "category": 2,
-    "photo": "amal_unni_pamb.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Aneesh Kili",
-    "category": 2,
-    "photo": "aneesh_kili.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Aneesh Karuka",
-    "category": 2,
-    "photo": "?"
-  },
-  {
-    "id": 7,
-    "name": "Aneesh SMT",
-    "category": 1,
-    "photo": "aneesh_smt.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Anukuttan Watson",
-    "category": 3,
-    "photo": "anukuttan_watson.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Anshad",
-    "category": 1,
-    "photo": "anshad_lords.jpg"
-  },
-  {
-    "id": 10,
-    "name": "Appu",
-    "category": 1,
-    "photo": "?"
-  },
-  {
-    "id": 11,
-    "name": "Arun Victory",
-    "category": 3,
-    "photo": "arun_excise_victory.jpg"
-  },
-  {
-    "id": 12,
-    "name": "Arun Vinayan",
-    "category": 3,
-    "photo": "thankachan_unni.jpg"
-  },
-  {
-    "id": 13,
-    "name": "Aswin",
-    "category": 1,
-    "photo": "aswin.jpg"
-  },
-  {
-    "id": 14,
-    "name": "Athul Raj",
-    "category": 1,
-    "photo": "athul_raj.jpg"
-  },
-  {
-    "id": 15,
-    "name": "Biju Gopal Paala",
-    "category": 1,
-    "photo": "biju_gopal_paala.jpg"
-  },
-  {
-    "id": 16,
-    "name": "Bilal",
-    "category": 3,
-    "photo": "bilal.jpg"
-  },
-  {
-    "id": 17,
-    "name": "Boby",
-    "category": 2,
-    "photo": "captain_boby.jpg"
-  },
-  {
-    "id": 18,
-    "name": "Bony",
-    "category": 2,
-    "photo": "bony.jpg"
-  },
-  {
-    "id": 19,
-    "name": "Chinjan",
-    "category": 1,
-    "photo": "chinjan.jpg"
-  },
-  {
-    "id": 20,
-    "name": "Deepak Boche",
-    "category": 2,
-    "photo": "deepak_boche.jpg"
-  },
-  {
-    "id": 21,
-    "name": "Dileep",
-    "category": 1,
-    "photo": "dileep.jpg"
-  },
-  {
-    "id": 22,
-    "name": "Jijo",
-    "category": 2,
-    "photo": "jijo.jpg"
-  },
-  {
-    "id": 23,
-    "name": "Jino",
-    "category": 3,
-    "photo": "jino.jpg"
-  },
-  {
-    "id": 24,
-    "name": "Jithu",
-    "category": 1,
-    "photo": "jithu_auziz.jpg"
-  },
-  {
-    "id": 25,
-    "name": "Jithu Pattukalam",
-    "category": 1,
-    "photo": "jithu_paatukalam.jpg"
-  },
-  {
-    "id": 26,
-    "name": "Joshy",
-    "category": 1,
-    "photo": "joshy.jpg"
-  },
-  {
-    "id": 27,
-    "name": "Kannappan",
-    "category": 2,
-    "photo": "kannappan.jpg"
-  },
-  {
-    "id": 28,
-    "name": "Kichu",
-    "category": 2,
-    "photo": "kichu.jpg"
-  },
-  {
-    "id": 29,
-    "name": "Lijo",
-    "category": 1,
-    "photo": "lijo.jpg"
-  },
-  {
-    "id": 30,
-    "name": "Maneesh",
-    "category": 2,
-    "photo": "maneesh.jpg"
-  },
-  {
-    "id": 31,
-    "name": "Manu Udhaya",
-    "category": 2,
-    "photo": "manu.jpg"
-  },
-  {
-    "id": 32,
-    "name": "Memba",
-    "category": 1,
-    "photo": "memba.jpg"
-  },
-  {
-    "id": 33,
-    "name": "Midhun Unni Udhaya",
-    "category": 2,
-    "photo": "unni_udhaya.jpg"
-  },
-  {
-    "id": 34,
-    "name": "Nandhu",
-    "category": 2,
-    "photo": "nandhu.jpg"
-  },
-  {
-    "id": 35,
-    "name": "Neppy",
-    "category": 1,
-    "photo": "neppi.jpg"
-  },
-  {
-    "id": 36,
-    "name": "Praise",
-    "category": 1,
-    "photo": "praise.jpg"
-  },
-  {
-    "id": 37,
-    "name": "Prasanth John",
-    "category": 3,
-    "photo": "john.jpg"
-  },
-  {
-    "id": 38,
-    "name": "Praveen",
-    "category": 2,
-    "photo": "machine_praveen.jpg"
-  },
-  {
-    "id": 39,
-    "name": "Rahul MT Boys",
-    "category": 2,
-    "photo": "rahul_mt_boys.jpg"
-  },
-  {
-    "id": 40,
+    "sl_no": 3,
     "name": "Rahul Aala",
-    "category": 2,
-    "photo": "aala.jpg"
+    "phone_number": 7356408582,
+    "current_team": "Victory ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_0689 - RaHuL AlA.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 41,
-    "name": "Rajesh Manohar",
-    "category": 2,
-    "photo": "rayappan.jpg"
+    "sl_no": 4,
+    "name": "Ameen",
+    "phone_number": 8089378941,
+    "current_team": "City kings",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20241202_180816 - Ameen.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 42,
-    "name": "Rajith Udhaya",
-    "category": 2,
-    "photo": "?"
+    "sl_no": 5,
+    "name": "Anees Muhammed",
+    "phone_number": 8592992729,
+    "current_team": "MCT ",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20241201_211451~2 - anees muhammed.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 43,
-    "name": "Ranesh",
-    "category": 3,
-    "photo": "ranesh.jpg"
+    "sl_no": 6,
+    "name": "Harikrishnan ",
+    "phone_number": 9567025877,
+    "current_team": "Youth Wing",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20250208-WA0001 - renju nath.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 44,
-    "name": "Reny",
-    "category": 1,
-    "photo": "renny.jpg"
+    "sl_no": 7,
+    "name": "Arun P Gopi",
+    "phone_number": 9562105822,
+    "current_team": "Spartans",
+    "category": "Bowler",
+    "photo_file_name": "IMG-20240726-WA0032 - arun puthuvalilgopi.jpg",
+    "batting_style": "Left-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Left-Arm"
   },
   {
-    "id": 45,
-    "name": "Sabumon",
-    "category": 1,
-    "photo": "?"
+    "sl_no": 8,
+    "name": "Anshad",
+    "phone_number": 8281692185,
+    "current_team": "Cobras",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20250208-WA0037 - Anshad Ar.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 46,
-    "name": "Saran Raj",
-    "category": 1,
-    "photo": "?"
+    "sl_no": 9,
+    "name": "Sebin ",
+    "phone_number": 8075807104,
+    "current_team": "Mt boys ",
+    "category": "All Rounder",
+    "photo_file_name": "FB_IMG_1538159573309 - Football world..jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Left-Arm"
   },
   {
-    "id": 47,
-    "name": "Sarath",
-    "category": 1,
-    "photo": "sarath.jpg"
+    "sl_no": 10,
+    "name": "AJITH",
+    "phone_number": 9447779803,
+    "current_team": "DCC ARAYANKAVU,PANAVALLY ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20250105_183208 - ajith v.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 48,
-    "name": "Sebastian Jose",
-    "category": 2,
-    "photo": "sebastian_joseph.jpg"
+    "sl_no": 11,
+    "name": "Aswin",
+    "phone_number": 7293318484,
+    "current_team": "Spartans",
+    "category": "All Rounder",
+    "photo_file_name": "aswin - Aswin .A.S.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 49,
-    "name": "Sreekuttan",
-    "category": 1,
-    "photo": "sreekuttan_kombanz.jpg"
+    "sl_no": 12,
+    "name": "SHIYAS MSD",
+    "phone_number": 8138065078,
+    "current_team": "CITY KINGS",
+    "category": "Batsman",
+    "photo_file_name": "1739174012262933908922448765491 - Najeeb Abdullah.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 50,
-    "name": "Anikuttan Police",
-    "category": 2,
-    "photo": "sreeraj_anukuttan.jpg"
+    "sl_no": 13,
+    "name": "Manaf",
+    "phone_number": 8921696006,
+    "current_team": "No",
+    "category": "Bowler",
+    "photo_file_name": "IMG_20230630_124106_069 - Manaf M.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 51,
-    "name": "Unni Police",
-    "category": 3,
-    "photo": "unni.jpg"
+    "sl_no": 14,
+    "name": "Sahad",
+    "phone_number": 8075731829,
+    "current_team": "Right arm. Fast bowler",
+    "category": "Bowler",
+    "photo_file_name": "IMG-20250211-WA0008 - Sahad Thaju.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 52,
-    "name": "Suman",
-    "category": 2,
-    "photo": "suman.jpg"
+    "sl_no": 15,
+    "name": "Anandakrishnan s",
+    "phone_number": 9633126641,
+    "current_team": "Ecc",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20250210_195440 - Anandakrishnan S.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 53,
-    "name": "Shyam Mandu",
-    "category": 2,
-    "photo": "syam_mandu.jpg"
+    "sl_no": 16,
+    "name": "SREEKUTTAN ",
+    "phone_number": 9747894680,
+    "current_team": "KOMBANZ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20240818-WA0054 - sreekumar s.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 54,
+    "sl_no": 17,
+    "name": "Shibu",
+    "phone_number": 9544441124,
+    "current_team": "Sky 360",
+    "category": "Batsman",
+    "photo_file_name": "Screenshot_2024-12-09-00-48-17-50_1c337646f29875672b5a61192b9010f9 - Shibu.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Slow",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 18,
+    "name": "Praveen. Kp",
+    "phone_number": 9539180659,
+    "current_team": "Mcc kalavoor",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20250211-WA0022 - praveen kp.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 19,
+    "name": "Raajith ",
+    "phone_number": 8281731440,
+    "current_team": "Udaya ",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20240824-WA0034 - Rajith A.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Spin",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 20,
+    "name": "Nissam",
+    "phone_number": 9544105105,
+    "current_team": "Sky 360",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20241030_180210 - Nissam N.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 21,
+    "name": "JINO ",
+    "phone_number": 7736264276,
+    "current_team": "Spartns",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20241212_123220_821 - Jino Thankachan.webp",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 22,
+    "name": "VARUN ",
+    "phone_number": 9946609043,
+    "current_team": "CITY KINGS",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20250131-WA0099 - Prince Babu.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 23,
+    "name": "Jihas(chinju )",
+    "phone_number": 8848355625,
+    "current_team": "Mcc",
+    "category": "Batsman",
+    "photo_file_name": "Screenshot_20241201_192219 - Jihas S.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 24,
+    "name": "Vishnu",
+    "phone_number": 9746899885,
+    "current_team": "City kings",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20250209-WA0044 - VISHNU S Saji.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 25,
+    "name": "FUZAIL ( FUZZI )",
+    "phone_number": 7025628425,
+    "current_team": "NO TEAM",
+    "category": "All Rounder",
+    "photo_file_name": "D7F8281F-0F81-4461-8E98-F59773E04822 - Fuzail Ahammed.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 26,
+    "name": "Akhil",
+    "phone_number": 9539942652,
+    "current_team": "Bhavana",
+    "category": "All Rounder",
+    "photo_file_name": "+91 95399 42652 20250203_214101 - Akhil Aki.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 27,
+    "name": "Pradeep. C",
+    "phone_number": 7012812347,
+    "current_team": "Sky 360",
+    "category": "Bowler",
+    "photo_file_name": "IMG-20240901-WA0038 - Pradeep chandran.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 28,
+    "name": "Adhil",
+    "phone_number": 7736776290,
+    "current_team": "City kings ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_1915 - adhil ashraf.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 29,
+    "name": "NAIZAM",
+    "phone_number": 9037170579,
+    "current_team": "CITY KINGS",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20241205-WA0077 - Naisam Najeem.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 30,
+    "name": "Priju",
+    "phone_number": 9947190803,
+    "current_team": "Naveena ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20240901-WA0001 - Priju P.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 31,
+    "name": "Sambhu",
+    "phone_number": 9567290230,
+    "current_team": "Naveena",
+    "category": "All Rounder",
+    "photo_file_name": "20240324_074725 - sambumon s.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 32,
+    "name": "Kichu",
+    "phone_number": 9846654185,
+    "current_team": "City kings ",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20241201_203600_Instagram - ARUN B.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 33,
+    "name": "Tony antony ",
+    "phone_number": 8075797751,
+    "current_team": "Eleven ducks",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250209_231931 - Nichu Sachu.jpg",
+    "batting_style": "Left-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 34,
+    "name": "Shanu",
+    "phone_number": 8943808767,
+    "current_team": "Mcc",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20240901-WA0094 - Shanu Ayra.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 35,
+    "name": "Amal Haridas",
+    "phone_number": 8089828267,
+    "current_team": "Bhavana ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20240825-WA0025 - Amal Haridas.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 36,
+    "name": "SREEKUTTAN",
+    "phone_number": 9995730368,
+    "current_team": "CITY KINGS",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20250215-WA0157 - Nazar Najeeb.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 37,
+    "name": "Nowfal ",
+    "phone_number": 7593921847,
+    "current_team": "Cobraz ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20250215-WA0029 - sarin rajivan.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 38,
+    "name": "Manaf",
+    "phone_number": 7012383124,
+    "current_team": "Mcc",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_2024_0903_123518 - Manaf Abu.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 39,
+    "name": "PAACHU",
+    "phone_number": 8891261115,
+    "current_team": "SKY 360",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20241114-WA0023 - Fazil Rahumathulla.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 40,
+    "name": "SANEER COBRAS",
+    "phone_number": 8089703836,
+    "current_team": "COBRAS",
+    "category": "All Rounder",
+    "photo_file_name": "fc11032f-cd89-4fa3-8447-95ed3b732994 - SANEER MUHAMMED.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 41,
+    "name": "Boby Varghese ",
+    "phone_number": 9633029281,
+    "current_team": "BCCA",
+    "category": "Batsman",
+    "photo_file_name": "Screenshot_20250217-202734_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Slow",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 42,
+    "name": "ATHUL KR",
+    "phone_number": 8089621580,
+    "current_team": "Melbourne",
+    "category": "Bowler",
+    "photo_file_name": "IMG_20250215_232943_265 - Athul Krishnankr.webp",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 43,
+    "name": "Unais",
+    "phone_number": 8111807755,
+    "current_team": "SRT",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20241113_234409_831 - unais 14.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 44,
+    "name": "Sachi",
+    "phone_number": 9645184737,
+    "current_team": "Bhavana",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20240204-WA0011~2 - Akhil Cherthala.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 45,
+    "name": "Akhil sn",
+    "phone_number": 8547604588,
+    "current_team": "Spartans",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20240901-WA0002 - Kala Mani.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 46,
+    "name": "ROBIN KR",
+    "phone_number": 9061008863,
+    "current_team": "BHAVANA ",
+    "category": "All Rounder",
+    "photo_file_name": "20210319_144438 - Robin Kr.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 47,
+    "name": "SHINAS ",
+    "phone_number": 9995435331,
+    "current_team": "MCT",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20250209-WA0154 - Shinas Shanavas.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 48,
+    "name": "Rijas Basheer ",
+    "phone_number": 8089390907,
+    "current_team": "Royals muhamma",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_1063 - Rijas Basheer.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 49,
+    "name": "Achu(kachappan )",
+    "phone_number": 9048555046,
+    "current_team": "Royals bhavana",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20250221_185837 - ACHUTHADAS K V.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 50,
+    "name": "Appu Rahul",
+    "phone_number": 9544605400,
+    "current_team": "MT Boyz",
+    "category": "All Rounder",
+    "photo_file_name": "WhatsApp Image 2025-02-14 at 17.44.17 - Aswin .A.S.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 51,
+    "name": "HARSHAN",
+    "phone_number": 9809809802,
+    "current_team": "MT BOYS",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20241201_212638 - HARSHU.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 52,
+    "name": "Rajesh",
+    "phone_number": 9074326256,
+    "current_team": "MD boys",
+    "category": "Batsman",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 53,
+    "name": "Arunkumar T P",
+    "phone_number": 9846373304,
+    "current_team": "Kombanz",
+    "category": "All Rounder",
+    "photo_file_name": "20250207_120642 - Arunkumar T P.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 54,
+    "name": "JOJI ",
+    "phone_number": 8848697607,
+    "current_team": "SKGS",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 55,
+    "name": "Dhanesh vs",
+    "phone_number": 7559048233,
+    "current_team": "Royals muhamma, Bhavana",
+    "category": "Batsman",
+    "photo_file_name": "IMG_20240129_095957_462 - DHANESH VS.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Spin",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 56,
+    "name": "Sajeer s",
+    "phone_number": 9544123499,
+    "current_team": "kombanz ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20190113-WA0154 - SAJEER SALIM.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 57,
+    "name": "Anshad Ashraf",
+    "phone_number": 9809667668,
+    "current_team": "county ",
+    "category": "All Rounder",
+    "photo_file_name": "FB_IMG_1652599384516 - anshad mehraj.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 58,
+    "name": "Bharath",
+    "phone_number": 6238039102,
+    "current_team": "Quorum pathirappally",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20241201-WA0095 - Bharath MP.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 59,
+    "name": "Shereef",
+    "phone_number": 9656243613,
+    "current_team": "Bluestar ",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 60,
+    "name": "ANANDU",
+    "phone_number": 8848578338,
+    "current_team": "COBRAZ",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_2024-11-16-19-15-04-96_965bbf4d18d205f782c6b8409c5773a4~2 - ANANDU S.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 61,
+    "name": "Vichu",
+    "phone_number": 7994342860,
+    "current_team": "MT boyz",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20250218_135420 - Adithyan Babu.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 62,
+    "name": "Ajith ",
+    "phone_number": 7994268007,
+    "current_team": "MT boys ",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20241202-WA0022 - Maneesh C.M.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 63,
+    "name": "Safeer",
+    "phone_number": 8089567488,
+    "current_team": "CobraZ ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20250224_190502 - Safeer Subair.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 64,
+    "name": "Shameer",
+    "phone_number": 9072736896,
+    "current_team": "Shark",
+    "category": "All Rounder",
+    "photo_file_name": "17404099493706013851316738939460 - shameer shan.jpg",
+    "batting_style": "Left-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Left-Arm"
+  },
+  {
+    "sl_no": 65,
+    "name": "Vipin Vijay ",
+    "phone_number": 9061005605,
+    "current_team": "DCC KANICHUKULANGARA ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_5829 - Vipin Vijay.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 66,
+    "name": "Kannan",
+    "phone_number": 8075605691,
+    "current_team": "Kombanz",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20240901_191531 - Hari krishnan.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 67,
+    "name": "Adarsh Mohandas ",
+    "phone_number": 8301856923,
+    "current_team": "ANGRY BIRDS AKG ",
+    "category": "Bowler",
+    "photo_file_name": "20240929_181501 - Adarsh Mohandas.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Left-Arm"
+  },
+  {
+    "sl_no": 68,
+    "name": "Mahesh",
+    "phone_number": 7558976997,
+    "current_team": "Forward",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20240913_102604_347 - Mahesh R.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 69,
+    "name": "Sreejith cs",
+    "phone_number": 9072377748,
+    "current_team": "Bhavana cc",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20250226-WA0101 - manu mohan.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 70,
+    "name": "VINEESH ",
+    "phone_number": 9037383497,
+    "current_team": "Royals crickt club",
+    "category": "All Rounder",
+    "photo_file_name": "1594140658374 - Janaki Janaki.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 71,
+    "name": "Sijas",
+    "phone_number": 9074889586,
+    "current_team": "City kings ",
+    "category": "Bowler",
+    "photo_file_name": "IMG-20250227-WA0038 - Sijas Siyad.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 72,
+    "name": "Vijith",
+    "phone_number": 7907974872,
+    "current_team": "Vaiking",
+    "category": "Batsman",
+    "photo_file_name": "IMG_20241111_165059 - Vijith K V.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Slow",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 73,
+    "name": "LENIN",
+    "phone_number": 9633221889,
+    "current_team": "COBRAZ",
+    "category": "All Rounder",
+    "photo_file_name": "17407981981386076130935322818196 - ANANDU S.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 74,
+    "name": "Jomon",
+    "phone_number": 7510146144,
+    "current_team": "srt",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20241215_164316 - Jomon Ab.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 75,
+    "name": "Bipin Bichu ",
+    "phone_number": 8281367044,
+    "current_team": "SRT",
+    "category": "All Rounder",
+    "photo_file_name": "eEe692BrKGafKQvn - bipin bichu.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 76,
+    "name": "Aneesh",
+    "phone_number": 6282553709,
+    "current_team": "SRT",
+    "category": "Batsman",
+    "photo_file_name": "FB_IMG_1730437361070 - Aneesh Kili.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 77,
+    "name": "SHARUN",
+    "phone_number": 7902797379,
+    "current_team": "COBRAZ",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20250301-WA0083 - Sanu thaha.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 78,
+    "name": "Abhilash ",
+    "phone_number": 9961392929,
+    "current_team": "Dcc Kanichukulangara ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20241110-WA0122 - Vijeesh V D.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 79,
+    "name": "Hareesh ",
+    "phone_number": 8089396836,
+    "current_team": "Royal tigers",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20241212-115246_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 80,
+    "name": "Manu V",
+    "phone_number": 9020230020,
+    "current_team": "Vagoos ",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20241210-113756_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 81,
+    "name": "Monichan (Pappa)",
+    "phone_number": 9961156024,
+    "current_team": "Udaya",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20241221-184115_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 82,
+    "name": "John ",
+    "phone_number": 9447786565,
+    "current_team": "Arsh ",
+    "category": "Bowler",
+    "photo_file_name": "IMG-20230219-WA0078 - John yuvaz.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 83,
+    "name": "Remith Remanan",
+    "phone_number": 9846554554,
+    "current_team": "SCC",
+    "category": "All Rounder",
+    "photo_file_name": "WhatsApp Image 2024-11-30 at 08.24.19_32e3135a - Remith Remanan.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 84,
+    "name": "Nandu ",
+    "phone_number": 8281047937,
+    "current_team": "Youth wing",
+    "category": "Batsman",
+    "photo_file_name": "IMG_20240901_120022 - Nandu T A.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 85,
+    "name": "VISHNH ANAND",
+    "phone_number": 9633155505,
+    "current_team": "ARSH ALLEPPEY ",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250304_150905_Instagram - Game.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 86,
+    "name": "ALTHAF",
+    "phone_number": 9400048934,
+    "current_team": "THRIVENI BOYS ",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20240901-WA0032 - althaf jaleel.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 87,
+    "name": "Vinu v",
+    "phone_number": 9447707059,
+    "current_team": "SRT",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20250222-WA0067 - vinu v.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 88,
+    "name": "Manaf",
+    "phone_number": 9747617296,
+    "current_team": "MT Boys",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250304-190008_WhatsApp - reny antony.jpg",
+    "batting_style": "Left-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Left-Arm"
+  },
+  {
+    "sl_no": 89,
+    "name": "Saranjith ",
+    "phone_number": 9539545600,
+    "current_team": "Royals Muhamma",
+    "category": "All Rounder",
+    "photo_file_name": "20250301_154259 - SARANJITH SASIDHARAN.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 90,
+    "name": "Binee",
+    "phone_number": 7012496527,
+    "current_team": "Cobraz ",
+    "category": "All Rounder",
+    "photo_file_name": "42C7CDDA-89E9-4961-ABD1-B0DF5812D29B - BINEESH B.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 91,
+    "name": "Suhas",
+    "phone_number": 8281863928,
+    "current_team": "Green boys",
+    "category": "All Rounder",
+    "photo_file_name": "COLLAGE_20230113_183543 - Suhas MD.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 92,
+    "name": "Shaheer MJ",
+    "phone_number": 9961617571,
+    "current_team": "Inning Stars",
+    "category": "Batsman",
+    "photo_file_name": "85a8f578-6a78-47ca-9cb5-9b129f294d88.png_1741152811314 - Shaheer m Jafar.png",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 93,
+    "name": "Sanju S",
+    "phone_number": 9544855392,
+    "current_team": "Naveena ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_3609 - Sanju Sing.heic",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 94,
+    "name": "Udin kumar U ",
+    "phone_number": 7356504746,
+    "current_team": "Dragons Ayaparambu ",
+    "category": "All Rounder",
+    "photo_file_name": "1738993094127 - Udin Vishnu.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Spin",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 95,
+    "name": "Manu",
+    "phone_number": 8907786601,
+    "current_team": "SRT",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20230109-WA0030 - Manu M.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 96,
+    "name": "Sandeep ",
+    "phone_number": 8138877708,
+    "current_team": "EAGLES ",
+    "category": "All Rounder",
+    "photo_file_name": "d9d1dd4d-c946-4e01-a3c6-bd8d482b5ac8 - sandeep nair.jpeg",
+    "batting_style": "Left-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 97,
+    "name": "Sandeep ",
+    "phone_number": 9809986860,
+    "current_team": "Royals Muhamma",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20250209-WA0165 - Sandeep PD.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 98,
+    "name": "Senny",
+    "phone_number": 9656685841,
+    "current_team": "Cobrazz",
+    "category": "All Rounder",
+    "photo_file_name": "FB_IMG_1727238350309 - Sanal Senni.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 99,
+    "name": "Ajeed",
+    "phone_number": 9995368817,
+    "current_team": "Santos",
+    "category": "All Rounder",
+    "photo_file_name": "FB_IMG_1725199565769 - Sanal Senni.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 100,
+    "name": "Waseem",
+    "phone_number": 8086806101,
+    "current_team": "COBRAZ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20250302-WA0082(2) - ANANDU S.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 101,
     "name": "Tony Jose",
-    "category": 1,
-    "photo": "tony.jpg"
+    "phone_number": 7736476016,
+    "current_team": "Spartanz",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20240811-WA0050 - Tony Jose.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Left-Arm"
   },
   {
-    "id": 55,
-    "name": "Upesh",
-    "category": 1,
-    "photo": "upesh.jpg"
+    "sl_no": 102,
+    "name": "Sabumon",
+    "phone_number": 7736770200,
+    "current_team": "Spartans",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20250223-WA0046(1) - Sabumon P S.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 56,
-    "name": "Vikas",
-    "category": 3,
-    "photo": "vikas.jpg"
+    "sl_no": 103,
+    "name": "Kannan",
+    "phone_number": 9207208201,
+    "current_team": "OUR CC",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20241211-WA0266 - Maneesh C.M.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 57,
-    "name": "Vinod MT Boys",
-    "category": 2,
-    "photo": "vinod_mt_boys.jpg"
+    "sl_no": 104,
+    "name": "Memba",
+    "phone_number": 8129911979,
+    "current_team": "MT Boys",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250308-175012_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 58,
-    "name": "Vishnu Appappan",
-    "category": 2,
-    "photo": "vishnu_appappan.jpg"
+    "sl_no": 105,
+    "name": "Shahid iqubal ",
+    "phone_number": 7306834617,
+    "current_team": "BccA",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20240424_224401_428 - Shahid Iqbal.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 59,
-    "name": "Zidhu",
-    "category": 1,
-    "photo": "sidhu.jpg"
+    "sl_no": 106,
+    "name": "Vishnu",
+    "phone_number": 8129451384,
+    "current_team": "MT Boys",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250308-200510_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Slow",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 0,
-    "name": "Hari",
-    "category": 1,
-    "photo": "hari_chettan.jpg"
+    "sl_no": 107,
+    "name": "Sreeraj r s",
+    "phone_number": 9562981660,
+    "current_team": "Spartanz",
+    "category": "Bowler",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 0,
-    "name": "Kevin",
-    "category": 2,
-    "photo": "kevin.jpg"
+    "sl_no": 108,
+    "name": "Kichu ",
+    "phone_number": 8714318751,
+    "current_team": "Nil",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20241216-WA0048 - ananthakrishnanm ananathakrishnanm.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 0,
-    "name": "Benny",
-    "category": 2,
-    "photo": "benni.jpg"
+    "sl_no": 109,
+    "name": "Indrajith jithu ",
+    "phone_number": 9446246262,
+    "current_team": "Titans",
+    "category": "All Rounder",
+    "photo_file_name": "Photo from Indujithu - Indu Jithu",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 0,
-    "name": "Prateesh GST",
-    "category": 2,
-    "photo": "prateesh_muth_gst.jpg"
+    "sl_no": 110,
+    "name": "Aneesh meezha",
+    "phone_number": 9995959726,
+    "current_team": "MCC",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20241208-WA0022 - Sanal Senni.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 0,
-    "name": "Appus",
-    "category": 2,
-    "photo": "apoos.jpg"
+    "sl_no": 111,
+    "name": "Sulfi Basheer",
+    "phone_number": 7025410883,
+    "current_team": "bigguns ",
+    "category": "Batsman",
+    "photo_file_name": "IMG_2803 - sulfibasheer b.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 0,
-    "name": "P.P Shiju",
-    "category": 2,
-    "photo": "shiju_pp.jpg"
+    "sl_no": 112,
+    "name": "Subhash pn",
+    "phone_number": 9656146213,
+    "current_team": "Titans",
+    "category": "Bowler",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 0,
-    "name": "Shinu",
-    "category": 2,
-    "photo": ""
+    "sl_no": 113,
+    "name": "JIDHIN ",
+    "phone_number": 8943205604,
+    "current_team": "KARIMBANZ",
+    "category": "Batsman",
+    "photo_file_name": "20231020_163427 - JIDHIN JS7.jpg",
+    "batting_style": "Left-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 0,
-    "name": "Sanju",
-    "category": 2,
-    "photo": ""
+    "sl_no": 114,
+    "name": "Binu",
+    "phone_number": 9288090909,
+    "current_team": "Eleven ducks",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 0,
-    "name": "Pappa",
-    "category": 3,
-    "photo": "pappa.jpg"
+    "sl_no": 115,
+    "name": "Paala",
+    "phone_number": 9188548949,
+    "current_team": "MT Boys",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250309-185153_WhatsApp - reny antony.jpg",
+    "batting_style": "Left-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
   },
   {
-    "id": 0,
-    "name": "Biju",
-    "category": 3,
-    "photo": "biju.jpg"
+    "sl_no": 116,
+    "name": "Manu",
+    "phone_number": 8606738283,
+    "current_team": "Udaya",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 117,
+    "name": "SHIBIN ",
+    "phone_number": 8891077377,
+    "current_team": "Thriveni boys ",
+    "category": "Batsman",
+    "photo_file_name": "PXL_20220529_040259542 - Shibin E.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 118,
+    "name": "Ranesh",
+    "phone_number": 9539686303,
+    "current_team": "Spartons",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250310-170806_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 119,
+    "name": "JAYAKUMAR",
+    "phone_number": 9037129698,
+    "current_team": "ACC",
+    "category": "Batsman",
+    "photo_file_name": "Screenshot_20250310-170851_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Slow",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 120,
+    "name": "Pravi",
+    "phone_number": 7012194964,
+    "current_team": "Eleven Ducks",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250217-142253 - Pravi Prakasan.png",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 121,
+    "name": "Bittu",
+    "phone_number": 8075331445,
+    "current_team": "11 ducks",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20250216-WA0146 - Hariprasad ks.jpg",
+    "batting_style": "Left-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 122,
+    "name": "Babu kuttan",
+    "phone_number": 8943223384,
+    "current_team": "Strikers Poomkavu",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 123,
+    "name": "SUMAN",
+    "phone_number": 7736496313,
+    "current_team": "Spartans",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20240917_110517 - sumesh s.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 124,
+    "name": "Sabah",
+    "phone_number": 7306980529,
+    "current_team": "City kings",
+    "category": "Batsman",
+    "photo_file_name": "IMG_20250301_171051 - Sabah Shihab.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 125,
+    "name": "Rijas Mubarak ",
+    "phone_number": 9539073422,
+    "current_team": "TOSS",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20250207_115459 - Rijas Mubarak.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 126,
+    "name": "Rahul",
+    "phone_number": 7012759025,
+    "current_team": "Toss Kakkazhom",
+    "category": "Bowler",
+    "photo_file_name": "IMG_20250305_143506_433 - rahuls rajeevan.webp",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 127,
+    "name": "Shuhaib",
+    "phone_number": 7907821918,
+    "current_team": "Nop",
+    "category": "Bowler",
+    "photo_file_name": "IMG-20250304-WA0112 - Shuhaib R.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 128,
+    "name": "Rajeshkumar ",
+    "phone_number": 9447804531,
+    "current_team": "Lords ",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 129,
+    "name": "Sarath s",
+    "phone_number": 7736661674,
+    "current_team": "Galaxy ",
+    "category": "Bowler",
+    "photo_file_name": "IMG20241020173908 - sarath s.heic",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 130,
+    "name": "Srejith",
+    "phone_number": 9744085390,
+    "current_team": "7star",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 131,
+    "name": "Kunju",
+    "phone_number": 8921153623,
+    "current_team": "DCC ARYANKAVU",
+    "category": "Batsman",
+    "photo_file_name": "Screenshot_20250311-193041_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Slow",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 132,
+    "name": "Vineesh",
+    "phone_number": 9895148088,
+    "current_team": "ACC Arthunkal ",
+    "category": "Batsman",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Slow",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 133,
+    "name": "Vishnu",
+    "phone_number": 6282448907,
+    "current_team": "Perumbalam  11",
+    "category": "Bowler",
+    "photo_file_name": "Screenshot_20250311-194307_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 134,
+    "name": "Rejeesh",
+    "phone_number": 6282676892,
+    "current_team": "T",
+    "category": "Bowler",
+    "photo_file_name": "E3F8398F-4347-43FF-8994-48F9A755D438 - REJEEB KUNJUMON.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 135,
+    "name": "Sajith ",
+    "phone_number": 6282262427,
+    "current_team": "SRT",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_20231031_104756 - Sajith Ks.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 136,
+    "name": "GOKUL KRISHNAN ",
+    "phone_number": 7356979775,
+    "current_team": "Youth wing",
+    "category": "All Rounder",
+    "photo_file_name": "IMG20250223171801 - Gokul Krishnan.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 137,
+    "name": "Sminal syamkumar",
+    "phone_number": 9037413456,
+    "current_team": "BCCA",
+    "category": "Bowler",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 138,
+    "name": "Antony P T ",
+    "phone_number": 9072702473,
+    "current_team": "Inoz Bhavana",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20250311-WA0000 - arun puthuvalilgopi.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 139,
+    "name": "Richu",
+    "phone_number": 8129143433,
+    "current_team": "Cobraz",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 140,
+    "name": "Amal lal",
+    "phone_number": 95267995339,
+    "current_team": "MT Boys",
+    "category": "Bowler",
+    "photo_file_name": "IMG-20250311-WA0116 - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 141,
+    "name": "Kochu(Rejeesh)",
+    "phone_number": 9061012903,
+    "current_team": "Windies",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 142,
+    "name": "AL-THAF",
+    "phone_number": 8921651436,
+    "current_team": "Cobras",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_9364 - Al Thaf.jpeg",
+    "batting_style": "Left-Handed",
+    "bowling_style": "Spin",
+    "bowling_arm": "Left-Arm"
+  },
+  {
+    "sl_no": 143,
+    "name": "Syam s",
+    "phone_number": 8590932352,
+    "current_team": "Spartanz",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 144,
+    "name": "Mukeshmurali",
+    "phone_number": 8089649848,
+    "current_team": "Royals ",
+    "category": "All Rounder",
+    "photo_file_name": "3ccb6dbfe2c5ed8943b89322f64d2d07 - Mukeshmurali 92.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 145,
+    "name": "Sherin",
+    "phone_number": 7994191517,
+    "current_team": "Dream killers",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 146,
+    "name": "Kichu S ",
+    "phone_number": 8891350405,
+    "current_team": "Victory ",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20240520-WA0147 - Kichu S.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 147,
+    "name": "ARUN .R",
+    "phone_number": 9074264721,
+    "current_team": "YOUTHWING ",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20250312-WA0166 - sreekumar s.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Spin",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 148,
+    "name": "Yadhu",
+    "phone_number": 7902211304,
+    "current_team": "GCC",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250312-201712_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 149,
+    "name": "Abhijith",
+    "phone_number": 8078591367,
+    "current_team": "Perumbalam ",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250312-201650_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 150,
+    "name": "Rino Raj",
+    "phone_number": 7907702165,
+    "current_team": "Perumbalam 11",
+    "category": "Batsman",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Slow",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 151,
+    "name": "Justin",
+    "phone_number": 9946410308,
+    "current_team": "Young Fighters",
+    "category": "Bowler",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 152,
+    "name": "Akhil ",
+    "phone_number": 7736919238,
+    "current_team": "Skcc",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_1771 - akhil sajith.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 153,
+    "name": "Vishnu",
+    "phone_number": 9074620050,
+    "current_team": "Vikings",
+    "category": "All Rounder",
+    "photo_file_name": "1716913385894-01 - vava vishnu.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 154,
+    "name": "Ajay ",
+    "phone_number": 8848169941,
+    "current_team": "Vikings",
+    "category": "All Rounder",
+    "photo_file_name": "IMG_0033 - ajaykochu13 ajaykochu13.jpeg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 155,
+    "name": "Anadhu",
+    "phone_number": 7592921114,
+    "current_team": "MT Boys",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250313-173119_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 156,
+    "name": "Vipin Raj",
+    "phone_number": 8943831372,
+    "current_team": "PCC",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250313-173150_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 157,
+    "name": "Nazim",
+    "phone_number": 8606516140,
+    "current_team": "Nil",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250313-173430_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 158,
+    "name": "Binu",
+    "phone_number": 9995922356,
+    "current_team": "Prathibha",
+    "category": "Batsman",
+    "photo_file_name": "Screenshot_20250313-174148_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 159,
+    "name": "Sumesh",
+    "phone_number": 8129004199,
+    "current_team": "MT Boys",
+    "category": "Bowler",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 160,
+    "name": "ARUN PANKAJ",
+    "phone_number": 9995188541,
+    "current_team": "YOUTH WING ",
+    "category": "All Rounder",
+    "photo_file_name": "IMG20250313185633 - Gokul Krishnan.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 161,
+    "name": "JICHU",
+    "phone_number": 8086966945,
+    "current_team": "YOUTH WING ",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 162,
+    "name": "DHANESH VS",
+    "phone_number": 7593048233,
+    "current_team": "Royals, bhavana, INOZ ",
+    "category": "Batsman",
+    "photo_file_name": "IMG_20240129_095957_462 - DHANESH VS.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Spin",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 163,
+    "name": "Ajikumar P",
+    "phone_number": 8111864904,
+    "current_team": "shark ",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 164,
+    "name": "RENJITH",
+    "phone_number": 7907092059,
+    "current_team": "YOUTHWING ",
+    "category": "Batsman",
+    "photo_file_name": "IMG_20250314_192924 - sreekumar s.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 165,
+    "name": "Shabeer",
+    "phone_number": 9995906020,
+    "current_team": "Kombanz",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 166,
+    "name": "Unnikuttan",
+    "phone_number": 9746183838,
+    "current_team": "Super Titans",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250314-180843_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 167,
+    "name": "Unni",
+    "phone_number": 8848969271,
+    "current_team": "Bhavana",
+    "category": "Bowler",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 168,
+    "name": "Hari lal Manu",
+    "phone_number": 8893239944,
+    "current_team": "Bhavana",
+    "category": "Batsman",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Slow",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 169,
+    "name": "Kittu",
+    "phone_number": 9544251127,
+    "current_team": "Super Titans",
+    "category": "Bowler",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 170,
+    "name": "Rahul",
+    "phone_number": 9947688120,
+    "current_team": "MT BOYS,",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 171,
+    "name": "Sajith",
+    "phone_number": 7907557705,
+    "current_team": "Cobras",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 172,
+    "name": "Iriah",
+    "phone_number": 9744327552,
+    "current_team": "Ashas",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 173,
+    "name": "Jondhy",
+    "phone_number": 8606710856,
+    "current_team": "SRT",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 174,
+    "name": "Ashiq",
+    "phone_number": 9562376310,
+    "current_team": "Super Titans",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 175,
+    "name": "Rahul Kichu ",
+    "phone_number": 8660639371,
+    "current_team": "ACC Arthukal ",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250314-211150_WhatsApp - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 176,
+    "name": "Shemeer പിജെ",
+    "phone_number": 7306038430,
+    "current_team": "Galaxy",
+    "category": "Bowler",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 177,
+    "name": "Ajesh",
+    "phone_number": 9645864987,
+    "current_team": "Bhavana cc",
+    "category": "All Rounder",
+    "photo_file_name": "IMG-20240708-WA0090 - manu mohan.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Spin",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 178,
+    "name": "Anish yoosuf",
+    "phone_number": 9746123431,
+    "current_team": "SKY 360",
+    "category": "Batsman",
+    "photo_file_name": "17420558144311311772607029282564 - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Slow",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 179,
+    "name": "Sudhi",
+    "phone_number": 7411806944,
+    "current_team": "Srt",
+    "category": "All Rounder",
+    "photo_file_name": "Screenshot_20250315_215440_Instagram - ARUN B.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Spin",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 180,
+    "name": "Ajith",
+    "phone_number": 7907706985,
+    "current_team": "Bhavana",
+    "category": "All Rounder",
+    "photo_file_name": "1742055927103293288023334691543 - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 181,
+    "name": "Zahid",
+    "phone_number": 9142999123,
+    "current_team": "Triveni",
+    "category": "All Rounder",
+    "photo_file_name": "17420560263948093842846481948594 - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 182,
+    "name": "Arun Kannan",
+    "phone_number": 7012888689,
+    "current_team": "Bhavana",
+    "category": "All Rounder",
+    "photo_file_name": "17420561338658917967983277359042 - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 183,
+    "name": "Mansoor",
+    "phone_number": 8891760130,
+    "current_team": "Amsterdam",
+    "category": "All Rounder",
+    "photo_file_name": "17420562196215717373134759124894 - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 184,
+    "name": "Angel",
+    "phone_number": 9544447879,
+    "current_team": "Pheonex",
+    "category": "Batsman",
+    "photo_file_name": "1742056315283830524789348324979 - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 185,
+    "name": "Sulfi",
+    "phone_number": 8714477985,
+    "current_team": "Auzis",
+    "category": "All Rounder",
+    "photo_file_name": "17420564536912579668611157361273 - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 186,
+    "name": "Rahul",
+    "phone_number": 9074040487,
+    "current_team": "Victory",
+    "category": "All Rounder",
+    "photo_file_name": "17420565363633019264460249561743 - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 187,
+    "name": "Nandhu",
+    "phone_number": 9495031003,
+    "current_team": "Perumbalam",
+    "category": "All Rounder",
+    "photo_file_name": "17420566209712494718646888923848 - reny antony.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 188,
+    "name": "Tojin Michael",
+    "phone_number": 8089653032,
+    "current_team": "victory",
+    "category": "Batsman",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 189,
+    "name": "VICHU",
+    "phone_number": 9605001150,
+    "current_team": "YOUTHWING",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20250316-WA0101 - sreekumar s.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Spin",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 190,
+    "name": "ARUN .C.P",
+    "phone_number": 8891638173,
+    "current_team": "YOUTHWING",
+    "category": "Batsman",
+    "photo_file_name": "IMG-20250316-WA0106 - sreekumar s.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 191,
+    "name": "Jibin",
+    "phone_number": 9633592126,
+    "current_team": "Eagles",
+    "category": "All Rounder",
+    "photo_file_name": "siby - Aswin .A.S.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 192,
+    "name": "Sajimon",
+    "phone_number": 8075891901,
+    "current_team": "Eagles",
+    "category": "All Rounder",
+    "photo_file_name": "saji - Aswin .A.S.jpg",
+    "batting_style": "Left-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Left-Arm"
   }
 ]
