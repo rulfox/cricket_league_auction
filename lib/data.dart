@@ -33,9 +33,9 @@ class Player {
     bowlingArm = json['bowling_arm'];
   }
   double? timestamp;
-  int? slNo;
+  String? slNo;
   String? name;
-  int? phoneNumber;
+  String? phoneNumber;
   String? currentTeam;
   String? category;
   String? photoUrl;
