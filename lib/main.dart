@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
       setState(() {
         _player = player;
       });
-      await Future.delayed(const Duration(seconds: 1)); // Delay for 5 seconds
+      await Future.delayed(const Duration(seconds: 3)); // Delay for 5 seconds
     }
   }
 
@@ -78,47 +78,13 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("assets/images/background.jpg"),
+                  image: AssetImage("assets/images/bg_red.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
           ),
           Row(children: <Widget>[
-            Expanded(
-                child: GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => FullScreenImageScreen(imagePath: _player.getPlayerPhoto()),
-                        ),
-                      );
-                    },
-                  child: Stack(
-                    children: [
-                      Expanded(
-                        child: ClipRRect(
-                          child: ImageFiltered(
-                            imageFilter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-                            child: Image.asset(
-                              _player.getPlayerPhoto(),
-                              fit: BoxFit.cover,
-                              width: double.infinity,
-                              height: double.infinity,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Image.asset(
-                        _player.getPlayerPhoto(),
-                        fit: BoxFit.fitHeight,
-                        width: double.infinity,
-                        height: double.infinity,
-                      ),
-                    ],
-                  ),
-            )),
             Expanded(
               child: Column(children: <Widget>[
                 Expanded(
@@ -127,6 +93,17 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(left: 30, right: 30),
+                          child: SizedBox(
+                            height: 240, // adjust height as needed
+                            width: double.infinity,
+                            child: Image.asset(
+                              "assets/images/emirates.png",
+                              fit: BoxFit.scaleDown,
+                            ),
+                          ),
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
@@ -155,19 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
                             fit: BoxFit.scaleDown,
-                            child: Text(_player.getCurrentTeam(),
-                                style: const TextStyle(
-                                    fontSize: 90,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(_player.getCategoryName(),
+                            child: Text(_player.getCategory(),
                                 style: const TextStyle(
                                     fontSize: 70,
                                     fontWeight: FontWeight.bold,
@@ -179,19 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
                             fit: BoxFit.scaleDown,
-                            child: Text("${_player.getBattingStyle()} Batsman",
-                                style: const TextStyle(
-                                    fontSize: 50,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text("${_player.getBowlingArm()} ${_player.getBowlingStyle()} Bowler",
+                            child: Text(_player.getArm(),
                                 style: const TextStyle(
                                     fontSize: 50,
                                     fontWeight: FontWeight.bold,
@@ -219,6 +172,40 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),*/
               ]),
             ),
+            Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => FullScreenImageScreen(imagePath: _player.getPlayerPhoto()),
+                      ),
+                    );
+                  },
+                  child: Stack(
+                    children: [
+                      Expanded(
+                        child: ClipRRect(
+                          child: ImageFiltered(
+                            imageFilter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+                            child: Image.asset(
+                              _player.getPlayerPhoto(),
+                              fit: BoxFit.cover,
+                              width: double.infinity,
+                              height: double.infinity,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Image.asset(
+                        _player.getPlayerPhoto(),
+                        fit: BoxFit.fitHeight,
+                        width: double.infinity,
+                        height: double.infinity,
+                      ),
+                    ],
+                  ),
+                )),
           ]),
         ],
       ),

@@ -74,7 +74,7 @@ class _PlayersPopupState extends State<PlayersPopup> {
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("assets/images/background.jpg"),
+                  image: AssetImage("assets/images/bg_red.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -126,7 +126,7 @@ class _PlayersPopupState extends State<PlayersPopup> {
                       return GestureDetector(
                         child: ListTile(
                           title: Text(
-                              "${player.getPlayerName()} - ${player.getCurrentTeam()}",
+                              "${player.getPlayerName()} - ${player.getCategory()}",
                               style: const TextStyle(
                                   fontSize: 30,
                                   fontWeight: FontWeight.normal,
