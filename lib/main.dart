@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    //displayPlayersSequentially(); // Call the function here
+    displayPlayersSequentially(); // Call the function here
   }
 
   void displayPlayersSequentially() async {
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
       setState(() {
         _player = player;
       });
-      await Future.delayed(const Duration(seconds: 3)); // Delay for 5 seconds
+      await Future.delayed(const Duration(seconds: 1)); // Delay for 5 seconds
     }
   }
 
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Padding(
+                        /*Padding(
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: SizedBox(
                             height: 240, // adjust height as needed
@@ -103,14 +103,14 @@ class _MyHomePageState extends State<MyHomePage> {
                               fit: BoxFit.scaleDown,
                             ),
                           ),
-                        ),
+                        ),*/
                         Padding(
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
                             fit: BoxFit.contain,
                             child: Text("#${_player.getPlayerId()}",
                                 style: const TextStyle(
-                                    fontSize: 90,
+                                    fontSize: 120,
                                     fontWeight: FontWeight.bold,
                                     fontFamily: 'VTFRedZone',
                                     color: Colors.white)),
@@ -122,13 +122,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             fit: BoxFit.contain,
                             child: Text(_player.getPlayerName(),
                                 style: const TextStyle(
-                                    fontSize: 120,
+                                    fontSize: 140,
                                     fontWeight: FontWeight.bold,
                                     fontFamily: 'VTFRedZone',
                                     color: Colors.white)),
                           ),
                         ),
-                        Padding(
+                        /*Padding(
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
                             fit: BoxFit.scaleDown,
@@ -151,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     fontFamily: 'VTFRedZone',
                                     color: Colors.white)),
                           ),
-                        ),
+                        ),*/
                       ],
                     ),
                   ),
