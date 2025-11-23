@@ -11,7 +11,6 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   _players =
       await getPlayersData();
-  print("Players Length -> ${_players.length}");
   runApp(const MyApp());
 }
 
@@ -97,34 +96,10 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
                             fit: BoxFit.contain,
-                            child: Text("Poomkavu Legends\nSuper League",
+                            child: Text("Victory\nPremier League",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    fontSize: 80,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: FittedBox(
-                            fit: BoxFit.contain,
-                            child: Text("#${_player.getPlayerId()}",
-                                style: const TextStyle(
-                                    fontSize: 120,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: FittedBox(
-                            fit: BoxFit.contain,
-                            child: Text(_player.getPlayerName(),
-                                style: const TextStyle(
-                                    fontSize: 130,
+                                    fontSize: 60,
                                     fontWeight: FontWeight.bold,
                                     fontFamily: 'VTFRedZone',
                                     color: Colors.white)),
@@ -133,10 +108,22 @@ class _MyHomePageState extends State<MyHomePage> {
                         /*Padding(
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(_player.getCategory(),
+                            fit: BoxFit.contain,
+                            child: Text("#${_player.getPlayerId()}",
                                 style: const TextStyle(
-                                    fontSize: 70,
+                                    fontSize: 100,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'VTFRedZone',
+                                    color: Colors.white)),
+                          ),
+                        ),*/
+                        Padding(
+                          padding: const EdgeInsets.only(left: 30, right: 30),
+                          child: FittedBox(
+                            fit: BoxFit.contain,
+                            child: Text(_player.getPlayerName(),
+                                style: const TextStyle(
+                                    fontSize: 110,
                                     fontWeight: FontWeight.bold,
                                     fontFamily: 'VTFRedZone',
                                     color: Colors.white)),
@@ -146,14 +133,67 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
                             fit: BoxFit.scaleDown,
-                            child: Text(_player.getArm(),
+                            child: Text(_player.getTeam(),
                                 style: const TextStyle(
                                     fontSize: 50,
                                     fontWeight: FontWeight.bold,
                                     fontFamily: 'VTFRedZone',
                                     color: Colors.white)),
                           ),
-                        ),*/
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 30, right: 30),
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(_player.getCategory(),
+                                style: const TextStyle(
+                                    fontSize: 60,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'VTFRedZone',
+                                    color: Colors.white)),
+                          ),
+                        ),
+                        Padding(
+                            padding: const EdgeInsets.only(left: 30, right: 30),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(_player.getBattingStyle(),
+                                    style: const TextStyle(
+                                        fontSize: 50,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'VTFRedZone',
+                                        color: Colors.white)
+                                ),
+                                const Text("  |  ",
+                                    style: TextStyle(
+                                        fontSize: 50,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'VTFRedZone',
+                                        color: Colors.white)
+                                ),
+                                Text(_player.getBowlingStyle(),
+                                    style: const TextStyle(
+                                        fontSize: 50,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'VTFRedZone',
+                                        color: Colors.white)
+                                ),
+                              ],
+                            )
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 30, right: 30),
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(_player.getPhoneNumber(),
+                                style: const TextStyle(
+                                    fontSize: 50,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'VTFRedZone',
+                                    color: Colors.white)),
+                          ),
+                        ),
                       ],
                     ),
                   ),

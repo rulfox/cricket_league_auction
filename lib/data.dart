@@ -9,53 +9,88 @@ class Player {
   Player({
     this.slNo,
     this.name,
+    this.phoneNumber,
+    this.team,
     this.category,
+    this.battingStyle,
+    this.bowlingStyle,
+    this.address,
     this.photoFileName,
-    this.arm});
+  });
 
   Player.fromJson(dynamic json) {
     slNo = json['sl_no'];
     name = json['name'];
+    phoneNumber = json['phone_number']?.toString();
+    team = json['team'];
     category = json['category'];
+    battingStyle = json['batting_style'];
+    bowlingStyle = json['bowling_style'];
+    address = json['address'];
     photoFileName = json['photo_file_name'];
-    arm = json['arm'];
   }
+
   int? slNo;
   String? name;
+  String? phoneNumber;
+  String? team;
   String? category;
+  String? battingStyle;
+  String? bowlingStyle;
+  String? address;
   String? photoFileName;
-  String? arm;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
     map['sl_no'] = slNo;
-    map['name'] = name;
+    map['Name'] = name;
+    map['Phone Number'] = phoneNumber;
+    map['team'] = team;
     map['category'] = category;
+    map['batting_style'] = battingStyle;
+    map['bowling_style'] = bowlingStyle;
+    map['address'] = address;
     map['photo_file_name'] = photoFileName;
-    map['arm'] = arm;
     return map;
   }
 
-  String getPlayerPhoto(){
+  String getPlayerPhoto() {
     return "assets/images/player/$photoFileName";
   }
 
-  String getPlayerName(){
+  String getPlayerName() {
     return name ?? "";
   }
 
-  String getArm() {
-    return arm ?? "-";
+  String getPhoneNumber() {
+    return phoneNumber ?? "";
   }
 
-  String getPlayerId(){
-    return slNo.toString() ?? "";
+  String getTeam() {
+    return team ?? "";
   }
 
-  String getCategory(){
+  String getBattingStyle() {
+    return battingStyle ?? "-";
+  }
+
+  String getBowlingStyle() {
+    return bowlingStyle ?? "-";
+  }
+
+  String getAddress() {
+    return address ?? "";
+  }
+
+  String getPlayerId() {
+    return slNo?.toString() ?? "";
+  }
+
+  String getCategory() {
     return category ?? "";
   }
 }
+
 
 Player parsePlayerFromJson(String jsonString) {
   final jsonData = jsonDecode(jsonString);
