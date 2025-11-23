@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    displayPlayersSequentially(); // Call the function here
+    //displayPlayersSequentially(); // Call the function here
   }
 
   void displayPlayersSequentially() async {
@@ -93,17 +93,19 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        /*Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: SizedBox(
-                            height: 240, // adjust height as needed
-                            width: double.infinity,
-                            child: Image.asset(
-                              "assets/images/emirates.png",
-                              fit: BoxFit.scaleDown,
-                            ),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 30, right: 30),
+                          child: FittedBox(
+                            fit: BoxFit.contain,
+                            child: Text("Poomkavu Legends\nSuper League",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 80,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'VTFRedZone',
+                                    color: Colors.white)),
                           ),
-                        ),*/
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
@@ -122,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             fit: BoxFit.contain,
                             child: Text(_player.getPlayerName(),
                                 style: const TextStyle(
-                                    fontSize: 140,
+                                    fontSize: 130,
                                     fontWeight: FontWeight.bold,
                                     fontFamily: 'VTFRedZone',
                                     color: Colors.white)),

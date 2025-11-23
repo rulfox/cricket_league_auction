@@ -126,7 +126,7 @@ class _PlayersPopupState extends State<PlayersPopup> {
                       return GestureDetector(
                         child: ListTile(
                           title: Text(
-                              "${player.getPlayerName()} - ${player.getCategory()}",
+                              "${player.getPlayerId()} - ${player.getPlayerName()}",
                               style: const TextStyle(
                                   fontSize: 30,
                                   fontWeight: FontWeight.normal,
