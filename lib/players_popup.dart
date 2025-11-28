@@ -74,7 +74,7 @@ class _PlayersPopupState extends State<PlayersPopup> {
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("assets/images/bg_red.jpg"),
+                  image: AssetImage("assets/images/background.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),

@@ -97,13 +97,19 @@ Player parsePlayerFromJson(String jsonString) {
   return Player.fromJson(jsonData);
 }
 
+// dart
 Future<List<Player>> getPlayersData() async {
   String playersJson = await rootBundle.loadString("players.json");
   List<Player> players = (jsonDecode(playersJson) as List)
       .map((json) => Player.fromJson(json))
+      .where((p) =>
+  p.photoFileName != null &&
+      p.photoFileName!.trim().isNotEmpty &&
+      p.photoFileName!.toLowerCase() != 'null')
       .toList();
   for (Player player in players) {
     print("Player: ${player.name}, Category: ${player.category}, URL: ${player.getPlayerPhoto()}");
   }
   return players;
 }
+

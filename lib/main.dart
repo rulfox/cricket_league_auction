@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    //displayPlayersSequentially(); // Call the function here
+    displayPlayersSequentially();
   }
 
   void displayPlayersSequentially() async {
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
       setState(() {
         _player = player;
       });
-      await Future.delayed(const Duration(seconds: 1)); // Delay for 5 seconds
+      await Future.delayed(const Duration(milliseconds: 1500)); // Delay for 5 seconds
     }
   }
 
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("assets/images/bg_red.jpg"),
+                  image: AssetImage("assets/images/background.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     color: Colors.white)),
                           ),
                         ),
-                        /*Padding(
+                        Padding(
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
                             fit: BoxFit.contain,
@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     fontFamily: 'VTFRedZone',
                                     color: Colors.white)),
                           ),
-                        ),*/
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: FittedBox(
@@ -257,9 +257,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            FloatingActionButton(
+            /*FloatingActionButton(
               onPressed: () => {
-                //_setPlayer(Player(name: "Arun Raj", category: "Batsman", price: 30200, photo: "upl_logo.png")),
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -274,7 +273,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               tooltip: 'Search',
               child: const Icon(Icons.search),
-            ),
+            ),*/
             /*const SizedBox(width: 30),
             FloatingActionButton(
               onPressed: () => {
