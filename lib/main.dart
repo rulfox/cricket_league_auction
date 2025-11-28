@@ -257,7 +257,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            /*FloatingActionButton(
+            FloatingActionButton(
               onPressed: () => {
                 Navigator.push(
                   context,
@@ -273,7 +273,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               tooltip: 'Search',
               child: const Icon(Icons.search),
-            ),*/
+            ),
             /*const SizedBox(width: 30),
             FloatingActionButton(
               onPressed: () => {
