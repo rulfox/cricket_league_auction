@@ -84,6 +84,17 @@ class _MyHomePageState extends State<MyHomePage> {
       bindings: <ShortcutActivator, VoidCallback>{
         const SingleActivator(LogicalKeyboardKey.arrowRight): () => _navigatePlayer(1),
         const SingleActivator(LogicalKeyboardKey.arrowLeft): () => _navigatePlayer(-1),
+        const SingleActivator(LogicalKeyboardKey.space): () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => PlayersPopup(
+              players: _players,
+              setPlayer: (Player player) {
+                _setPlayer(player);
+              },
+            ),
+          ),
+        ),
       },
       child: Focus(
         autofocus: true,
