@@ -30,7 +30,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Kaithathil ",
-    "photo_file_name": "ajith_youthwing.jpg"
+    "photo_file_name": ""
   },
   {
     "sl_no": 4,
@@ -129,11 +129,11 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "IMG-20251119-WA0031 - akhil anand.jpg"
+    "photo_file_name": "anshad_ikka.jpg"
   },
   {
     "sl_no": 13,
-    "name": "Anshad appu",
+    "name": "Anshad Appu",
     "phone_number": 8714160866,
     "team": "Gold star",
     "category": "All Rounder",
@@ -177,7 +177,7 @@
   },
   {
     "sl_no": 17,
-    "name": "BADUSHA. M",
+    "name": "Remove BADUSHA. M",
     "phone_number": 8129286377,
     "team": "ECC",
     "category": "Bowler",
@@ -195,7 +195,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "17640856341263926035744115180767 - akhil anand.jpg"
+    "photo_file_name": "basith.jpg"
   },
   {
     "sl_no": 19,
@@ -206,7 +206,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "17640826926223742536689319332925 - akhil anand.jpg"
+    "photo_file_name": "bhaggy.jpg"
   },
   {
     "sl_no": 20,
@@ -228,7 +228,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Vadikattukizhakethil ",
-    "photo_file_name": "IMG-20250810-WA0120 - Deepak Saji.jpg"
+    "photo_file_name": "boche.jpg"
   },
   {
     "sl_no": 22,
@@ -287,7 +287,7 @@
   },
   {
     "sl_no": 27,
-    "name": "Haris Achils ",
+    "name": "Remove Haris Achils ",
     "phone_number": 9895942070,
     "team": "MCC",
     "category": "All Rounder",
@@ -298,7 +298,7 @@
   },
   {
     "sl_no": 28,
-    "name": "Indrajith",
+    "name": "Remove Indrajith",
     "phone_number": 9446246262,
     "team": "ACC",
     "category": "All Rounder",
@@ -320,7 +320,7 @@
   },
   {
     "sl_no": 30,
-    "name": "Jichu ",
+    "name": "Remove Jichu ",
     "phone_number": 8086966945,
     "team": "Youth wing ",
     "category": "Batsman",
@@ -514,7 +514,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alappuzha",
-    "photo_file_name": ""
+    "photo_file_name": "praise_antony.jpg"
   },
   {
     "sl_no": 48,
@@ -547,7 +547,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alappuzha",
-    "photo_file_name": ""
+    "photo_file_name": "thirippan.jpg"
   },
   {
     "sl_no": 51,
@@ -606,14 +606,14 @@
   },
   {
     "sl_no": 56,
-    "name": "Saeed",
+    "name": "Remove Saeed",
     "phone_number": 9846431431,
     "team": "Mcc",
     "category": "All Rounder",
     "batting_style": "Left Hand",
     "bowling_style": "Left Arm",
     "address": "Mannancherry",
-    "photo_file_name": ""
+    "photo_file_name": "saeed.jpg"
   },
   {
     "sl_no": 57,
@@ -672,7 +672,7 @@
   },
   {
     "sl_no": 62,
-    "name": "SANOJ ",
+    "name": "Remove SANOJ ",
     "phone_number": 8606593686,
     "team": "Hayz x1",
     "category": "All Rounder",
@@ -705,7 +705,7 @@
   },
   {
     "sl_no": 65,
-    "name": "Shanavas Sherief",
+    "name": "Remove Shanavas Sherief",
     "phone_number": 9995427034,
     "team": "Mcc ",
     "category": "All Rounder",
@@ -944,5 +944,16 @@
     "bowling_style": "Right Arm",
     "address": "Nilamparambil Mannancherry p.o alappuzha",
     "photo_file_name": "IMG_0127 - Zaman Mhmd.jpeg"
+  },
+  {
+    "sl_no": 87,
+    "name": "Praise Antony",
+    "phone_number": 7012031663,
+    "team": "Kombanz",
+    "category": "All Rounder",
+    "batting_style": "Lef Hand",
+    "bowling_style": "Left Arm",
+    "address": "Ebeneizer",
+    "photo_file_name": "praise.jpg"
   }
 ]
