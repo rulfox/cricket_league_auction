@@ -320,7 +320,7 @@
   },
   {
     "sl_no": 30,
-    "name": "Thaslim",
+    "name": "Thaslim Thachu",
     "phone_number": 9995522663,
     "team": "Acc adivaram",
     "category": "All Rounder",
@@ -375,7 +375,7 @@
   },
   {
     "sl_no": 35,
-    "name": "Kuttappi peeli",
+    "name": "Peeli",
     "phone_number": 9744941467,
     "team": "Victory ",
     "category": "All Rounder",
@@ -833,7 +833,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "1764082628944368428581762994403 - akhil anand.jpg"
+    "photo_file_name": "sreejith.jpg"
   },
   {
     "sl_no": 77,
@@ -878,5 +878,115 @@
     "bowling_style": "Right Arm",
     "address": "Nikarthil. North aryad po",
     "photo_file_name": "manju.jpg"
+  },
+  {
+    "sl_no": 81,
+    "name": "Jino",
+    "phone_number": 7994548207,
+    "team": "Spartans",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": "VVRH",
+    "photo_file_name": "jino.jpg"
+  },
+  {
+    "sl_no": 82,
+    "name": "Sreekuttan",
+    "phone_number": 9747894680,
+    "team": "Kombanz",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": "VVRH",
+    "photo_file_name": "sreekuttan.jpg"
+  },
+  {
+    "sl_no": 83,
+    "name": "Aswin",
+    "phone_number": 7293318484,
+    "team": "Spartans",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": "Roadmukku",
+    "photo_file_name": "sreekuttan.jpg"
+  },
+  {
+    "sl_no": 84,
+    "name": "Tojin",
+    "phone_number": 8089653032,
+    "team": "Victory",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": "Roadmukku",
+    "photo_file_name": "kappi.jpg"
+  },
+  {
+    "sl_no": 85,
+    "name": "Abdul Samad NS",
+    "phone_number": 9633225550,
+    "team": "Mannancherry",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": "Roadmukku",
+    "photo_file_name": "samad.jpg"
+  },
+  {
+    "sl_no": 86,
+    "name": "Indrajith jithu ",
+    "phone_number": 9446246262,
+    "current_team": "ACC",
+    "category": "All Rounder",
+    "photo_file_name": "indrajith_jithu.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 87,
+    "name": "Nadirsha",
+    "phone_number": 8606464138,
+    "current_team": "Century",
+    "category": "All Rounder",
+    "photo_file_name": "nadirsha.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 88,
+    "name": "Vishnu Vijayan",
+    "phone_number": 7736603383,
+    "current_team": "SMT XI",
+    "category": "All Rounder",
+    "photo_file_name": "vishnu_vijayan.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 89,
+    "name": "Athul Krishnan",
+    "phone_number": 9940940237,
+    "current_team": "Century",
+    "category": "All Rounder",
+    "photo_file_name": "athul_krishnan.png",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
+  },
+  {
+    "sl_no": 90,
+    "name": "Varun",
+    "phone_number": 8281748486,
+    "current_team": "Century",
+    "category": "All Rounder",
+    "photo_file_name": "varun.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm"
   }
 ]
