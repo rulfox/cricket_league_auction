@@ -419,14 +419,14 @@
   },
   {
     "sl_no": 39,
-    "name": "Maneesh",
-    "phone_number": 8590344533,
-    "team": "Kombanz",
-    "category": "Batsman",
+    "name": "Satheesh Ashes",
+    "phone_number": 9746850942,
+    "team": "Ashes Komalapuram",
+    "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
-    "address": "Chirayil kalavoor po alappuzha",
-    "photo_file_name": "IMG_20240304_192447 - Maneesh C.M.jpg"
+    "address": "Komalapuram",
+    "photo_file_name": "kinnathi.jpg"
   },
   {
     "sl_no": 40,
@@ -485,14 +485,14 @@
   },
   {
     "sl_no": 45,
-    "name": "NOUFAL N",
-    "phone_number": 9074855363,
-    "team": "SKY 360",
+    "name": "Sinoj Babu",
+    "phone_number": 1234567890,
+    "team": "ACC",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "KUTTIPPURAM NORTH ARYAD P O ALAPPUZHA ",
-    "photo_file_name": "c9a084b9-50d2-4952-9982-c97a24a8ce05 - Noufal Navas.jpeg"
+    "photo_file_name": "sinoj_babu.jpg"
   },
   {
     "sl_no": 46,
@@ -716,14 +716,14 @@
   },
   {
     "sl_no": 66,
-    "name": "Shanu",
-    "phone_number": 8943808767,
-    "team": "Century ",
-    "category": "All Rounder",
+    "name": "Abhijith",
+    "phone_number": 1234567890,
+    "team": "MCC ",
+    "category": "Batsman",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "IMG-20251118-WA0060 - akhil anand.jpg"
+    "photo_file_name": "abhijithh.jpg"
   },
   {
     "sl_no": 67,
@@ -903,14 +903,14 @@
   },
   {
     "sl_no": 83,
-    "name": "Harilal",
-    "phone_number": 9037938044,
-    "team": "SMT XI",
+    "name": "Khaleel",
+    "phone_number": 1234567890,
+    "team": "Century",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "VVRH",
-    "photo_file_name": "harilal.jpg"
+    "photo_file_name": "khaleel.jpg"
   },
   {
     "sl_no": 84,
@@ -958,22 +958,22 @@
   },
   {
     "sl_no": 88,
-    "name": "Vishnu Vijayan",
-    "phone_number": 7736603383,
-    "current_team": "SMT XI",
+    "name": "Rahul Aala",
+    "phone_number": 73564085282,
+    "current_team": "Victory",
     "category": "All Rounder",
-    "photo_file_name": "vishnu_vijayan.jpg",
+    "photo_file_name": "aala_rahul.jpg",
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right-Arm"
   },
   {
     "sl_no": 89,
-    "name": "Athul Krishnan",
-    "phone_number": 9940940237,
-    "current_team": "Century",
+    "name": "Gopan",
+    "phone_number": 9544058565,
+    "current_team": "Youth Wing",
     "category": "All Rounder",
-    "photo_file_name": "athul_krishnan.png",
+    "photo_file_name": "gopan_ycc.jpg",
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right-Arm"

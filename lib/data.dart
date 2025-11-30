@@ -107,9 +107,6 @@ Future<List<Player>> getPlayersData() async {
       p.photoFileName!.trim().isNotEmpty &&
       p.photoFileName!.toLowerCase() != 'null')*/
       .toList();
-  for (Player player in players) {
-    print("Player: ${player.name}, Category: ${player.category}, URL: ${player.getPlayerPhoto()}");
-  }
   return players;
 }
 
