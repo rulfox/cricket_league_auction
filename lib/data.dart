@@ -22,7 +22,7 @@ class Player {
     slNo = json['sl_no'];
     name = json['name'];
     phoneNumber = json['phone_number']?.toString();
-    team = json['team'];
+    team = json['current_team'] ?? json['team'];
     category = json['category'];
     battingStyle = json['batting_style'];
     bowlingStyle = json['bowling_style'];
