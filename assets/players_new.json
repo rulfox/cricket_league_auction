@@ -1,6 +1,6 @@
 [
   {
-    "sl_no": "1",
+    "sl_no": 1,
     "name": "Ajith Udaya",
     "phone_number": "7902523383",
     "current_team": "Udaya",
@@ -11,7 +11,7 @@
     "photo_file_name": "ajith_udaya.jpg"
   },
   {
-    "sl_no": "2",
+    "sl_no": 2,
     "name": "Upesh Udaya",
     "phone_number": "7012532681",
     "current_team": "Udaya",
@@ -19,10 +19,10 @@
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right Arm",
-    "photo_file_name": ""
+    "photo_file_name": "upesh_udaya.jpg"
   },
   {
-    "sl_no": "3",
+    "sl_no": 3,
     "name": "Manu Mapra",
     "phone_number": "",
     "current_team": "Victory",
@@ -30,10 +30,10 @@
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right Arm",
-    "photo_file_name": ""
+    "photo_file_name": "manu_mapra.jpg"
   },
   {
-    "sl_no": "4",
+    "sl_no": 4,
     "name": "Nadirsha",
     "phone_number": "+91 86064 64138",
     "current_team": "Century ",
@@ -44,7 +44,7 @@
     "photo_file_name": "nadirsha.jpg"
   },
   {
-    "sl_no": "5",
+    "sl_no": 5,
     "name": "Bipin Sunny",
     "phone_number": "+91 86064 64138",
     "current_team": "Victory ",
@@ -55,7 +55,7 @@
     "photo_file_name": "bipin_sunny.jpg"
   },
   {
-    "sl_no": "6",
+    "sl_no": 6,
     "name": "Jino",
     "phone_number": "+91 86064 64138",
     "current_team": "Spartanz ",
@@ -66,7 +66,7 @@
     "photo_file_name": "jino.jpg"
   },
   {
-    "sl_no": "7",
+    "sl_no": 7,
     "name": "Suji",
     "phone_number": "8129924909",
     "current_team": "Acc legends",
@@ -77,8 +77,8 @@
     "photo_file_name": "suji.jpeg"
   },
   {
-    "sl_no": "8",
-    "name": "Vishnu",
+    "sl_no": 8,
+    "name": "Vishnu KS",
     "phone_number": "0",
     "current_team": "Victory",
     "category": "Batsman",
@@ -88,7 +88,7 @@
     "photo_file_name": "vishnu.jpeg"
   },
   {
-    "sl_no": "9",
+    "sl_no": 9,
     "name": "Haris. Achils",
     "phone_number": "9895942071",
     "current_team": "MCC. Mannancherry ",
@@ -99,7 +99,18 @@
     "photo_file_name": "IMG_20250706_131602 - haris achils.jpg"
   },
   {
-    "sl_no": "11",
+    "sl_no": 10,
+    "name": "Shaji",
+    "phone_number": "",
+    "current_team": "Holders",
+    "category": "All Rounder",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right Arm",
+    "photo_file_name": "shaji_holders.jpg"
+  },
+  {
+    "sl_no": 11,
     "name": "Ramu",
     "phone_number": "0",
     "current_team": "DCC",
@@ -110,7 +121,7 @@
     "photo_file_name": "ramu_dcc.jpg"
   },
   {
-    "sl_no": "12",
+    "sl_no": 12,
     "name": "John",
     "phone_number": "",
     "current_team": "Arsh NYC",
@@ -121,7 +132,7 @@
     "photo_file_name": "john.jpg"
   },
   {
-    "sl_no": "13",
+    "sl_no": 13,
     "name": "Tony Udaya",
     "phone_number": "",
     "current_team": "Udaya",
@@ -129,13 +140,13 @@
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right Arm",
-    "photo_file_name": ""
+    "photo_file_name": "tony_udaya.jpg"
   },
   {
-    "sl_no": "14",
+    "sl_no": 14,
     "name": "Sajin",
     "phone_number": "",
-    "current_team": "",
+    "current_team": "MCC",
     "category": "All Rounder",
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
@@ -143,7 +154,7 @@
     "photo_file_name": "sajin.jpeg"
   },
   {
-    "sl_no": "15",
+    "sl_no": 15,
     "name": "Binoy",
     "phone_number": "",
     "current_team": "Acc legends",
@@ -176,7 +187,7 @@
     "photo_file_name": "sreejith_udaya.jpg"
   },
   {
-    "sl_no": 17,
+    "sl_no": 18,
     "name": "Thamsi Udaya",
     "phone_number": 0,
     "team": "Udaya ",
@@ -187,7 +198,7 @@
     "photo_file_name": "thamsi_udaya.jpg"
   },
   {
-    "sl_no": 18,
+    "sl_no": 19,
     "name": "SAJEESH V. S",
     "phone_number": 9495791974,
     "team": "ACC Aryad",
@@ -198,7 +209,7 @@
     "photo_file_name": "IMG_20251106_203321 - Sajeesh VS.jpg"
   },
   {
-    "sl_no": 19,
+    "sl_no": 20,
     "name": "Manaf",
     "phone_number": 9747617296,
     "team": "Kalavur lions ",
@@ -209,7 +220,7 @@
     "photo_file_name": "manaf.jpg"
   },
   {
-    "sl_no": 20,
+    "sl_no": 21,
     "name": "Memba",
     "phone_number": 0,
     "team": "MT Boyz ",
@@ -220,7 +231,7 @@
     "photo_file_name": "memba.jpg"
   },
   {
-    "sl_no": 21,
+    "sl_no": 22,
     "name": "Jithu",
     "phone_number": 0,
     "team": "Arsh NYC",
@@ -231,7 +242,7 @@
     "photo_file_name": "jithu_arsh_nyc.jpg"
   },
   {
-    "sl_no": 22,
+    "sl_no": 23,
     "name": "Sanoj",
     "phone_number": 0,
     "team": "Hayz XI",
@@ -242,7 +253,7 @@
     "photo_file_name": "IMG_20251019_173255 - Sanoj Majeed.jpg"
   },
   {
-    "sl_no": 23,
+    "sl_no": 24,
     "name": "Jijo",
     "phone_number": 9747986633,
     "team": "VCC",
@@ -253,7 +264,7 @@
     "photo_file_name": "jijo.jpeg"
   },
   {
-    "sl_no": 24,
+    "sl_no": 25,
     "name": "Gopu",
     "phone_number": 0,
     "team": "VCC",
@@ -264,7 +275,7 @@
     "photo_file_name": "gopu.jpeg"
   },
   {
-    "sl_no": 25,
+    "sl_no": 26,
     "name": "Suman ",
     "phone_number": 7736496313,
     "team": "Victory",
@@ -275,7 +286,7 @@
     "photo_file_name": "IMG_20250430_115905 - sumesh s.jpg"
   },
   {
-    "sl_no": 26,
+    "sl_no": 27,
     "name": "Kichu S",
     "phone_number": 8891350405,
     "team": "Victory",
@@ -286,7 +297,7 @@
     "photo_file_name": "kichu.jpeg"
   },
   {
-    "sl_no": 27,
+    "sl_no": 28,
     "name": "Hari",
     "phone_number": 9809080757,
     "team": "VCC",
@@ -297,7 +308,7 @@
     "photo_file_name": "hari.jpeg"
   },
   {
-    "sl_no": 28,
+    "sl_no": 29,
     "name": "Kaneesh ",
     "phone_number": 9645521885,
     "team": "Victory ",
@@ -308,7 +319,7 @@
     "photo_file_name": "kaneesh.jpeg"
   },
   {
-    "sl_no": 29,
+    "sl_no": 30,
     "name": "Liju",
     "phone_number": 8281677068,
     "team": "VCC",
@@ -319,7 +330,7 @@
     "photo_file_name": "liju.jpeg"
   },
   {
-    "sl_no": 30,
+    "sl_no": 31,
     "name": "Akhil Anand",
     "phone_number": 9895706527,
     "team": "VCC",
@@ -330,7 +341,7 @@
     "photo_file_name": "akhil_anand_mangalan.jpg"
   },
   {
-    "sl_no": 31,
+    "sl_no": 32,
     "name": "Joshy",
     "phone_number": 0,
     "team": "Spartanz",
@@ -338,10 +349,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Ponnittusseryveli north aryad",
-    "photo_file_name": ""
+    "photo_file_name": "joshy_udaya.png"
   },
   {
-    "sl_no": 32,
+    "sl_no": 33,
     "name": "Binoj",
     "phone_number": 9744594370,
     "team": "Victory ",
@@ -352,7 +363,7 @@
     "photo_file_name": "binoj.jpeg"
   },
   {
-    "sl_no": 33,
+    "sl_no": 34,
     "name": "Sreeraj",
     "phone_number": 8089653038,
     "team": "VCC",
@@ -363,18 +374,18 @@
     "photo_file_name": "sreeraj_podiyan.jpg"
   },
   {
-    "sl_no": 34,
-    "name": "Aneesh",
+    "sl_no": 35,
+    "name": "Aneesh Pokkan",
     "phone_number": 0,
     "team": "VCC",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
-    "address": "Acc",
-    "photo_file_name": "aneesh_smt_makkan.jpg"
+    "address": "Vcc",
+    "photo_file_name": "aneesh_pokkan.jpg"
   },
   {
-    "sl_no": 35,
+    "sl_no": 36,
     "name": "Ullas",
     "phone_number": 9020506655,
     "team": "VCC",
@@ -385,7 +396,7 @@
     "photo_file_name": "ullas_victory.jpg"
   },
   {
-    "sl_no": 36,
+    "sl_no": 37,
     "name": "Maady",
     "phone_number": 9809984127,
     "team": "Victory",
@@ -396,7 +407,7 @@
     "photo_file_name": "amal_maddy.jpg"
   },
   {
-    "sl_no": 37,
+    "sl_no": 38,
     "name": "Peeli",
     "phone_number": 9744941467,
     "team": "Victory ",
@@ -407,7 +418,7 @@
     "photo_file_name": "peeli.jpg"
   },
   {
-    "sl_no": 38,
+    "sl_no": 39,
     "name": "Shyam ",
     "phone_number": 7306392340,
     "team": "Victory ",
@@ -418,7 +429,7 @@
     "photo_file_name": "shyam_akkare.jpg"
   },
   {
-    "sl_no": 39,
+    "sl_no": 40,
     "name": "Tojin",
     "phone_number": 8089653032,
     "team": "Victory",
@@ -429,7 +440,7 @@
     "photo_file_name": "kappi.jpg"
   },
   {
-    "sl_no": 40,
+    "sl_no": 41,
     "name": "Rahul Thirippan",
     "phone_number": 9074040487,
     "team": "Spartan",
@@ -440,7 +451,7 @@
     "photo_file_name": "thirippan.jpg"
   },
   {
-    "sl_no": 41,
+    "sl_no": 42,
     "name": "Harshan",
     "phone_number": 0,
     "team": "MT Boyz",
@@ -451,7 +462,7 @@
     "photo_file_name": "harshan.jpg"
   },
   {
-    "sl_no": 42,
+    "sl_no": 43,
     "name": "Vinod",
     "phone_number": 0,
     "team": "MT Boyz",
@@ -462,7 +473,7 @@
     "photo_file_name": "vinod_mt.jpg"
   },
   {
-    "sl_no": 43,
+    "sl_no": 44,
     "name": "Jose Dayal",
     "phone_number": 0,
     "team": "Mannancherry",
@@ -473,7 +484,7 @@
     "photo_file_name": "jose_dayal.jpg"
   },
   {
-    "sl_no": 44,
+    "sl_no": 45,
     "name": "Suppi",
     "phone_number": 0,
     "team": "Spiders",
@@ -484,7 +495,7 @@
     "photo_file_name": "suppi.jpg"
   },
   {
-    "sl_no": 45,
+    "sl_no": 46,
     "name": "Sabumon",
     "phone_number": 0,
     "team": "Udaya",
@@ -495,7 +506,7 @@
     "photo_file_name": "sabumon.jpg"
   },
   {
-    "sl_no": 46,
+    "sl_no": 47,
     "name": "Raneesh",
     "phone_number": 9746974592,
     "team": "MCC",
@@ -506,7 +517,7 @@
     "photo_file_name": "raneesh.jpg"
   },
   {
-    "sl_no": 47,
+    "sl_no": 48,
     "name": "Midhun",
     "phone_number": 0,
     "team": "Udaya",
@@ -517,7 +528,7 @@
     "photo_file_name": "midhun_udaya_unni.jpg"
   },
   {
-    "sl_no": 48,
+    "sl_no": 49,
     "name": "Antony",
     "phone_number": 0,
     "team": "Bhavana",
@@ -528,7 +539,7 @@
     "photo_file_name": "antony_excise.jpg"
   },
   {
-    "sl_no": 49,
+    "sl_no": 50,
     "name": "Sharun",
     "phone_number": 0,
     "team": "Cobraz",
@@ -539,7 +550,7 @@
     "photo_file_name": "sharun_cobraz.jpg"
   },
   {
-    "sl_no": 50,
+    "sl_no": 51,
     "name": "Kannappan",
     "phone_number": 0,
     "team": "Udaya",
@@ -547,10 +558,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "kannappan_udaya.png"
   },
   {
-    "sl_no": 51,
+    "sl_no": 52,
     "name": "Praveen",
     "phone_number": 9207206967,
     "team": "Kombanz",
@@ -558,10 +569,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alappuzha",
-    "photo_file_name": ""
+    "photo_file_name": "machine_praveen.jpg"
   },
   {
-    "sl_no": 52,
+    "sl_no": 53,
     "name": "Dileep",
     "phone_number": 9847283743,
     "team": "Spartanz",
@@ -572,7 +583,7 @@
     "photo_file_name": "dileep_spartanz.jpg"
   },
   {
-    "sl_no": 53,
+    "sl_no": 54,
     "name": "Shyam",
     "phone_number": 0,
     "team": "Spartanz",
@@ -583,7 +594,7 @@
     "photo_file_name": "syam_spartanz_mandu.jpg"
   },
   {
-    "sl_no": 54,
+    "sl_no": 55,
     "name": "Rajesh",
     "phone_number": 9645566603,
     "team": "Kalavoor lions",
@@ -594,7 +605,7 @@
     "photo_file_name": "rajesh.jpg"
   },
   {
-    "sl_no": 55,
+    "sl_no": 56,
     "name": "Sharon",
     "phone_number": 8848835773,
     "team": "Youthwing ",
@@ -605,7 +616,7 @@
     "photo_file_name": "sharon.jpg"
   },
   {
-    "sl_no": 56,
+    "sl_no": 57,
     "name": "Renjith",
     "phone_number": 7907092059,
     "team": "Youthwing",
@@ -616,7 +627,7 @@
     "photo_file_name": "IMG_20230209_195108_153 - Renjith Kattungal.webp"
   },
   {
-    "sl_no": 57,
+    "sl_no": 58,
     "name": "AJEED",
     "phone_number": 9995368817,
     "team": "Kalavoor Lions",
@@ -627,7 +638,7 @@
     "photo_file_name": "ajeed.jpg"
   },
   {
-    "sl_no": 58,
+    "sl_no": 59,
     "name": "Mahesh",
     "phone_number": 7558976997,
     "team": "Arsh NYC",
@@ -638,7 +649,7 @@
     "photo_file_name": "mahesh_arsh_nyc.jpg"
   },
   {
-    "sl_no": 59,
+    "sl_no": 60,
     "name": "Govind K",
     "phone_number": 7034351239,
     "team": "Victory ",
@@ -649,7 +660,7 @@
     "photo_file_name": "IMG_3441 - Govind K.jpeg"
   },
   {
-    "sl_no": 60,
+    "sl_no": 61,
     "name": "Pranav",
     "phone_number": 8137826885,
     "team": "Victory ",
@@ -660,7 +671,7 @@
     "photo_file_name": "20240906_221634 - PRANAV PRASAD.jpg"
   },
   {
-    "sl_no": 61,
+    "sl_no": 62,
     "name": "Maneesh",
     "phone_number": "8590344533",
     "team": "Kombanz",
@@ -671,7 +682,7 @@
     "photo_file_name": "IMG_20240304_192447 - Maneesh C.M.jpg"
   },
   {
-    "sl_no": 62,
+    "sl_no": 63,
     "name": "Arun Vinayan",
     "phone_number": "0",
     "team": "Spartanz",
@@ -682,7 +693,7 @@
     "photo_file_name": "thankachan_unni_spartanz.jpg"
   },
   {
-    "sl_no": 63,
+    "sl_no": 64,
     "name": "Deepak Boche",
     "phone_number": 9995855209,
     "team": "SPARTANS ",
@@ -693,7 +704,7 @@
     "photo_file_name": "boche.jpg"
   },
   {
-    "sl_no": 64,
+    "sl_no": 65,
     "name": "Freddy",
     "phone_number": 9995855209,
     "team": "Udaa ",
@@ -704,7 +715,7 @@
     "photo_file_name": "freddy_udaya.jpg"
   },
   {
-    "sl_no": 65,
+    "sl_no": 66,
     "name": "Salman",
     "phone_number": 6238294745,
     "team": "Spartanz ",
@@ -715,7 +726,7 @@
     "photo_file_name": "IMG_7235 - Sanilcochin. Msn.jpeg"
   },
   {
-    "sl_no": 66,
+    "sl_no": 67,
     "name": "Anshad",
     "phone_number": 8281692185,
     "team": "Kalavoor lions",
@@ -726,7 +737,7 @@
     "photo_file_name": "anshad_ikka.jpg"
   },
   {
-    "sl_no": 67,
+    "sl_no": 68,
     "name": "Jithu",
     "phone_number": 0,
     "team": "Spartanz",
@@ -734,10 +745,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "jithu_paattukalam.jpg"
   },
   {
-    "sl_no": 68,
+    "sl_no": 69,
     "name": "Kichappan",
     "phone_number": 0,
     "team": "Spartanz",
@@ -745,10 +756,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "kichappan_vvrh.jpg"
   },
   {
-    "sl_no": 69,
+    "sl_no": 70,
     "name": "Jomon",
     "phone_number": 0,
     "team": "Spartanz",
@@ -756,10 +767,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "jomon_spartanz.jpg"
   },
   {
-    "sl_no": 70,
+    "sl_no": 71,
     "name": "Tony",
     "phone_number": 0,
     "team": "Yuva",
@@ -767,10 +778,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "tony_spartanz.jpg"
+    "photo_file_name": "tony_yuva.jpg"
   },
   {
-    "sl_no": 71,
+    "sl_no": 72,
     "name": "Bharath",
     "phone_number": 0,
     "team": "Spartanz",
@@ -778,10 +789,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "bharath_spartanz.jpg"
   },
   {
-    "sl_no": 72,
+    "sl_no": 73,
     "name": "Aneesh Kili",
     "phone_number": 0,
     "team": "SRT",
@@ -792,7 +803,7 @@
     "photo_file_name": "aneesh_kili.jpg"
   },
   {
-    "sl_no": 73,
+    "sl_no": 74,
     "name": "Sharath",
     "phone_number": 0,
     "team": "Spartanz",
@@ -800,10 +811,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "sarath_spartanz.jpg"
   },
   {
-    "sl_no": 74,
+    "sl_no": 75,
     "name": "Reny",
     "phone_number": 0,
     "team": "Spartanz",
@@ -814,7 +825,7 @@
     "photo_file_name": "reny_udaya.jpg"
   },
   {
-    "sl_no": 75,
+    "sl_no": 76,
     "name": "Zidhu",
     "phone_number": 0,
     "team": "Auziz",
@@ -825,7 +836,7 @@
     "photo_file_name": "zidhu_arsh_nyc.jpeg"
   },
   {
-    "sl_no": 76,
+    "sl_no": 77,
     "name": "Bipin Bichu",
     "phone_number": 0,
     "team": "SRT",
@@ -836,7 +847,7 @@
     "photo_file_name": "bipin_bichu_srt.jpg"
   },
   {
-    "sl_no": 77,
+    "sl_no": 78,
     "name": "Maneesh KSEB",
     "phone_number": 7012731778,
     "team": "MCC",
@@ -844,21 +855,21 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Kattuvelikkakth",
-    "photo_file_name": ""
+    "photo_file_name": "maneesh_kseb.jpg"
   },
   {
-    "sl_no": 78,
+    "sl_no": 79,
     "name": "Binu",
     "phone_number": 0,
-    "team": "",
+    "team": "Hitters",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "binu_hitters.jpg"
   },
   {
-    "sl_no": 79,
+    "sl_no": 80,
     "name": "Sennichan",
     "phone_number": 9656685841,
     "team": "Kalavoor lions",
@@ -869,7 +880,7 @@
     "photo_file_name": "senni.jpg"
   },
   {
-    "sl_no": 80,
+    "sl_no": 81,
     "name": "Vishnu Appappan",
     "phone_number": 0,
     "team": "MT Boyz",
@@ -877,10 +888,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "vishnu_appappan.jpeg"
   },
   {
-    "sl_no": 81,
+    "sl_no": 82,
     "name": "Sanu ",
     "phone_number": 6361941969,
     "team": "Victory ",
@@ -891,7 +902,7 @@
     "photo_file_name": "sanu.jpg"
   },
   {
-    "sl_no": 82,
+    "sl_no": 83,
     "name": "Aswin",
     "phone_number": 7293318484,
     "team": "Spartanz",
@@ -902,7 +913,7 @@
     "photo_file_name": "aswin.jpg"
   },
   {
-    "sl_no": 83,
+    "sl_no": 84,
     "name": "Sebin",
     "phone_number": 0,
     "team": "MT Boyz",
@@ -910,10 +921,10 @@
     "batting_style": "Left Hand",
     "bowling_style": "Left Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "sebin.jpg"
   },
   {
-    "sl_no": 84,
+    "sl_no": 85,
     "name": "Jos",
     "phone_number": 0,
     "team": "BCC",
@@ -921,10 +932,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "jose_bank.jpg"
   },
   {
-    "sl_no": 85,
+    "sl_no": 86,
     "name": "Biju Paala",
     "phone_number": 0,
     "team": "Udaya",
@@ -932,10 +943,10 @@
     "batting_style": "Left Hand",
     "bowling_style": "Left Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "biju_paala_udaya.jpg"
   },
   {
-    "sl_no": 86,
+    "sl_no": 87,
     "name": "Bruno",
     "phone_number": 0,
     "team": "",
@@ -943,10 +954,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "bruno_mt_boyz.jpg"
   },
   {
-    "sl_no": 87,
+    "sl_no": 88,
     "name": "Praveen",
     "phone_number": 0,
     "team": "MCC",
@@ -957,7 +968,7 @@
     "photo_file_name": "machine_praveen.jpg"
   },
   {
-    "sl_no": 88,
+    "sl_no": 89,
     "name": "Neppi",
     "phone_number": 0,
     "team": "MCC",
@@ -965,10 +976,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "neppi.jpeg"
   },
   {
-    "sl_no": 89,
+    "sl_no": 90,
     "name": "Shan Shaji",
     "phone_number": 0,
     "team": "Udaya",
@@ -976,20 +987,20 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "shan_shaji.jpg"
   },
   {
-    "sl_no": 90,
+    "sl_no": 91,
     "name": "Nandhu",
     "phone_number": "8281047037",
     "current_team": "Youth wing",
     "category": "All Rounder",
     "batting_style": "Right-Handed",
     "bowling_style": "Right Arm",
-    "photo_file_name": ""
+    "photo_file_name": "nandhu_youth_wing.jpg"
   },
   {
-    "sl_no": 91,
+    "sl_no": 92,
     "name": "Sebastian Jos",
     "phone_number": 7293318484,
     "team": "Spartanz",
@@ -997,10 +1008,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Raodmukk",
-    "photo_file_name": ""
+    "photo_file_name": "sebastian_jose.jpg"
   },
   {
-    "sl_no": 92,
+    "sl_no": 93,
     "name": "Shemeer",
     "phone_number": 9995651602,
     "team": "Mcc",
@@ -1011,7 +1022,7 @@
     "photo_file_name": "20240626_140537 - Shemeer Sharaf.jpg"
   },
   {
-    "sl_no": 93,
+    "sl_no": 94,
     "name": "Suhail Muhammed",
     "phone_number": 9895416981,
     "team": "MCC",
@@ -1022,7 +1033,7 @@
     "photo_file_name": "IMG_2172 - suhail Muhammed.jpeg"
   },
   {
-    "sl_no": 94,
+    "sl_no": 95,
     "name": "SreeHari",
     "phone_number": 0,
     "team": "VCC",
@@ -1033,7 +1044,7 @@
     "photo_file_name": "sreehari_lechi_kannan.jpg"
   },
   {
-    "sl_no": 95,
+    "sl_no": 96,
     "name": "Syam Gilly",
     "phone_number": 9895544162,
     "team": "VCC",
@@ -1041,10 +1052,10 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "IMG_20250928_170816 - akhil anand.jpg"
+    "photo_file_name": "shyam_kseb_syam.jpg"
   },
   {
-    "sl_no": 96,
+    "sl_no": 97,
     "name": "Manu Poopally",
     "phone_number": 0,
     "team": "DCC",
