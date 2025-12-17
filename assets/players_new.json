@@ -52,7 +52,7 @@
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right Arm",
-    "photo_file_name": ""
+    "photo_file_name": "bipin_sunny.jpg"
   },
   {
     "sl_no": "6",
@@ -66,7 +66,7 @@
     "photo_file_name": "jino.jpg"
   },
   {
-    "sl_no": "8",
+    "sl_no": "7",
     "name": "Suji",
     "phone_number": "8129924909",
     "current_team": "Acc legends",
@@ -74,22 +74,21 @@
     "batting_style": "Right-Handed",
     "bowling_style": "Slow",
     "bowling_arm": "Right Arm",
-    "photo_file_name": "FB_IMG_1739456292045 - anish Karunakaran pillai.jpg"
+    "photo_file_name": "suji.jpeg"
   },
   {
-    "sl_no": "9",
+    "sl_no": "8",
     "name": "Vishnu",
-    "phone_number": "9605001150",
-    "current_team": "Youth wing",
+    "phone_number": "0",
+    "current_team": "Victory",
     "category": "Batsman",
     "batting_style": "Right-Handed",
     "bowling_style": "Spin",
     "bowling_arm": "Right Arm",
-    "photo_file_name": "IMG-20250615-WA0118~2 - VISHNU Vichu.jpg",
-    "Aadhar Card - Front ": "https://drive.google.com/open?id=14FhzHQNWKoJC8rYABd-YWg9hCF1OVX6F"
+    "photo_file_name": "vishnu.jpeg"
   },
   {
-    "sl_no": "10",
+    "sl_no": "9",
     "name": "Haris. Achils",
     "phone_number": "9895942071",
     "current_team": "MCC. Mannancherry ",
@@ -101,14 +100,14 @@
   },
   {
     "sl_no": "11",
-    "name": "Indrajih jithu",
-    "phone_number": "9446246262",
-    "current_team": "Titans Alpy",
+    "name": "Ramu",
+    "phone_number": "0",
+    "current_team": "DCC",
     "category": "All Rounder",
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right Arm",
-    "photo_file_name": "8_indrajith_jithu.png"
+    "photo_file_name": "ramu_dcc.jpg"
   },
   {
     "sl_no": "12",

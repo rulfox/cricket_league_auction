@@ -1,0 +1,464 @@
+[
+  {
+    "sl_no": 1,
+    "name": "Abhishek",
+    "category": "Bowler",
+    "arm": "Right",
+    "photo_file_name": "abhishek.jpeg"
+  },
+  {
+    "sl_no": 2,
+    "name": "Afsal",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "afsal.jpeg"
+  },
+  {
+    "sl_no": 3,
+    "name": "Afzal",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "afzal.jpeg"
+  },
+  {
+    "sl_no": 4,
+    "name": "Ajeed",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "ajeed.jpeg"
+  },
+  {
+    "sl_no": 5,
+    "name": "Ajith Kaja",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "ajith_kaja.jpeg"
+  },
+  {
+    "sl_no": 6,
+    "name": "Ajmal",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "ajmal.jpeg"
+  },
+  {
+    "sl_no": 7,
+    "name": "Akhil",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "mangalan.jpeg"
+  },
+  {
+    "sl_no": 8,
+    "name": "Akshai",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "akshai.jpeg"
+  },
+  {
+    "sl_no": 9,
+    "name": "Anas",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "anas.jpeg"
+  },
+  {
+    "sl_no": 10,
+    "name": "Anees Muhammad",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "anees.jpeg"
+  },
+  {
+    "sl_no": 11,
+    "name": "Anshad",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "anshad.jpeg"
+  },
+  {
+    "sl_no": 12,
+    "name": "Arjun",
+    "category": "Bowler",
+    "arm": "Left",
+    "photo_file_name": "arjun.jpeg"
+  },
+  {
+    "sl_no": 13,
+    "name": "Arjun",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "arjun_batsman.jpeg"
+  },
+  {
+    "sl_no": 14,
+    "name": "Arun",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "arun_yw.jpeg"
+  },
+  {
+    "sl_no": 15,
+    "name": "Aswin",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "aswin.jpg"
+  },
+  {
+    "sl_no": 16,
+    "name": "Badhusha",
+    "category": "Bowler",
+    "arm": "Left",
+    "photo_file_name": "badhusha.jpeg"
+  },
+  {
+    "sl_no": 17,
+    "name": "Badhusha",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "badhusha_all_rounder.jpeg"
+  },
+  {
+    "sl_no": 18,
+    "name": "Basith",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "basith.jpeg"
+  },
+  {
+    "sl_no": 19,
+    "name": "Bilal",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "bilal.jpeg"
+  },
+  {
+    "sl_no": 20,
+    "name": "Bilal Latheef",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "bilal_latheef.jpeg"
+  },
+  {
+    "sl_no": 21,
+    "name": "Binoj",
+    "category": "Bowler",
+    "arm": "Left",
+    "photo_file_name": "binoj.jpeg"
+  },
+  {
+    "sl_no": 22,
+    "name": "Gokul",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "gokul.jpeg"
+  },
+  {
+    "sl_no": 23,
+    "name": "Gopu",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "gopu.jpeg"
+  },
+  {
+    "sl_no": 24,
+    "name": "Govind",
+    "category": "Bowler",
+    "arm": "Left",
+    "photo_file_name": "govind.jpeg"
+  },
+  {
+    "sl_no": 25,
+    "name": "Hari",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "hari.jpeg"
+  },
+  {
+    "sl_no": 26,
+    "name": "Hari",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "hari_yw.jpeg"
+  },
+  {
+    "sl_no": 27,
+    "name": "Haris",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "haris.jpeg"
+  },
+  {
+    "sl_no": 28,
+    "name": "Indrajith",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "indrajith.jpeg"
+  },
+  {
+    "sl_no": 29,
+    "name": "Jassim",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "jassim.jpeg"
+  },
+  {
+    "sl_no": 30,
+    "name": "Jijo",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "jijo.jpeg"
+  },
+  {
+    "sl_no": 31,
+    "name": "Kaneesh",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "kaneesh.jpeg"
+  },
+  {
+    "sl_no": 32,
+    "name": "Kichi",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "kichi.jpeg"
+  },
+  {
+    "sl_no": 33,
+    "name": "Kichu",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "kichu.jpeg"
+  },
+  {
+    "sl_no": 34,
+    "name": "Liju",
+    "category": "Bowler",
+    "arm": "Right",
+    "photo_file_name": "liju.jpeg"
+  },
+  {
+    "sl_no": 35,
+    "name": "Manaf",
+    "category": "All Rounder",
+    "arm": "Left",
+    "photo_file_name": "manaf.jpeg"
+  },
+  {
+    "sl_no": 36,
+    "name": "Manjappi",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "manjappi.jpeg"
+  },
+  {
+    "sl_no": 37,
+    "name": "Muhammad Aslam",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "muhammad_aslam.jpeg"
+  },
+  {
+    "sl_no": 38,
+    "name": "Muhammad Sajin",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "sajin.jpeg"
+  },
+  {
+    "sl_no": 39,
+    "name": "Muneer",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "muneer.jpeg"
+  },
+  {
+    "sl_no": 40,
+    "name": "Murad",
+    "category": "Bowler",
+    "arm": "Right",
+    "photo_file_name": "murad_thangal.jpeg"
+  },
+  {
+    "sl_no": 41,
+    "name": "Nadhirsha",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "nadirsha.jpeg"
+  },
+  {
+    "sl_no": 42,
+    "name": "Neppi",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "neppi.jpeg"
+  },
+  {
+    "sl_no": 43,
+    "name": "Nishad P K",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "nishad_pk.jpeg"
+  },
+  {
+    "sl_no": 44,
+    "name": "Noufal",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "noufal.jpeg"
+  },
+  {
+    "sl_no": 45,
+    "name": "Pollard",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "pollard.jpeg"
+  },
+  {
+    "sl_no": 46,
+    "name": "Punjan",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "punjan.jpeg"
+  },
+  {
+    "sl_no": 47,
+    "name": "Rafeek",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "rafeek.jpeg"
+  },
+  {
+    "sl_no": 48,
+    "name": "Rahul Aala",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "rahul_aala.jpeg"
+  },
+  {
+    "sl_no": 49,
+    "name": "Reni",
+    "category": "Bowler",
+    "arm": "Right",
+    "photo_file_name": "reni.jpeg"
+  },
+  {
+    "sl_no": 50,
+    "name": "Renjith",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "renjith.jpeg"
+  },
+  {
+    "sl_no": 51,
+    "name": "Rinas",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "rinas.jpeg"
+  },
+  {
+    "sl_no": 52,
+    "name": "Sajid",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "sajid.jpeg"
+  },
+  {
+    "sl_no": 53,
+    "name": "Salman",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "salman.jpeg"
+  },
+  {
+    "sl_no": 54,
+    "name": "Shanavas",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "shanavas.jpeg"
+  },
+  {
+    "sl_no": 55,
+    "name": "Sharon",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "sharon.jpeg"
+  },
+  {
+    "sl_no": 56,
+    "name": "Shejeer",
+    "category": "Bowler",
+    "arm": "Right",
+    "photo_file_name": "shejeer.jpeg"
+  },
+  {
+    "sl_no": 57,
+    "name": "Shiyas",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "shiyas.jpeg"
+  },
+  {
+    "sl_no": 58,
+    "name": "Sibi",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "sibi.jpeg"
+  },
+  {
+    "sl_no": 59,
+    "name": "Siyad Mufeed",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "mufeed.jpeg"
+  },
+  {
+    "sl_no": 60,
+    "name": "Saji",
+    "category": "All Rounder",
+    "arm": "Left",
+    "photo_file_name": "saji.jpg"
+  },
+  {
+    "sl_no": 61,
+    "name": "Subash",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "subash.jpeg"
+  },
+  {
+    "sl_no": 62,
+    "name": "Suhail",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "suhail.jpeg"
+  },
+  {
+    "sl_no": 63,
+    "name": "Suji",
+    "category": "Bowler",
+    "arm": "Right",
+    "photo_file_name": "suji.jpeg"
+  },
+  {
+    "sl_no": 64,
+    "name": "Thachu",
+    "category": "All Rounder",
+    "arm": "Right",
+    "photo_file_name": "thachu.jpeg"
+  },
+  {
+    "sl_no": 65,
+    "name": "Tojin",
+    "category": "Bowler",
+    "arm": "Right",
+    "photo_file_name": "tojin.jpeg"
+  },
+  {
+    "sl_no": 66,
+    "name": "Vishnu",
+    "category": "Batsman",
+    "arm": "Right",
+    "photo_file_name": "vishnu.jpeg"
+  }
+]
