@@ -99,6 +99,17 @@
     "photo_file_name": "IMG-20251119-WA0029 - akhil anand.jpg"
   },
   {
+    "sl_no": 11,
+    "name": "Suman ",
+    "phone_number": 7736496313,
+    "team": "Victory",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": "Acc",
+    "photo_file_name": "IMG_20250430_115905 - sumesh s.jpg"
+  },
+  {
     "sl_no": 10,
     "name": "Aneesh ",
     "phone_number": 8129924909,
@@ -108,17 +119,6 @@
     "bowling_style": "Right Arm",
     "address": "Acc",
     "photo_file_name": "Screenshot_2025-11-25-22-11-56-681_com.whatsapp - Saji Mon.jpg"
-  },
-  {
-    "sl_no": 11,
-    "name": "Ansari",
-    "phone_number": 9037233483,
-    "team": "Eagles",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": "Alappuzha ",
-    "photo_file_name": "ansari.jpg"
   },
   {
     "sl_no": 12,
