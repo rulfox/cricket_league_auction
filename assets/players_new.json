@@ -118,7 +118,7 @@
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right Arm",
-    "photo_file_name": ""
+    "photo_file_name": "john.jpg"
   },
   {
     "sl_no": "13",
@@ -140,7 +140,7 @@
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right Arm",
-    "photo_file_name": ""
+    "photo_file_name": "sajin.jpeg"
   },
   {
     "sl_no": "15",
@@ -151,7 +151,7 @@
     "batting_style": "Right-Handed",
     "bowling_style": "Slow",
     "bowling_arm": "Right Arm",
-    "photo_file_name": ""
+    "photo_file_name": "binoy.jpg"
   },
   {
     "sl_no": 16,
@@ -162,7 +162,7 @@
     "batting_style": "Left Hand",
     "bowling_style": "Left Arm",
     "address": "Kuttipurathu house ",
-    "photo_file_name": "Screenshot_2025-04-05-14-17-00-672_com.whatsapp - Saji Mon.jpg"
+    "photo_file_name": "saji.jpg"
   },
   {
     "sl_no": 17,
@@ -173,7 +173,7 @@
     "batting_style": "Left Hand",
     "bowling_style": "Left Arm",
     "address": "Kuttipurathu house ",
-    "photo_file_name": ""
+    "photo_file_name": "sreejith_udaya.jpg"
   },
   {
     "sl_no": 17,
@@ -181,10 +181,10 @@
     "phone_number": 0,
     "team": "Udaya ",
     "category": "All Rounder",
-    "batting_style": "Left Hand",
-    "bowling_style": "Left Arm",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
     "address": "Kuttipurathu house ",
-    "photo_file_name": ""
+    "photo_file_name": "thamsi_udaya.jpg"
   },
   {
     "sl_no": 18,
@@ -214,10 +214,10 @@
     "phone_number": 0,
     "team": "MT Boyz ",
     "category": "All Rounder",
-    "batting_style": "Left Hand",
-    "bowling_style": "Left Arm",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
     "address": "Manaf manu",
-    "photo_file_name": ""
+    "photo_file_name": "memba.jpg"
   },
   {
     "sl_no": 21,
@@ -228,7 +228,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Manaf manu",
-    "photo_file_name": ""
+    "photo_file_name": "jithu_arsh_nyc.jpg"
   },
   {
     "sl_no": 22,
@@ -239,7 +239,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "IMG_20251019_173255 - Sanoj Majeed.jpg"
   },
   {
     "sl_no": 23,
@@ -250,7 +250,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchey",
-    "photo_file_name": "jijoppan.jpg"
+    "photo_file_name": "jijo.jpeg"
   },
   {
     "sl_no": 24,
@@ -261,7 +261,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "gopu.jpeg"
   },
   {
     "sl_no": 25,
@@ -278,8 +278,8 @@
     "sl_no": 26,
     "name": "Kichu S",
     "phone_number": 8891350405,
-    "team": "Victory ",
-    "category": "Bowler",
+    "team": "Victory",
+    "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Roadmukk",
@@ -294,7 +294,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "IMG_20251125_201149 - akhil anand.jpg"
+    "photo_file_name": "hari.jpeg"
   },
   {
     "sl_no": 28,
@@ -305,7 +305,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alpy",
-    "photo_file_name": "IMG-20251125-WA0230(1) - Kichu S.jpg"
+    "photo_file_name": "kaneesh.jpeg"
   },
   {
     "sl_no": 29,
@@ -316,7 +316,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "liju_c_bose.jpg"
+    "photo_file_name": "liju.jpeg"
   },
   {
     "sl_no": 30,
@@ -327,7 +327,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Ponnittusseryveli north aryad",
-    "photo_file_name": "IMG_20220202_161614 - akhil anand.jpg"
+    "photo_file_name": "akhil_anand_mangalan.jpg"
   },
   {
     "sl_no": 31,
@@ -349,7 +349,7 @@
     "batting_style": "Left Hand",
     "bowling_style": "Left Arm",
     "address": "Alpy",
-    "photo_file_name": "kuttappi.jpg"
+    "photo_file_name": "binoj.jpeg"
   },
   {
     "sl_no": 33,
@@ -360,18 +360,18 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "IMG_20251109_131324 - akhil anand.jpg"
+    "photo_file_name": "sreeraj_podiyan.jpg"
   },
   {
     "sl_no": 34,
-    "name": "Aneesh ",
+    "name": "Aneesh",
     "phone_number": 0,
     "team": "VCC",
-    "category": "Batsman",
+    "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Acc",
-    "photo_file_name": ""
+    "photo_file_name": "aneesh_smt_makkan.jpg"
   },
   {
     "sl_no": 35,
@@ -382,7 +382,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "IMG_20251125_202155 - akhil anand.jpg"
+    "photo_file_name": "ullas_victory.jpg"
   },
   {
     "sl_no": 36,
@@ -393,7 +393,7 @@
     "batting_style": "Left Hand",
     "bowling_style": "Left Arm",
     "address": "Kulakkattuveliyil ",
-    "photo_file_name": "+91 98099 84127 20231201_154215 - amal.k Vasudev.jpg"
+    "photo_file_name": "amal_maddy.jpg"
   },
   {
     "sl_no": 37,
@@ -430,7 +430,7 @@
   },
   {
     "sl_no": 40,
-    "name": "Rahul",
+    "name": "Rahul Thirippan",
     "phone_number": 9074040487,
     "team": "Spartan",
     "category": "All Rounder",
@@ -448,7 +448,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alappuzha",
-    "photo_file_name": ""
+    "photo_file_name": "harshan.jpg"
   },
   {
     "sl_no": 42,
@@ -459,18 +459,18 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alappuzha",
-    "photo_file_name": ""
+    "photo_file_name": "vinod_mt.jpg"
   },
   {
     "sl_no": 43,
-    "name": "Jos Dayal",
+    "name": "Jose Dayal",
     "phone_number": 0,
     "team": "Mannancherry",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alappuzha",
-    "photo_file_name": ""
+    "photo_file_name": "jose_dayal.jpg"
   },
   {
     "sl_no": 44,
@@ -481,7 +481,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alappuzha",
-    "photo_file_name": ""
+    "photo_file_name": "suppi.jpg"
   },
   {
     "sl_no": 45,
@@ -492,7 +492,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alappuzha",
-    "photo_file_name": ""
+    "photo_file_name": "sabumon.jpg"
   },
   {
     "sl_no": 46,
@@ -503,7 +503,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": "IMG-20251121-WA0154 - akhil anand.jpg"
+    "photo_file_name": "raneesh.jpg"
   },
   {
     "sl_no": 47,
@@ -514,7 +514,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "midhun_udaya_unni.jpg"
   },
   {
     "sl_no": 48,
@@ -525,7 +525,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "antony_excise.jpg"
   },
   {
     "sl_no": 49,
@@ -536,7 +536,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "sharun_cobraz.jpg"
   },
   {
     "sl_no": 50,
@@ -569,7 +569,7 @@
     "batting_style": "Left Hand",
     "bowling_style": "Left Arm",
     "address": "Alappuzha",
-    "photo_file_name": ""
+    "photo_file_name": "dileep_spartanz.jpg"
   },
   {
     "sl_no": 53,
@@ -580,7 +580,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alappuzha",
-    "photo_file_name": ""
+    "photo_file_name": "syam_spartanz_mandu.jpg"
   },
   {
     "sl_no": 54,
@@ -635,7 +635,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alp",
-    "photo_file_name": ""
+    "photo_file_name": "mahesh_arsh_nyc.jpg"
   },
   {
     "sl_no": 59,
@@ -679,7 +679,7 @@
     "batting_style": "Right-Handed",
     "bowling_style": "Fast",
     "address": "",
-    "photo_file_name": "IMG_20240304_192447 - Maneesh C.M.jpg"
+    "photo_file_name": "thankachan_unni_spartanz.jpg"
   },
   {
     "sl_no": 63,
@@ -701,7 +701,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": ""
+    "photo_file_name": "freddy_udaya.jpg"
   },
   {
     "sl_no": 65,
@@ -767,7 +767,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "tony_spartanz.jpg"
   },
   {
     "sl_no": 71,
@@ -789,7 +789,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "aneesh_kili.jpg"
   },
   {
     "sl_no": 73,
@@ -811,29 +811,29 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "reny_udaya.jpg"
   },
   {
     "sl_no": 75,
-    "name": "Sidhu",
+    "name": "Zidhu",
     "phone_number": 0,
     "team": "Auziz",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "zidhu_arsh_nyc.jpeg"
   },
   {
     "sl_no": 76,
-    "name": "Bichu",
+    "name": "Bipin Bichu",
     "phone_number": 0,
     "team": "SRT",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "bipin_bichu_srt.jpg"
   },
   {
     "sl_no": 77,
@@ -954,7 +954,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": ""
+    "photo_file_name": "machine_praveen.jpg"
   },
   {
     "sl_no": 88,
@@ -1030,7 +1030,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "S S Manzil Mannancherry P O Alappuzha ",
-    "photo_file_name": ""
+    "photo_file_name": "sreehari_lechi_kannan.jpg"
   },
   {
     "sl_no": 95,
@@ -1052,6 +1052,6 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
-    "photo_file_name": ""
+    "photo_file_name": "manu_pooppally.jpg"
   }
 ]
