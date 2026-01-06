@@ -25,7 +25,7 @@ class Player {
     team = json['current_team'] ?? json['team'];
     category = json['category'];
     battingStyle = json['batting_style'];
-    bowlingStyle = json['bowling_style'];
+    bowlingStyle = json['bowling_arm'] ?? json['bowling_style'];
     address = json['address'];
     photoFileName = json['photo_file_name'];
   }

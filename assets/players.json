@@ -72,7 +72,7 @@
     "current_team": "Acc legends",
     "category": "Batsman",
     "batting_style": "Right-Handed",
-    "bowling_style": "Slow",
+    "bowling_style": "Fast",
     "bowling_arm": "Right Arm",
     "photo_file_name": "suji.jpeg"
   },
@@ -100,14 +100,14 @@
   },
   {
     "sl_no": 10,
-    "name": "Shaji",
-    "phone_number": "",
-    "current_team": "Holders",
+    "name": "Manu Poopally",
+    "phone_number": 0,
+    "team": "DCC",
     "category": "All Rounder",
-    "batting_style": "Right-Handed",
-    "bowling_style": "Medium",
-    "bowling_arm": "Right Arm",
-    "photo_file_name": "shaji_holders.jpg"
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": "Mannanchery ",
+    "photo_file_name": "manu_pooppally.jpg"
   },
   {
     "sl_no": 11,
@@ -146,12 +146,12 @@
     "sl_no": 14,
     "name": "Sajin",
     "phone_number": "",
-    "current_team": "MCC",
+    "current_team": "Chelsi",
     "category": "All Rounder",
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right Arm",
-    "photo_file_name": "sajin.jpeg"
+    "photo_file_name": "mohammed_sajin_chelsi.jpg"
   },
   {
     "sl_no": 15,
@@ -160,7 +160,7 @@
     "current_team": "Acc legends",
     "category": "Batsman",
     "batting_style": "Right-Handed",
-    "bowling_style": "Slow",
+    "bowling_style": "Fast",
     "bowling_arm": "Right Arm",
     "photo_file_name": "binoy.jpg"
   },
@@ -485,14 +485,14 @@
   },
   {
     "sl_no": 45,
-    "name": "Suppi",
+    "name": "Achu",
     "phone_number": 0,
     "team": "Spiders",
-    "category": "Bowler",
+    "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "Alappuzha",
-    "photo_file_name": "suppi.jpg"
+    "photo_file_name": "achu_vvrh.jpg"
   },
   {
     "sl_no": 46,
@@ -965,7 +965,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": "",
-    "photo_file_name": "machine_praveen.jpg"
+    "photo_file_name": "praveen_mcc.jpg"
   },
   {
     "sl_no": 89,
@@ -1053,16 +1053,5 @@
     "bowling_style": "Right Arm",
     "address": "Mannanchery ",
     "photo_file_name": "shyam_kseb_syam.jpg"
-  },
-  {
-    "sl_no": 97,
-    "name": "Manu Poopally",
-    "phone_number": 0,
-    "team": "DCC",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": "Mannanchery ",
-    "photo_file_name": "manu_pooppally.jpg"
   }
 ]
