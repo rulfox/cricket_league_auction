@@ -4,6 +4,7 @@ import 'package:cricket_league_auction/FullScreenImageScreen.dart';
 import 'package:cricket_league_auction/data.dart';
 import 'package:cricket_league_auction/players_popup.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 List<Player> _players = [];
 
@@ -52,6 +53,16 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _navigatePlayer(int direction) {
+    int currentIndex = _players.indexOf(_player);
+    int nextIndex = currentIndex + direction;
+
+    // Check bounds to prevent errors
+    if (nextIndex >= 0 && nextIndex < _players.length) {
+      _setPlayer(_players[nextIndex]);
+    }
+  }
+
   @override
   void initState() {
     super.initState();
@@ -69,141 +80,155 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          SizedBox(
-            width: double.infinity,
-            height: double.infinity,
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/images/background.jpg"),
-                  fit: BoxFit.cover,
-                ),
-              ),
+    return CallbackShortcuts(
+      bindings: <ShortcutActivator, VoidCallback>{
+        const SingleActivator(LogicalKeyboardKey.arrowRight): () => _navigatePlayer(1),
+        const SingleActivator(LogicalKeyboardKey.arrowLeft): () => _navigatePlayer(-1),
+        const SingleActivator(LogicalKeyboardKey.space): () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => PlayersPopup(
+              players: _players,
+              setPlayer: (Player player) {
+                _setPlayer(player);
+              },
             ),
           ),
-          Row(children: <Widget>[
-            Expanded(
-                child: GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => FullScreenImageScreen(imagePath: _player.getPlayerPhoto()),
-                        ),
-                      );
-                    },
-                  child: Stack(
-                    children: [
-                      Expanded(
-                        child: ClipRRect(
-                          child: ImageFiltered(
-                            imageFilter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-                            child: Image.asset(
-                              _player.getPlayerPhoto(),
-                              fit: BoxFit.cover,
-                              width: double.infinity,
-                              height: double.infinity,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Image.asset(
-                        _player.getPlayerPhoto(),
-                        fit: BoxFit.fitHeight,
-                        width: double.infinity,
-                        height: double.infinity,
-                      ),
-                    ],
-                  ),
-            )),
-            Expanded(
-              child: Column(children: <Widget>[
-                Expanded(
-                  child: Container(
-                    alignment: Alignment.bottomCenter,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: FittedBox(
-                            fit: BoxFit.contain,
-                            child: Text("#${_player.getPlayerId()}",
-                                style: const TextStyle(
-                                    fontSize: 90,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: FittedBox(
-                            fit: BoxFit.contain,
-                            child: Text(_player.getPlayerName(),
-                                style: const TextStyle(
-                                    fontSize: 120,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(_player.getCurrentTeam(),
-                                style: const TextStyle(
-                                    fontSize: 90,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(_player.getCategoryName(),
-                                style: const TextStyle(
-                                    fontSize: 70,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text("${_player.getBattingStyle()} Batsman",
-                                style: const TextStyle(
-                                    fontSize: 50,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 30, right: 30),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text("${_player.getBowlingArm()} ${_player.getBowlingStyle()} Bowler",
-                                style: const TextStyle(
-                                    fontSize: 50,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white)),
-                          ),
-                        ),
-                      ],
+        ),
+      },
+      child: Focus(
+        autofocus: true,
+        child: Scaffold(
+          body: Stack(
+            children: <Widget>[
+              SizedBox(
+                width: double.infinity,
+                height: double.infinity,
+                child: Container(
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/images/background.jpg"),
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                /*Expanded(
+              ),
+              Row(children: <Widget>[
+                Expanded(
+                  child: Column(children: <Widget>[
+                    Expanded(
+                      child: Container(
+                        alignment: Alignment.bottomCenter,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            const Padding(
+                              padding: EdgeInsets.only(left: 30, right: 30),
+                              child: FittedBox(
+                                fit: BoxFit.contain,
+                                child: Text("EPL",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        fontSize: 150,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'VTFRedZone',
+                                        color: Colors.white)),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 30, right: 30),
+                              child: FittedBox(
+                                fit: BoxFit.contain,
+                                child: Text("#${_player.getPlayerId()}",
+                                    style: const TextStyle(
+                                        fontSize: 100,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'VTFRedZone',
+                                        color: Colors.white)),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 30, right: 30),
+                              child: FittedBox(
+                                fit: BoxFit.contain,
+                                child: Text(_player.getPlayerName(),
+                                    style: const TextStyle(
+                                        fontSize: 110,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'VTFRedZone',
+                                        color: Colors.white)),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 30, right: 30),
+                              child: FittedBox(
+                                fit: BoxFit.scaleDown,
+                                child: Text(_player.department.toString(),
+                                    style: const TextStyle(
+                                        fontSize: 80,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'VTFRedZone',
+                                        color: Colors.white)),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 30, right: 30),
+                              child: FittedBox(
+                                fit: BoxFit.scaleDown,
+                                child: Text(_player.category.toString(),
+                                    style: const TextStyle(
+                                        fontSize: 60,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'VTFRedZone',
+                                        color: Colors.white)),
+                              ),
+                            ),
+                            Padding(
+                                padding: const EdgeInsets.only(left: 30, right: 30),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(_player.getBattingStyle(),
+                                        style: const TextStyle(
+                                            fontSize: 50,
+                                            fontWeight: FontWeight.bold,
+                                            fontFamily: 'VTFRedZone',
+                                            color: Colors.white)
+                                    ),
+                                    const Text("  |  ",
+                                        style: TextStyle(
+                                            fontSize: 50,
+                                            fontWeight: FontWeight.bold,
+                                            fontFamily: 'VTFRedZone',
+                                            color: Colors.white)
+                                    ),
+                                    Text(_player.getBowlingStyle(),
+                                        style: const TextStyle(
+                                            fontSize: 50,
+                                            fontWeight: FontWeight.bold,
+                                            fontFamily: 'VTFRedZone',
+                                            color: Colors.white)
+                                    ),
+                                  ],
+                                )
+                            ),
+                            /*Padding(
+                              padding: const EdgeInsets.only(left: 30, right: 30),
+                              child: FittedBox(
+                                fit: BoxFit.scaleDown,
+                                child: Text(_player.getPhoneNumber(),
+                                    style: const TextStyle(
+                                        fontSize: 50,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'VTFRedZone',
+                                        color: Colors.white)),
+                              ),
+                            ),*/
+                          ],
+                        ),
+                      ),
+                    ),
+                    /*Expanded(
                   child: Align(
                     alignment: Alignment.bottomCenter, // Align to the bottom
                     child: SizedBox(
@@ -217,36 +242,69 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),*/
-              ]),
-            ),
-          ]),
-        ],
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: <Widget>[
-            FloatingActionButton(
-              onPressed: () => {
-                //_setPlayer(Player(name: "Arun Raj", category: "Batsman", price: 30200, photo: "upl_logo.png")),
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => PlayersPopup(
-                      players: _players,
-                      setPlayer: (Player player) {
-                        _setPlayer(player);
+                  ]),
+                ),
+                Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => FullScreenImageScreen(imagePath: _player.getPlayerPhoto()),
+                          ),
+                        );
                       },
-                    ),
-                  ),
-                )
-              },
-              tooltip: 'Search',
-              child: const Icon(Icons.search),
-            ),
-            /*const SizedBox(width: 30),
+                      child: Stack(
+                        children: [
+                          Expanded(
+                            child: ClipRRect(
+                              child: ImageFiltered(
+                                imageFilter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+                                child: Image.asset(
+                                  _player.getPlayerPhoto(),
+                                  fit: BoxFit.cover,
+                                  width: double.infinity,
+                                  height: double.infinity,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Image.asset(
+                            _player.getPlayerPhoto(),
+                            fit: BoxFit.fitHeight,
+                            width: double.infinity,
+                            height: double.infinity,
+                          ),
+                        ],
+                      ),
+                    )),
+              ]),
+            ],
+          ),
+          floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+          floatingActionButton: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                FloatingActionButton(
+                  onPressed: () => {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PlayersPopup(
+                          players: _players,
+                          setPlayer: (Player player) {
+                            _setPlayer(player);
+                          },
+                        ),
+                      ),
+                    )
+                  },
+                  tooltip: 'Search',
+                  child: const Icon(Icons.search),
+                ),
+                /*const SizedBox(width: 30),
             FloatingActionButton(
               onPressed: () => {
                 //_setPlayer(Player(name: "Arun Raj", category: "Batsman", price: 30200, photo: "upl_logo.png")),
@@ -265,9 +323,11 @@ class _MyHomePageState extends State<MyHomePage> {
               tooltip: 'Share',
               child: const Icon(Icons.share),
             ),*/
-          ],
+              ],
+            ),
+          ), // This trailing comma makes auto-formatting nicer for build methods.
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
