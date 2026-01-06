@@ -31,7 +31,7 @@ class Player {
     paymentStatus = json['payment_status'];
     team = json['team'];
   }
-  int? id;
+  String? id;
   String? name;
   String? department;
   String? currentOffice;
