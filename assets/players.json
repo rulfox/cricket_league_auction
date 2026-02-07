@@ -52,7 +52,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": ""
+    "photo_file_name": "chippy_udaya_police.jpeg"
   },
   {
     "sl_no": 6,
@@ -151,7 +151,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": ""
+    "photo_file_name": "biju_pappa_udaya.jpeg"
   },
   {
     "sl_no": 15,
@@ -492,7 +492,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": ""
+    "photo_file_name": "aneesh_karuka.jpeg"
   },
   {
     "sl_no": 46,
@@ -580,7 +580,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": ""
+    "photo_file_name": "ajith_mt_boys.jpeg"
   },
   {
     "sl_no": 54,
@@ -782,13 +782,13 @@
   },
   {
     "sl_no": 72,
-    "name": "Party",
+    "name": "Hareesh Party",
     "phone_number": "",
     "team": "",
     "category": "",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": ""
+    "photo_file_name": "hareesh_party.jpeg"
   }
 ]
