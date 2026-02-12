@@ -177,14 +177,14 @@
   },
   {
     "sl_no": 17,
-    "name": "Thiruppan",
-    "phone_number": "",
+    "name": "Ananthu",
+    "phone_number": "8891418626",
     "team": "",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "thirippan.jpg"
+    "photo_file_name": "ananthu.png"
   },
   {
     "sl_no": 18,
@@ -320,14 +320,14 @@
   },
   {
     "sl_no": 30,
-    "name": "Akhil Sn",
-    "phone_number": "",
+    "name": "Anshad",
+    "phone_number": "8714160866",
     "team": "",
     "category": "Bowler",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "akhil_sn.jpg"
+    "photo_file_name": "anshad_appu.png"
   },
   {
     "sl_no": 31,
@@ -792,7 +792,7 @@
     "photo_file_name": "shameer_irumb.png"
   },
   {
-    "sl_no": 72,
+    "sl_no": 73,
     "name": "Aneesh",
     "phone_number": "9061882317",
     "team": "",
@@ -803,7 +803,7 @@
     "photo_file_name": "aneesh.png"
   },
   {
-    "sl_no": 73,
+    "sl_no": 74,
     "name": "Sibi",
     "phone_number": "989580942",
     "team": "",
@@ -814,7 +814,7 @@
     "photo_file_name": "sibi.png"
   },
   {
-    "sl_no": 59,
+    "sl_no": 75,
     "name": "Laiju",
     "phone_number": "8281677068",
     "team": "",
@@ -825,7 +825,7 @@
     "photo_file_name": "laiju_vellappally.png"
   },
   {
-    "sl_no": 60,
+    "sl_no": 76,
     "name": "Manu",
     "phone_number": "7356697035",
     "team": "",
@@ -836,7 +836,7 @@
     "photo_file_name": "manu.png"
   },
   {
-    "sl_no": 61,
+    "sl_no": 77,
     "name": "Sajin",
     "phone_number": "9895826283",
     "team": "",
@@ -847,7 +847,7 @@
     "photo_file_name": "sajin.png"
   },
   {
-    "sl_no": 62,
+    "sl_no": 78,
     "name": "Shambu YMCC",
     "phone_number": "9846560107",
     "team": "",
@@ -858,7 +858,7 @@
     "photo_file_name": "shambhu_ymcc.png"
   },
   {
-    "sl_no": 63,
+    "sl_no": 79,
     "name": "Shuhaib YMCC",
     "phone_number": "8086030508",
     "team": "",
@@ -869,7 +869,7 @@
     "photo_file_name": "shuhaib_ymcc.png"
   },
   {
-    "sl_no": 64,
+    "sl_no": 80,
     "name": "Reni",
     "phone_number": "8848399450",
     "team": "",
@@ -880,7 +880,7 @@
     "photo_file_name": "reni.png"
   },
   {
-    "sl_no": 65,
+    "sl_no": 81,
     "name": "Ajith Kannapan",
     "phone_number": "7736385096",
     "team": "",
@@ -891,7 +891,7 @@
     "photo_file_name": "ajith_kannappan.png"
   },
   {
-    "sl_no": 66,
+    "sl_no": 82,
     "name": "Arun Achu",
     "phone_number": "8089379416",
     "team": "",
@@ -902,18 +902,7 @@
     "photo_file_name": "arun_achu.png"
   },
   {
-    "sl_no": 67,
-    "name": "Siraj",
-    "phone_number": "7012395760",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "siraj.png"
-  },
-  {
-    "sl_no": 68,
+    "sl_no": 83,
     "name": "Saji Putt",
     "phone_number": "8075891901",
     "team": "",
@@ -924,7 +913,18 @@
     "photo_file_name": "saji_putt.jpg"
   },
   {
-    "sl_no": 69,
+    "sl_no": 84,
+    "name": "Siraj",
+    "phone_number": "7012395760",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "siraj.png"
+  },
+  {
+    "sl_no": 85,
     "name": "Kaneesh",
     "phone_number": "9645521885",
     "team": "",
@@ -935,7 +935,7 @@
     "photo_file_name": "kaneesh_victory.jpeg"
   },
   {
-    "sl_no": 70,
+    "sl_no": 86,
     "name": "Sooraj",
     "phone_number": "8921493216",
     "team": "",
@@ -946,7 +946,7 @@
     "photo_file_name": "sooraj.png"
   },
   {
-    "sl_no": 71,
+    "sl_no": 87,
     "name": "Hari VCC",
     "phone_number": "9809080757",
     "team": "",
@@ -955,5 +955,93 @@
     "bowling_style": "Right Arm",
     "address": " ",
     "photo_file_name": "hari_vcc.png"
+  },
+  {
+    "sl_no": 88,
+    "name": "Jassim",
+    "phone_number": "9895503005",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "jassim.png"
+  },
+  {
+    "sl_no": 89,
+    "name": "Haris",
+    "phone_number": "9895942070",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "haris.png"
+  },
+  {
+    "sl_no": 90,
+    "name": "Hari YMCC",
+    "phone_number": "8943378453",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "hari_ymcc.png"
+  },
+  {
+    "sl_no": 91,
+    "name": "Manu",
+    "phone_number": "8547786777",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "manu_mannancherry.png"
+  },
+  {
+    "sl_no": 92,
+    "name": "Antony",
+    "phone_number": "9072702473",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "antony.png"
+  },
+  {
+    "sl_no": 93,
+    "name": "Reshnu",
+    "phone_number": "7736695199",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "reshnu_mangalan.png"
+  },
+  {
+    "sl_no": 94,
+    "name": "Renjith Youth Wing",
+    "phone_number": "7907092059",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "renjith_mannancherry.png"
+  },
+  {
+    "sl_no": 95,
+    "name": "Manoj Bravo",
+    "phone_number": "7592936948",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "manoj_dj.png"
   }
 ]
