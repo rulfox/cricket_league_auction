@@ -473,6 +473,21 @@
     "team": "Unsold"
   },
   {
+    "id": "40",
+    "name": "Akhil Joseph",
+    "phone_number": 7736476016,
+    "department": "Fire and Rescue",
+    "current_office": "Thrissur, fire station",
+    "permanent_address": "Kampanichirayil house, south aryad alpy",
+    "category": "All Rounder",
+    "photo": "1695887927799_1 - Akhil joseph.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Fast",
+    "bowling_arm": "Left-Arm",
+    "payment_status": "Paid",
+    "team": "Unsold"
+  },
+  {
     "id": "41",
     "name": "Amal",
     "phone_number": 9809984127,
@@ -590,7 +605,7 @@
     "__EMPTY": ""
   },
   {
-    "id": "52",
+    "id": "53",
     "name": "Liju C Bose",
     "phone_number": "7012936829",
     "department": "Revenue ",
@@ -626,6 +641,20 @@
     "permanent_address": "Ponnittusseril \r\nNorth Arayad P O",
     "category": "All Rounder",
     "photo": "kalesh_kseb.png",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm",
+    "__EMPTY": ""
+  },
+  {
+    "id": "57",
+    "name": "Vishnu",
+    "phone_number": "8606009985",
+    "department": "KSEB ",
+    "current_office": "Alappuzha",
+    "permanent_address": "Ponnittusseril \r\nNorth Arayad P O",
+    "category": "All Rounder",
+    "photo": "vishnu_fire_force.png",
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right-Arm",
@@ -668,6 +697,20 @@
     "permanent_address": "Lalithalayam, Pallathuruthy, Pazhaveedu PO, Alappuzha, 688009",
     "category": "Batsman",
     "photo": "IMG_20251214_005625 - Chindumon L.jpg",
+    "batting_style": "Right-Handed",
+    "bowling_style": "Medium",
+    "bowling_arm": "Right-Arm",
+    "__EMPTY": ""
+  },
+  {
+    "id": "61",
+    "name": "Jinto",
+    "phone_number": "9074597691",
+    "department": "Revenue",
+    "current_office": "Taluk Office, Kanayannur",
+    "permanent_address": "Lalithalayam, Pallathuruthy, Pazhaveedu PO, Alappuzha, 688009",
+    "category": "Batsman",
+    "photo": "jinto_govt.png",
     "batting_style": "Right-Handed",
     "bowling_style": "Medium",
     "bowling_arm": "Right-Arm",
