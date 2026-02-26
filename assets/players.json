@@ -1043,5 +1043,49 @@
     "bowling_style": "Right Arm",
     "address": " ",
     "photo_file_name": "manoj_dj.png"
+  },
+  {
+    "sl_no": 96,
+    "name": "Badusha Left",
+    "phone_number": "8129286377",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "badushaleft.jpeg"
+  },
+  {
+    "sl_no": 97,
+    "name": "Ullas",
+    "phone_number": "9020506655",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "ullas.jpeg"
+  },
+  {
+    "sl_no": 98,
+    "name": "Renjith",
+    "phone_number": "6282239887",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "renjithkalavoor.jpeg"
+  },
+  {
+    "sl_no": 99,
+    "name": "Binoy ACC",
+    "phone_number": "8129293149",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "binoyacc.jpeg"
   }
 ]

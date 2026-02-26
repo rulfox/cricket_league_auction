@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.contain,
-                                child: Text("Udaya Premier League\nPRO",
+                                child: Text("VICTORY SUPER LEAGUE\nSEASON 1",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         fontSize: 60,
@@ -163,62 +163,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: const EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.scaleDown,
-                                child: Text(_player.getTeam(),
-                                    style: const TextStyle(
-                                        fontSize: 50,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily: 'VTFRedZone',
-                                        color: Colors.white)),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 30, right: 30),
-                              child: FittedBox(
-                                fit: BoxFit.scaleDown,
-                                child: Text(_player.getCategory(),
-                                    style: const TextStyle(
-                                        fontSize: 60,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily: 'VTFRedZone',
-                                        color: Colors.white)),
-                              ),
-                            ),
-                            Padding(
-                                padding: const EdgeInsets.only(left: 30, right: 30),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(_player.getBattingStyle(),
-                                        style: const TextStyle(
-                                            fontSize: 50,
-                                            fontWeight: FontWeight.bold,
-                                            fontFamily: 'VTFRedZone',
-                                            color: Colors.white)
-                                    ),
-                                    const Text("  |  ",
-                                        style: TextStyle(
-                                            fontSize: 50,
-                                            fontWeight: FontWeight.bold,
-                                            fontFamily: 'VTFRedZone',
-                                            color: Colors.white)
-                                    ),
-                                    Text(_player.getBowlingStyle(),
-                                        style: const TextStyle(
-                                            fontSize: 50,
-                                            fontWeight: FontWeight.bold,
-                                            fontFamily: 'VTFRedZone',
-                                            color: Colors.white)
-                                    ),
-                                  ],
-                                )
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 30, right: 30),
-                              child: FittedBox(
-                                fit: BoxFit.scaleDown,
                                 child: Text(_player.getPhoneNumber(),
                                     style: const TextStyle(
-                                        fontSize: 50,
+                                        fontSize: 80,
                                         fontWeight: FontWeight.bold,
                                         fontFamily: 'VTFRedZone',
                                         color: Colors.white)),
