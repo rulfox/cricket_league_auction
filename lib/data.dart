@@ -20,16 +20,16 @@ class Player {
   Player.fromJson(dynamic json) {
     id = json['id'];
     name = json['name'];
-    department = json['department'];
-    currentOffice = json['current_office'];
-    permanentAddress = json['permanent_address'];
-    category = json['category'];
+    department = '';
+    currentOffice = '';
+    permanentAddress = '';
+    category = '';
     photo = json['photo'];
-    battingStyle = json['batting_style'];
-    bowlingStyle = json['bowling_style'];
-    bowlingArm = json['bowling_arm'];
-    paymentStatus = json['payment_status'];
-    team = json['team'];
+    battingStyle = '';
+    bowlingStyle = '';
+    bowlingArm = '';
+    paymentStatus = '';
+    team = '';
   }
   String? id;
   String? name;
