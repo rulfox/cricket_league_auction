@@ -126,10 +126,10 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.contain,
-                                child: Text("EPL",
+                                child: Text("Emirates DPL 2026",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                        fontSize: 150,
+                                        fontSize: 100,
                                         fontWeight: FontWeight.bold,
                                         fontFamily: 'VTFRedZone',
                                         color: Colors.white)),
@@ -141,19 +141,19 @@ class _MyHomePageState extends State<MyHomePage> {
                                 fit: BoxFit.contain,
                                 child: Text("#${_player.getPlayerId()}",
                                     style: const TextStyle(
-                                        fontSize: 100,
+                                        fontSize: 130,
                                         fontWeight: FontWeight.bold,
                                         fontFamily: 'VTFRedZone',
                                         color: Colors.white)),
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 30, right: 30, top: 100),
+                              padding: const EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.contain,
                                 child: Text(_player.getPlayerName(),
                                     style: const TextStyle(
-                                        fontSize: 110,
+                                        fontSize: 120,
                                         fontWeight: FontWeight.bold,
                                         fontFamily: 'VTFRedZone',
                                         color: Colors.white)),
