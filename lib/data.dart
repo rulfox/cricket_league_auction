@@ -1,10 +1,6 @@
 import 'dart:convert';
-import 'dart:math';
-
 import 'package:flutter/services.dart';
-import 'package:path/path.dart';
 
-import 'constants.dart';
 class Player {
   Player({
     this.slNo,
@@ -97,16 +93,11 @@ Player parsePlayerFromJson(String jsonString) {
   return Player.fromJson(jsonData);
 }
 
-// dart
 Future<List<Player>> getPlayersData() async {
-  String playersJson = await rootBundle.loadString("players.json");
+  // Fixed path to match pubspec.yaml
+  String playersJson = await rootBundle.loadString("assets/players.json");
   List<Player> players = (jsonDecode(playersJson) as List)
       .map((json) => Player.fromJson(json))
-      /*.where((p) =>
-  p.photoFileName != null &&
-      p.photoFileName!.trim().isNotEmpty &&
-      p.photoFileName!.toLowerCase() != 'null')*/
       .toList();
   return players;
 }
-
