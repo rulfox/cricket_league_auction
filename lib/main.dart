@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.contain,
-                                child: Text("Emirates DPL 2026",
+                                child: Text("PLCC 2026",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         fontSize: 100,

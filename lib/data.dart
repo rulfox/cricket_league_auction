@@ -18,20 +18,20 @@ class Player {
     this.team,});
 
   Player.fromJson(dynamic json) {
-    id = json['id'];
+    id = json['sl_no'];
     name = json['name'];
     department = '';
     currentOffice = '';
     permanentAddress = '';
     category = '';
-    photo = json['photo'];
+    photo = json['photo_url'];
     battingStyle = '';
     bowlingStyle = '';
     bowlingArm = '';
     paymentStatus = '';
     team = '';
   }
-  String? id;
+  int? id;
   String? name;
   String? department;
   String? currentOffice;
@@ -46,13 +46,13 @@ class Player {
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
-    map['id'] = id;
+    map['sl_no'] = id;
     map['name'] = name;
     map['department'] = department;
     map['current_office'] = currentOffice;
     map['permanent_address'] = permanentAddress;
     map['category'] = category;
-    map['photo'] = photo;
+    map['photo_url'] = photo;
     map['batting_style'] = battingStyle;
     map['bowling_style'] = bowlingStyle;
     map['bowling_arm'] = bowlingArm;
