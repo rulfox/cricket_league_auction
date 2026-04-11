@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.contain,
-                                child: Text("PLCL",
+                                child: Text("PLCL S02",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         fontSize: 150,
@@ -136,7 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 30, right: 30),
+                              padding: const EdgeInsets.only(left: 30, right: 30, top: 50),
                               child: FittedBox(
                                 fit: BoxFit.contain,
                                 child: Text("#${_player.getPlayerId()}",
@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 30, right: 30),
+                              padding: const EdgeInsets.only(left: 30, right: 30, top: 50),
                               child: FittedBox(
                                 fit: BoxFit.contain,
                                 child: Text(_player.getPlayerName(),
@@ -159,7 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         color: Colors.white)),
                               ),
                             ),
-                            Padding(
+                            /*Padding(
                               padding: const EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.scaleDown,
@@ -182,8 +182,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                         fontFamily: 'VTFRedZone',
                                         color: Colors.white)),
                               ),
-                            ),
-                            Padding(
+                            ),*/
+                            /*Padding(
                                 padding: const EdgeInsets.only(left: 30, right: 30),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -211,7 +211,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                   ],
                                 )
-                            ),
+                            ),*/
                             /*Padding(
                               padding: const EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
