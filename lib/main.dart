@@ -126,10 +126,10 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.contain,
-                                child: Text("VICTORY SUPER LEAGUE\nSEASON 1",
+                                child: Text("VICTORY SUPER LEAGUE",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                        fontSize: 60,
+                                        fontSize: 100,
                                         fontWeight: FontWeight.bold,
                                         fontFamily: 'VTFRedZone',
                                         color: Colors.white)),
@@ -159,7 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         color: Colors.white)),
                               ),
                             ),
-                            Padding(
+                            /*Padding(
                               padding: const EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.scaleDown,
@@ -170,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         fontFamily: 'VTFRedZone',
                                         color: Colors.white)),
                               ),
-                            ),
+                            ),*/
                           ],
                         ),
                       ),
