@@ -85,109 +85,21 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": ""
+    "photo_file_name": "aneesh_century.png"
   },
   {
-    "sl_no": 3,
-    "name": "Achu kachappan",
+    "sl_no": 9,
+    "name": "Anish Kili",
     "phone_number": "9048555046",
     "team": "",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "achu_kachappan.png"
+    "photo_file_name": "aneesh_kili.jpg"
   },
   {
-    "sl_no": 81,
-    "name": "Ajith Kannapan",
-    "phone_number": "7736385096",
-    "team": "",
-    "category": "Bowler",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "ajith_kannappan.png"
-  },
-  {
-    "sl_no": 14,
-    "name": "Aju",
-    "phone_number": "9048421303",
-    "team": "",
-    "category": "Bowler",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "aju_vvrh.png"
-  },
-  {
-    "sl_no": 65,
-    "name": "Akhil Sabju",
-    "phone_number": "9061788681",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "akhil_sabju.png"
-  },
-  {
-    "sl_no": 27,
-    "name": "Akshay",
-    "phone_number": "7356488480",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "akshay.png"
-  },
-  {
-    "sl_no": 17,
-    "name": "Ananthu",
-    "phone_number": "8891418626",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "ananthu.png"
-  },
-  {
-    "sl_no": 25,
-    "name": "Anees",
-    "phone_number": "8592992729",
-    "team": "",
-    "category": "Batsman",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "annes_victory.png"
-  },
-  {
-    "sl_no": 73,
-    "name": "Aneesh",
-    "phone_number": "9061882317",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "aneesh.png"
-  },
-  {
-    "sl_no": 39,
-    "name": "Aneesh",
-    "phone_number": "8137090772",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "aneesh_pokkan.png"
-  },
-  {
-    "sl_no": 42,
+    "sl_no": 10,
     "name": "Anoop Babu",
     "phone_number": "9074780922",
     "team": "",
@@ -198,7 +110,7 @@
     "photo_file_name": "anoop_babu.png"
   },
   {
-    "sl_no": 30,
+    "sl_no": 11,
     "name": "Anshad",
     "phone_number": "8714160866",
     "team": "",
@@ -209,62 +121,18 @@
     "photo_file_name": "anshad_appu.png"
   },
   {
-    "sl_no": 92,
-    "name": "Antony",
-    "phone_number": "9072702473",
+    "sl_no": 12,
+    "name": "Aswin",
+    "phone_number": "8714160866",
     "team": "",
     "category": "Bowler",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "antony.png"
+    "photo_file_name": "aswin.jpg"
   },
   {
-    "sl_no": 23,
-    "name": "Arun",
-    "phone_number": "8891638173",
-    "team": "",
-    "category": "Batsman",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "arun_mannancherry.png"
-  },
-  {
-    "sl_no": 82,
-    "name": "Arun Achu",
-    "phone_number": "8089379416",
-    "team": "",
-    "category": "Batsman",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "arun_achu.png"
-  },
-  {
-    "sl_no": 44,
-    "name": "Arun pankaj",
-    "phone_number": "9995188541",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "arun_pankaj.png"
-  },
-  {
-    "sl_no": 36,
-    "name": "ARUN R",
-    "phone_number": "9074264721",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "arun_r.png"
-  },
-  {
-    "sl_no": 58,
+    "sl_no": 13,
     "name": "Badusha",
     "phone_number": "9037814499",
     "team": "",
@@ -275,7 +143,7 @@
     "photo_file_name": "badusha.png"
   },
   {
-    "sl_no": 96,
+    "sl_no": 13,
     "name": "Badusha Left",
     "phone_number": "8129286377",
     "team": "",
@@ -286,7 +154,7 @@
     "photo_file_name": "badushaleft.jpeg"
   },
   {
-    "sl_no": 56,
+    "sl_no": 14,
     "name": "Bhagyanath",
     "phone_number": "9895987605",
     "team": "",
@@ -297,7 +165,18 @@
     "photo_file_name": "bhagyanath.png"
   },
   {
-    "sl_no": 11,
+    "sl_no": 15,
+    "name": "Bharath",
+    "phone_number": "9895987605",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "bharath_spartanz.jpg"
+  },
+  {
+    "sl_no": 0,
     "name": "Bibin Sunny",
     "phone_number": "9447170049",
     "team": "",
@@ -308,7 +187,7 @@
     "photo_file_name": "bipin_sunny.png"
   },
   {
-    "sl_no": 6,
+    "sl_no": 0,
     "name": "Bilal",
     "phone_number": "9562353635",
     "team": "",
@@ -319,7 +198,7 @@
     "photo_file_name": "bilal.png"
   },
   {
-    "sl_no": 15,
+    "sl_no": 16,
     "name": "Binoj",
     "phone_number": "9744594370",
     "team": "",
@@ -330,51 +209,29 @@
     "photo_file_name": "binoj_kuttappi.png"
   },
   {
-    "sl_no": 99,
-    "name": "Binoy ACC",
-    "phone_number": "8129293149",
-    "team": "",
-    "category": "Bowler",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "binoyacc.jpeg"
-  },
-  {
-    "sl_no": 31,
-    "name": "Dhaneesh",
-    "phone_number": "7559048233",
-    "team": "",
-    "category": "Batsman",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "dhaneesh.png"
-  },
-  {
-    "sl_no": 20,
-    "name": "Gokul",
-    "phone_number": "7736916842",
-    "team": "",
-    "category": "Batsman",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "gokul.png"
-  },
-  {
-    "sl_no": 69,
-    "name": "Gopan",
-    "phone_number": "9544058565",
+    "sl_no": 17,
+    "name": "Boche",
+    "phone_number": "9744594370",
     "team": "",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "govachan.png"
+    "photo_file_name": "boche.jpg"
   },
   {
-    "sl_no": 1,
+    "sl_no": 18,
+    "name": "D J Manoj",
+    "phone_number": "7592936948",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "manoj_dj.png"
+  },
+  {
+    "sl_no": 19,
     "name": "Gopu",
     "phone_number": "9447504510",
     "team": "",
@@ -385,7 +242,29 @@
     "photo_file_name": "gopu.png"
   },
   {
-    "sl_no": 87,
+    "sl_no": 20,
+    "name": "Govind",
+    "phone_number": "9447504510",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "IMG_3441 - Govind K.jpeg"
+  },
+  {
+    "sl_no": 21,
+    "name": "Hareesh Udaya",
+    "phone_number": "9447504510",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "hareesh_pandey.jpg"
+  },
+  {
+    "sl_no": 22,
     "name": "Hari VCC",
     "phone_number": "9809080757",
     "team": "",
@@ -396,7 +275,7 @@
     "photo_file_name": "hari_vcc.png"
   },
   {
-    "sl_no": 90,
+    "sl_no": 0,
     "name": "Hari YMCC",
     "phone_number": "8943378453",
     "team": "",
@@ -407,7 +286,7 @@
     "photo_file_name": "hari_ymcc.png"
   },
   {
-    "sl_no": 4,
+    "sl_no": 0,
     "name": "Harikrishnan",
     "phone_number": "9567025877",
     "team": "",
@@ -418,7 +297,7 @@
     "photo_file_name": "hari_krishnan_ycc.png"
   },
   {
-    "sl_no": 89,
+    "sl_no": 23,
     "name": "Haris",
     "phone_number": "9895942070",
     "team": "",
@@ -429,7 +308,40 @@
     "photo_file_name": "haris.png"
   },
   {
-    "sl_no": 12,
+    "sl_no": 24,
+    "name": "Harshan",
+    "phone_number": "9895942070",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "harshan.png"
+  },
+  {
+    "sl_no": 25,
+    "name": "Indrajith",
+    "phone_number": "9895942070",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "indrajith_jithu.jpg"
+  },
+  {
+    "sl_no": 26,
+    "name": "Jithu",
+    "phone_number": "9895942070",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "jithu_auziz.jpg"
+  },
+  {
+    "sl_no": 0,
     "name": "Hasif",
     "phone_number": "9605141785",
     "team": "",
@@ -440,7 +352,7 @@
     "photo_file_name": "hasif.png"
   },
   {
-    "sl_no": 88,
+    "sl_no": 0,
     "name": "Jassim",
     "phone_number": "9895503005",
     "team": "",
@@ -451,7 +363,7 @@
     "photo_file_name": "jassim.png"
   },
   {
-    "sl_no": 64,
+    "sl_no": 27,
     "name": "Jijoppan",
     "phone_number": "9747986633",
     "team": "",
@@ -462,18 +374,62 @@
     "photo_file_name": "jijoppan.png"
   },
   {
-    "sl_no": 47,
-    "name": "Jithin sabu",
-    "phone_number": "7293413913",
+    "sl_no": 28,
+    "name": "Jino",
+    "phone_number": "9747986633",
     "team": "",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "jithin_sabu.png"
+    "photo_file_name": "jino.jpg"
   },
   {
-    "sl_no": 21,
+    "sl_no": 29,
+    "name": "John",
+    "phone_number": "9747986633",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "john.jpg"
+  },
+  {
+    "sl_no": 30,
+    "name": "Jomon",
+    "phone_number": "9747986633",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "jomon_spartanz.jpg"
+  },
+  {
+    "sl_no": 31,
+    "name": "Joseph",
+    "phone_number": "9747986633",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "joseph.jpg"
+  },
+  {
+    "sl_no": 32,
+    "name": "Joshy Spartanz",
+    "phone_number": "9747986633",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "joshy.jpg"
+  },
+  {
+    "sl_no": 33,
     "name": "Kabeer",
     "phone_number": "9037858041",
     "team": "",
@@ -484,7 +440,7 @@
     "photo_file_name": "kabeer.png"
   },
   {
-    "sl_no": 85,
+    "sl_no": 34,
     "name": "Kaneesh",
     "phone_number": "9645521885",
     "team": "",
@@ -495,7 +451,18 @@
     "photo_file_name": "kaneesh_victory.jpeg"
   },
   {
-    "sl_no": 33,
+    "sl_no": 35,
+    "name": "Kannappan Udaya",
+    "phone_number": "9645521885",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Left Hand",
+    "bowling_style": "Left Arm",
+    "address": " ",
+    "photo_file_name": "kannappan.jpg"
+  },
+  {
+    "sl_no": 0,
     "name": "Khaleel",
     "phone_number": "9995615315",
     "team": "",
@@ -506,73 +473,73 @@
     "photo_file_name": "khaleel.png"
   },
   {
-    "sl_no": 59,
-    "name": "Kichu",
+    "sl_no": 36,
+    "name": "Kichu Udaya",
     "phone_number": "8891350405",
     "team": "",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "kichu.png"
+    "photo_file_name": ""
   },
   {
-    "sl_no": 9,
-    "name": "Krishnanunni",
-    "phone_number": "9400449763",
+    "sl_no": 37,
+    "name": "Kichu Victory",
+    "phone_number": "8891350405",
     "team": "",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "krishnanunni_victory.png"
+    "photo_file_name": "kichu.jpeg"
   },
   {
-    "sl_no": 75,
-    "name": "Laiju",
-    "phone_number": "8281677068",
+    "sl_no": 38,
+    "name": "Mahesh",
+    "phone_number": "8891350405",
     "team": "",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "laiju_vellappally.png"
+    "photo_file_name": "mahesh_arsh_nyc.jpg"
   },
   {
-    "sl_no": 95,
-    "name": "Manoj Bravo",
-    "phone_number": "7592936948",
+    "sl_no": 39,
+    "name": "Manaf",
+    "phone_number": "8891350405",
     "team": "",
-    "category": "Bowler",
+    "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "manoj_dj.png"
+    "photo_file_name": "manaf.jpg"
   },
   {
-    "sl_no": 76,
-    "name": "Manu",
-    "phone_number": "7356697035",
+    "sl_no": 40,
+    "name": "Maneesh",
+    "phone_number": "8891350405",
     "team": "",
-    "category": "Batsman",
+    "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "manu.png"
+    "photo_file_name": "maneesh.jpg"
   },
   {
-    "sl_no": 91,
-    "name": "Manu",
-    "phone_number": "8547786777",
+    "sl_no": 41,
+    "name": "Memba",
+    "phone_number": "8891350405",
     "team": "",
-    "category": "Bowler",
+    "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "manu_mannancherry.png"
+    "photo_file_name": "memba.jpg"
   },
   {
-    "sl_no": 16,
+    "sl_no": 42,
     "name": "Micky",
     "phone_number": "7591949253",
     "team": "",
@@ -583,29 +550,18 @@
     "photo_file_name": "micky.png"
   },
   {
-    "sl_no": 38,
-    "name": "MUHAMMAD SAJIN",
-    "phone_number": "7736412213",
+    "sl_no": 43,
+    "name": "Midhun",
+    "phone_number": "7591949253",
     "team": "",
-    "category": "Bowler",
+    "category": "Batsman",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "muhammad_sajin.png"
+    "photo_file_name": ""
   },
   {
-    "sl_no": 7,
-    "name": "Mukesh Murali",
-    "phone_number": "8089649848",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "mukesh_murali.png"
-  },
-  {
-    "sl_no": 37,
+    "sl_no": 44,
     "name": "Murad",
     "phone_number": "8893148844",
     "team": "",
@@ -616,40 +572,7 @@
     "photo_file_name": "murad_thangal.png"
   },
   {
-    "sl_no": 34,
-    "name": "Nadirsha",
-    "phone_number": "8606464138",
-    "team": "",
-    "category": "Batsman",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "nadirsha.png"
-  },
-  {
-    "sl_no": 62,
-    "name": "Nahas",
-    "phone_number": "8714427319",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "nahas.png"
-  },
-  {
     "sl_no": 45,
-    "name": "Najeeb",
-    "phone_number": "8714310971",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "najeeb.png"
-  },
-  {
-    "sl_no": 29,
     "name": "Najeem",
     "phone_number": "8891286173",
     "team": "",
@@ -660,62 +583,7 @@
     "photo_file_name": "najeem_mannanchery.png"
   },
   {
-    "sl_no": 43,
-    "name": "Nandu Anilkumar",
-    "phone_number": "9746200806",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "nandhu_anilkumar.png"
-  },
-  {
-    "sl_no": 66,
-    "name": "Neppi",
-    "phone_number": "9778291988",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "neppi.png"
-  },
-  {
-    "sl_no": 57,
-    "name": "Nishad P K",
-    "phone_number": "9656696961",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "nishad_pk.png"
-  },
-  {
-    "sl_no": 10,
-    "name": "Noufal",
-    "phone_number": "9037037369",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "noufal_9037037369.png"
-  },
-  {
-    "sl_no": 8,
-    "name": "Noufal",
-    "phone_number": "9074855363",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "noufal_mannanchery.png"
-  },
-  {
-    "sl_no": 51,
+    "sl_no": 46,
     "name": "Peeli",
     "phone_number": "9744941467",
     "team": "",
@@ -726,30 +594,41 @@
     "photo_file_name": "peeli_kuttappi.png"
   },
   {
-    "sl_no": 70,
-    "name": "PK",
-    "phone_number": "9562453489",
+    "sl_no": 47,
+    "name": "Pranav",
+    "phone_number": "9744941467",
     "team": "",
-    "category": "All Rounder",
+    "category": "Batsman",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "pk.png"
+    "photo_file_name": "20240906_221634 - PRANAV PRASAD.jpg"
   },
   {
-    "sl_no": 60,
-    "name": "Prajeesh",
-    "phone_number": "8939743364",
+    "sl_no": 48,
+    "name": "Praveen",
+    "phone_number": "9744941467",
     "team": "",
-    "category": "All Rounder",
+    "category": "Batsman",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "prajeesh.png"
+    "photo_file_name": "machine_praveen.jpg"
   },
   {
-    "sl_no": 80,
-    "name": "Reni",
+    "sl_no": 49,
+    "name": "Ranesh Spartanz",
+    "phone_number": "9744941467",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "ranesh.jpg"
+  },
+  {
+    "sl_no": 50,
+    "name": "Reni Excise",
     "phone_number": "8848399450",
     "team": "",
     "category": "Batsman",
@@ -759,8 +638,8 @@
     "photo_file_name": "reni.png"
   },
   {
-    "sl_no": 98,
-    "name": "Renjith",
+    "sl_no": 51,
+    "name": "Renjith Kalavoor",
     "phone_number": "6282239887",
     "team": "",
     "category": "Bowler",
@@ -770,51 +649,18 @@
     "photo_file_name": "renjithkalavoor.jpeg"
   },
   {
-    "sl_no": 94,
-    "name": "Renjith Youth Wing",
-    "phone_number": "7907092059",
+    "sl_no": 52,
+    "name": "Reny Spartanz",
+    "phone_number": "6282239887",
     "team": "",
     "category": "Bowler",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "renjith_mannancherry.png"
+    "photo_file_name": "reny_sir.jpg"
   },
   {
-    "sl_no": 35,
-    "name": "Renkarji",
-    "phone_number": "9745496197",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "renkarji.png"
-  },
-  {
-    "sl_no": 93,
-    "name": "Reshnu",
-    "phone_number": "7736695199",
-    "team": "",
-    "category": "Bowler",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "reshnu_mangalan.png"
-  },
-  {
-    "sl_no": 13,
-    "name": "Rinas",
-    "phone_number": "7736343052",
-    "team": "",
-    "category": "Batsman",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "rinas.png"
-  },
-  {
-    "sl_no": 22,
+    "sl_no": 53,
     "name": "Riyas",
     "phone_number": "9746423151",
     "team": "",
@@ -825,7 +671,7 @@
     "photo_file_name": "riyas.png"
   },
   {
-    "sl_no": 83,
+    "sl_no": 54,
     "name": "Saji Putt",
     "phone_number": "8075891901",
     "team": "",
@@ -836,29 +682,51 @@
     "photo_file_name": "saji_putt.jpg"
   },
   {
-    "sl_no": 77,
-    "name": "Sajin",
-    "phone_number": "9895826283",
+    "sl_no": 55,
+    "name": "Sanoj",
+    "phone_number": "8075891901",
     "team": "",
     "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "sajin.png"
+    "photo_file_name": "sanoj_hayz.jpg"
   },
   {
-    "sl_no": 18,
-    "name": "Sanu",
-    "phone_number": "7592859952",
+    "sl_no": 56,
+    "name": "Sarath Spartanz",
+    "phone_number": "8075891901",
     "team": "",
-    "category": "Batsman",
+    "category": "All Rounder",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "sanu_vvrh.png"
+    "photo_file_name": "sarath.jpg"
   },
   {
-    "sl_no": 55,
+    "sl_no": 57,
+    "name": "Sayyappan",
+    "phone_number": "8075891901",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": ""
+  },
+  {
+    "sl_no": 58,
+    "name": "Senni",
+    "phone_number": "8075891901",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "senni.jpg"
+  },
+  {
+    "sl_no": 59,
     "name": "Shafeek",
     "phone_number": "7559953918",
     "team": "",
@@ -869,29 +737,7 @@
     "photo_file_name": "shafeek.png"
   },
   {
-    "sl_no": 78,
-    "name": "Shambu YMCC",
-    "phone_number": "9846560107",
-    "team": "",
-    "category": "Bowler",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "shambhu_ymcc.png"
-  },
-  {
-    "sl_no": 19,
-    "name": "Shameer",
-    "phone_number": "9995651602",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Left Hand",
-    "bowling_style": "Left Arm",
-    "address": " ",
-    "photo_file_name": "shameer.png"
-  },
-  {
-    "sl_no": 72,
+    "sl_no": 60,
     "name": "Shameer Irumb",
     "phone_number": "9746141259",
     "team": "",
@@ -902,7 +748,18 @@
     "photo_file_name": "shameer_irumb.png"
   },
   {
-    "sl_no": 52,
+    "sl_no": 61,
+    "name": "Shanavas",
+    "phone_number": "9746141259",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "shanavas_mannancherry.jpeg"
+  },
+  {
+    "sl_no": 62,
     "name": "Sharon",
     "phone_number": "9074974158",
     "team": "",
@@ -913,7 +770,18 @@
     "photo_file_name": "sharon.png"
   },
   {
-    "sl_no": 5,
+    "sl_no": 63,
+    "name": "Sharun Cobraz",
+    "phone_number": "9074974158",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "sharun_cobraz.jpg"
+  },
+  {
+    "sl_no": 64,
     "name": "Shihad",
     "phone_number": "9349888780",
     "team": "",
@@ -922,6 +790,39 @@
     "bowling_style": "Right Arm",
     "address": " ",
     "photo_file_name": "shihad_mannancherry.png"
+  },
+  {
+    "sl_no": 65,
+    "name": "Siyad Ponnad",
+    "phone_number": "9349888780",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": ""
+  },
+  {
+    "sl_no": 66,
+    "name": "Siyad Yaz",
+    "phone_number": "9349888780",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "ziyad.png"
+  },
+  {
+    "sl_no": 67,
+    "name": "Sreejith",
+    "phone_number": "7907386255",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "sreejith_mannancherry.png"
   },
   {
     "sl_no": 79,
@@ -977,17 +878,6 @@
     "bowling_style": "Right Arm",
     "address": " ",
     "photo_file_name": "sooraj.png"
-  },
-  {
-    "sl_no": 68,
-    "name": "Sreejith",
-    "phone_number": "7907386255",
-    "team": "",
-    "category": "All Rounder",
-    "batting_style": "Right Hand",
-    "bowling_style": "Right Arm",
-    "address": " ",
-    "photo_file_name": "sreejith_mannancherry.png"
   },
   {
     "sl_no": 48,
@@ -1109,5 +999,478 @@
     "bowling_style": "Right Arm",
     "address": " ",
     "photo_file_name": "ziyad.png"
+  },
+  {
+    "sl_no": 3,
+    "name": "Achu kachappan",
+    "phone_number": "9048555046",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "achu_kachappan.png"
+  },
+  {
+    "sl_no": 81,
+    "name": "Ajith Kannapan",
+    "phone_number": "7736385096",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "ajith_kannappan.png"
+  },
+  {
+    "sl_no": 14,
+    "name": "Aju",
+    "phone_number": "9048421303",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "aju_vvrh.png"
+  },
+  {
+    "sl_no": 65,
+    "name": "Akhil Sabju",
+    "phone_number": "9061788681",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "akhil_sabju.png"
+  },
+  {
+    "sl_no": 27,
+    "name": "Akshay",
+    "phone_number": "7356488480",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "akshay.png"
+  },
+  {
+    "sl_no": 17,
+    "name": "Ananthu",
+    "phone_number": "8891418626",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "ananthu.png"
+  },
+  {
+    "sl_no": 25,
+    "name": "Anees",
+    "phone_number": "8592992729",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "annes_victory.png"
+  },
+  {
+    "sl_no": 73,
+    "name": "Aneesh",
+    "phone_number": "9061882317",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "aneesh.png"
+  },
+  {
+    "sl_no": 39,
+    "name": "Aneesh",
+    "phone_number": "8137090772",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "aneesh_pokkan.png"
+  },
+  {
+    "sl_no": 92,
+    "name": "Antony",
+    "phone_number": "9072702473",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "antony.png"
+  },
+  {
+    "sl_no": 23,
+    "name": "Arun",
+    "phone_number": "8891638173",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "arun_mannancherry.png"
+  },
+  {
+    "sl_no": 82,
+    "name": "Arun Achu",
+    "phone_number": "8089379416",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "arun_achu.png"
+  },
+  {
+    "sl_no": 44,
+    "name": "Arun pankaj",
+    "phone_number": "9995188541",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "arun_pankaj.png"
+  },
+  {
+    "sl_no": 36,
+    "name": "ARUN R",
+    "phone_number": "9074264721",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "arun_r.png"
+  },
+  {
+    "sl_no": 99,
+    "name": "Binoy ACC",
+    "phone_number": "8129293149",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "binoyacc.jpeg"
+  },
+  {
+    "sl_no": 31,
+    "name": "Dhaneesh",
+    "phone_number": "7559048233",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "dhaneesh.png"
+  },
+  {
+    "sl_no": 20,
+    "name": "Gokul",
+    "phone_number": "7736916842",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "gokul.png"
+  },
+  {
+    "sl_no": 69,
+    "name": "Gopan",
+    "phone_number": "9544058565",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "govachan.png"
+  },
+  {
+    "sl_no": 9,
+    "name": "Krishnanunni",
+    "phone_number": "9400449763",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "krishnanunni_victory.png"
+  },
+  {
+    "sl_no": 75,
+    "name": "Laiju",
+    "phone_number": "8281677068",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "laiju_vellappally.png"
+  },
+  {
+    "sl_no": 76,
+    "name": "Manu",
+    "phone_number": "7356697035",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "manu.png"
+  },
+  {
+    "sl_no": 91,
+    "name": "Manu",
+    "phone_number": "8547786777",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "manu_mannancherry.png"
+  },
+  {
+    "sl_no": 16,
+    "name": "Micky",
+    "phone_number": "7591949253",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "micky.png"
+  },
+  {
+    "sl_no": 38,
+    "name": "MUHAMMAD SAJIN",
+    "phone_number": "7736412213",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "muhammad_sajin.png"
+  },
+  {
+    "sl_no": 7,
+    "name": "Mukesh Murali",
+    "phone_number": "8089649848",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "mukesh_murali.png"
+  },
+  {
+    "sl_no": 34,
+    "name": "Nadirsha",
+    "phone_number": "8606464138",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "nadirsha.png"
+  },
+  {
+    "sl_no": 62,
+    "name": "Nahas",
+    "phone_number": "8714427319",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "nahas.png"
+  },
+  {
+    "sl_no": 45,
+    "name": "Najeeb",
+    "phone_number": "8714310971",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "najeeb.png"
+  },
+  {
+    "sl_no": 43,
+    "name": "Nandu Anilkumar",
+    "phone_number": "9746200806",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "nandhu_anilkumar.png"
+  },
+  {
+    "sl_no": 66,
+    "name": "Neppi",
+    "phone_number": "9778291988",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "neppi.png"
+  },
+  {
+    "sl_no": 57,
+    "name": "Nishad P K",
+    "phone_number": "9656696961",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "nishad_pk.png"
+  },
+  {
+    "sl_no": 10,
+    "name": "Noufal",
+    "phone_number": "9037037369",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "noufal_9037037369.png"
+  },
+  {
+    "sl_no": 8,
+    "name": "Noufal",
+    "phone_number": "9074855363",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "noufal_mannanchery.png"
+  },
+  {
+    "sl_no": 70,
+    "name": "PK",
+    "phone_number": "9562453489",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "pk.png"
+  },
+  {
+    "sl_no": 60,
+    "name": "Prajeesh",
+    "phone_number": "8939743364",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "prajeesh.png"
+  },
+  {
+    "sl_no": 94,
+    "name": "Renjith Youth Wing",
+    "phone_number": "7907092059",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "renjith_mannancherry.png"
+  },
+  {
+    "sl_no": 35,
+    "name": "Renkarji",
+    "phone_number": "9745496197",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "renkarji.png"
+  },
+  {
+    "sl_no": 93,
+    "name": "Reshnu",
+    "phone_number": "7736695199",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "reshnu_mangalan.png"
+  },
+  {
+    "sl_no": 13,
+    "name": "Rinas",
+    "phone_number": "7736343052",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "rinas.png"
+  },
+  {
+    "sl_no": 78,
+    "name": "Shambu YMCC",
+    "phone_number": "9846560107",
+    "team": "",
+    "category": "Bowler",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "shambhu_ymcc.png"
+  },
+  {
+    "sl_no": 77,
+    "name": "Sajin",
+    "phone_number": "9895826283",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "sajin.png"
+  },
+  {
+    "sl_no": 18,
+    "name": "Sanu",
+    "phone_number": "7592859952",
+    "team": "",
+    "category": "Batsman",
+    "batting_style": "Right Hand",
+    "bowling_style": "Right Arm",
+    "address": " ",
+    "photo_file_name": "sanu_vvrh.png"
+  },
+  {
+    "sl_no": 19,
+    "name": "Shameer",
+    "phone_number": "9995651602",
+    "team": "",
+    "category": "All Rounder",
+    "batting_style": "Left Hand",
+    "bowling_style": "Left Arm",
+    "address": " ",
+    "photo_file_name": "shameer.png"
   }
 ]
