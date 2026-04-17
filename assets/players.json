@@ -1,262 +1,54 @@
 [
-  {
-    "sl_no": 1,
-    "name": "Sreeraj",
-    "photo_url": "anikuttan_police.png"
-  },
-  {
-    "sl_no": 2,
-    "name": "Reny",
-    "photo_url": "reni_udaya.png"
-  },
-  {
-    "sl_no": 3,
-    "name": "Salman",
-    "photo_url": "salman_udaya.png"
-  },
-  {
-    "sl_no": 4,
-    "name": "Kannan Vagoos",
-    "photo_url": "kannan_vagoos.png"
-  },
-  {
-    "sl_no": 5,
-    "name": "Arun Kuttu",
-    "photo_url": "IMG-20260305-WA0158 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 6,
-    "name": "Benni",
-    "photo_url": "IMG-20260305-WA0106 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 7,
-    "name": "Vipin",
-    "photo_url": "vipin_valavanad.png"
-  },
-  {
-    "sl_no": 8,
-    "name": "Kalesh",
-    "photo_url": "kalesh_kseb.png"
-  },
-  {
-    "sl_no": 9,
-    "name": "Boby",
-    "photo_url": "IMG-20260305-WA0031 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 10,
-    "name": "Boji",
-    "photo_url": "IMG-20260305-WA0152 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 11,
-    "name": "Indrajith",
-    "photo_url": "IMG-20260305-WA0119 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 12,
-    "name": "Jijo Udaya",
-    "photo_url": "IMG-20260305-WA0093 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 13,
-    "name": "Dileep",
-    "photo_url": "dileep_police.png"
-  },
-  {
-    "sl_no": 14,
-    "name": "Shameer",
-    "photo_url": "shameer.png"
-  },
-  {
-    "sl_no": 15,
-    "name": "Sreejith Agarkar",
-    "photo_url": "sreejith_agarkar.png"
-  },
-  {
-    "sl_no": 16,
-    "name": "Sreejith Victory",
-    "photo_url": "IMG_20250202_091938 - Sreejith S.jpg"
-  },
-  {
-    "sl_no": 17,
-    "name": "Krishnan",
-    "photo_url": "IMG-20260305-WA0171 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 18,
-    "name": "Maneesh",
-    "photo_url": "IMG-20260305-WA0100 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 19,
-    "name": "Manu DCC",
-    "photo_url": "IMG-20260305-WA0117 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 20,
-    "name": "Manu M",
-    "photo_url": "IMG-20260305-WA0078 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 21,
-    "name": "Manu MCC",
-    "photo_url": "IMG-20260305-WA0124 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 22,
-    "name": "Monichan",
-    "photo_url": "IMG-20260305-WA0108 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 23,
-    "name": "Ranesh",
-    "photo_url": "ranesh_udaya.png"
-  },
-  {
-    "sl_no": 24,
-    "name": "Oucha",
-    "photo_url": "IMG-20260305-WA0169 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 25,
-    "name": "Pradeep MCC",
-    "photo_url": "IMG-20260305-WA0111 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 26,
-    "name": "Vinod",
-    "photo_url": "vinod_udaya.png"
-  },
-  {
-    "sl_no": 27,
-    "name": "Soju",
-    "photo_url": "soju.png"
-  },
-  {
-    "sl_no": 28,
-    "name": "Binu MCC",
-    "photo_url": "binu_mcc.png"
-  },
-  {
-    "sl_no": 29,
-    "name": "Anil Dev",
-    "photo_url": "anil_dev.png"
-  },
-  {
-    "sl_no": 30,
-    "name": "Praveen TG",
-    "photo_url": "IMG-20260305-WA0168 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 31,
-    "name": "Prijjesh ACC",
-    "photo_url": "IMG-20260305-WA0060 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 32,
-    "name": "Sabumon",
-    "photo_url": "IMG-20260305-WA0118 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 33,
-    "name": "Saji ACC",
-    "photo_url": "IMG-20260305-WA0142 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 34,
-    "name": "Sajimon",
-    "photo_url": "IMG-20260305-WA0055 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 35,
-    "name": "Sam Alex",
-    "photo_url": "IMG-20260305-WA0030 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 36,
-    "name": "Suppy",
-    "photo_url": "suppy.png"
-  },
-  {
-    "sl_no": 37,
-    "name": "Haris",
-    "photo_url": "haris.png"
-  },
-  {
-    "sl_no": 38,
-    "name": "Shaji",
-    "photo_url": "IMG-20260305-WA0116 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 39,
-    "name": "Siyad S M",
-    "photo_url": "siyad_sm.png"
-  },
-  {
-    "sl_no": 40,
-    "name": "Sinoj",
-    "photo_url": "IMG-20260305-WA0073 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 41,
-    "name": "Sony",
-    "photo_url": "sony_udaya.png"
-  },
-  {
-    "sl_no": 42,
-    "name": "Renjith",
-    "photo_url": "renjith_army.png"
-  },
-  {
-    "sl_no": 43,
-    "name": "Anshad",
-    "photo_url": "anshad_udaya.png"
-  },
-  {
-    "sl_no": 44,
-    "name": "Achu",
-    "photo_url": "achu_vvrh.png"
-  },
-  {
-    "sl_no": 45,
-    "name": "Sujeesh MCC",
-    "photo_url": "IMG-20260305-WA0112 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 46,
-    "name": "Sumesh Deppy",
-    "photo_url": "sumesh_deppy.png"
-  },
-  {
-    "sl_no": 47,
-    "name": "Sumesh ACC",
-    "photo_url": "IMG-20260305-WA0062 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 48,
-    "name": "Sumith",
-    "photo_url": "IMG-20260305-WA0120 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 49,
-    "name": "Syam S",
-    "photo_url": "IMG-20260305-WA0113 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 50,
-    "name": "Titus",
-    "photo_url": "IMG-20260305-WA0115 - poomkavulegendsCC PLCC.jpg"
-  },
-  {
-    "sl_no": 51,
-    "name": "Arun Francis",
-    "photo_url": "arun_francis.png"
-  },
-  {
-    "sl_no": 52,
-    "name": "Vinoj AK",
-    "photo_url": "IMG-20260305-WA0076 - poomkavulegendsCC PLCC.jpg"
-  }
+  { "sl_no": 1, "name": "Achu", "photo_url": "achu_vvrh.png" },
+  { "sl_no": 2, "name": "Anil Dev", "photo_url": "anil_dev.png" },
+  { "sl_no": 3, "name": "Anshad", "photo_url": "anshad_udaya.png" },
+  { "sl_no": 4, "name": "Arun Francis", "photo_url": "arun_francis.png" },
+  { "sl_no": 5, "name": "Arun Kuttu", "photo_url": "IMG-20260305-WA0158 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 6, "name": "Benni", "photo_url": "IMG-20260305-WA0106 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 7, "name": "Binu MCC", "photo_url": "binu_mcc.png" },
+  { "sl_no": 8, "name": "Boby", "photo_url": "IMG-20260305-WA0031 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 9, "name": "Boji", "photo_url": "IMG-20260305-WA0152 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 10, "name": "Dileep", "photo_url": "dileep_police.png" },
+  { "sl_no": 11, "name": "Haris", "photo_url": "haris.png" },
+  { "sl_no": 12, "name": "Indrajith", "photo_url": "IMG-20260305-WA0119 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 13, "name": "Jijo Udaya", "photo_url": "IMG-20260305-WA0093 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 14, "name": "Kalesh", "photo_url": "kalesh_kseb.png" },
+  { "sl_no": 15, "name": "Kannan Vagoos", "photo_url": "kannan_vagoos.png" },
+  { "sl_no": 16, "name": "Krishnan", "photo_url": "IMG-20260305-WA0171 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 17, "name": "Maneesh", "photo_url": "IMG-20260305-WA0100 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 18, "name": "Manu DCC", "photo_url": "IMG-20260305-WA0117 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 19, "name": "Manu M", "photo_url": "IMG-20260305-WA0078 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 20, "name": "Manu MCC", "photo_url": "IMG-20260305-WA0124 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 21, "name": "Monichan", "photo_url": "IMG-20260305-WA0108 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 22, "name": "Oucha", "photo_url": "IMG-20260305-WA0169 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 23, "name": "Pradeep MCC", "photo_url": "IMG-20260305-WA0111 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 24, "name": "Praveen TG", "photo_url": "IMG-20260305-WA0168 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 25, "name": "Prijjesh ACC", "photo_url": "IMG-20260305-WA0060 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 26, "name": "Ranesh", "photo_url": "ranesh_udaya.png" },
+  { "sl_no": 27, "name": "Renjith", "photo_url": "renjith_army.png" },
+  { "sl_no": 28, "name": "Reny", "photo_url": "reni_udaya.png" },
+  { "sl_no": 29, "name": "Sabumon", "photo_url": "IMG-20260305-WA0118 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 30, "name": "Saji ACC", "photo_url": "IMG-20260305-WA0142 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 31, "name": "Sajimon", "photo_url": "IMG-20260305-WA0055 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 32, "name": "Salman", "photo_url": "salman_udaya.png" },
+  { "sl_no": 33, "name": "Sam Alex", "photo_url": "IMG-20260305-WA0030 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 34, "name": "Simin", "photo_url": "simin.png" },
+  { "sl_no": 35, "name": "Shameer", "photo_url": "shameer.png" },
+  { "sl_no": 36, "name": "Sinoj", "photo_url": "IMG-20260305-WA0073 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 37, "name": "Siyad S M", "photo_url": "siyad_sm.png" },
+  { "sl_no": 38, "name": "Soju", "photo_url": "soju.png" },
+  { "sl_no": 39, "name": "Sony", "photo_url": "sony_udaya.png" },
+  { "sl_no": 40, "name": "Sreejith Agarkar", "photo_url": "sreejith_agarkar.png" },
+  { "sl_no": 41, "name": "Sreejith Victory", "photo_url": "IMG_20250202_091938 - Sreejith S.jpg" },
+  { "sl_no": 42, "name": "Sreeraj", "photo_url": "anikuttan_police.png" },
+  { "sl_no": 43, "name": "Sujeesh MCC", "photo_url": "IMG-20260305-WA0112 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 44, "name": "Sumesh ACC", "photo_url": "IMG-20260305-WA0062 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 45, "name": "Sumesh Deppy", "photo_url": "sumesh_deppy.png" },
+  { "sl_no": 46, "name": "Sumith", "photo_url": "IMG-20260305-WA0120 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 47, "name": "Suppy", "photo_url": "suppy.png" },
+  { "sl_no": 48, "name": "Syam S", "photo_url": "IMG-20260305-WA0113 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 49, "name": "Titus", "photo_url": "IMG-20260305-WA0115 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 50, "name": "Vinod", "photo_url": "vinod_udaya.png" },
+  { "sl_no": 51, "name": "Vinoj AK", "photo_url": "IMG-20260305-WA0076 - poomkavulegendsCC PLCC.jpg" },
+  { "sl_no": 52, "name": "Vipin", "photo_url": "vipin_valavanad.png" }
 ]
