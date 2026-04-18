@@ -45,7 +45,7 @@
   },
   {
     "sl_no": 5,
-    "name": "Akhil 7Dukes",
+    "name": "Akhil 7 Dukes",
     "phone_number": "7510852348",
     "team": "",
     "category": "Bowler",
@@ -771,14 +771,14 @@
   },
   {
     "sl_no": 71,
-    "name": "Siyad Yaz",
-    "phone_number": "9349888780",
+    "name": "Shafeeq Mahin",
+    "phone_number": "8714160866",
     "team": "",
-    "category": "Batsman",
+    "category": "Bowler",
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": "ziyad.png"
+    "photo_file_name": "shafeek.png"
   },
   {
     "sl_no": 72,
@@ -844,7 +844,7 @@
     "batting_style": "Right Hand",
     "bowling_style": "Right Arm",
     "address": " ",
-    "photo_file_name": ""
+    "photo_file_name": "suneer_juice.png"
   },
   {
     "sl_no": 78,
