@@ -7,57 +7,34 @@ class Player {
     this.id,
     this.name,
     this.department,
-    this.currentOffice,
-    this.permanentAddress,
-    this.category,
+    this.phoneNumber,
     this.photo,
-    this.battingStyle,
-    this.bowlingStyle,
-    this.bowlingArm,
-    this.paymentStatus,
-    this.team,});
+    this.category
+  });
 
   Player.fromJson(dynamic json) {
     id = json['id'];
     name = json['name'];
-    department = '';
-    currentOffice = '';
-    permanentAddress = '';
-    category = '';
-    photo = json['photo'];
-    battingStyle = '';
-    bowlingStyle = '';
-    bowlingArm = '';
-    paymentStatus = '';
-    team = '';
+    department = json['department'];
+    phoneNumber = json['phone_number'];
+    photo = json['photo_file_name'];
+    category = json['category'];
   }
   String? id;
   String? name;
   String? department;
-  String? currentOffice;
-  String? permanentAddress;
-  String? category;
+  String? phoneNumber;
   String? photo;
-  String? battingStyle;
-  String? bowlingStyle;
-  String? bowlingArm;
-  String? paymentStatus;
-  String? team;
+  String? category;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
     map['id'] = id;
     map['name'] = name;
     map['department'] = department;
-    map['current_office'] = currentOffice;
-    map['permanent_address'] = permanentAddress;
+    map['phone_number'] = phoneNumber;
+    map['photo_file_name'] = photo;
     map['category'] = category;
-    map['photo'] = photo;
-    map['batting_style'] = battingStyle;
-    map['bowling_style'] = bowlingStyle;
-    map['bowling_arm'] = bowlingArm;
-    map['payment_status'] = paymentStatus;
-    map['team'] = team;
     return map;
   }
 
@@ -71,18 +48,6 @@ class Player {
 
   String getCurrentTeam() {
     return department ?? "General County (Assumed)";
-  }
-
-  String getBattingStyle() {
-    return battingStyle ?? "-";
-  }
-
-  String getBowlingStyle() {
-    return bowlingStyle ?? "-";
-  }
-
-  String getBowlingArm() {
-    return bowlingArm ?? "-";
   }
 
   String getCategoryName(){

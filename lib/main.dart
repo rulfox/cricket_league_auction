@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.contain,
-                                child: Text("Emirates DPL 2026",
+                                child: Text("Employee Super League",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         fontSize: 100,
@@ -159,11 +159,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                         color: Colors.white)),
                               ),
                             ),
-                            /*Padding(
+                            Padding(
                               padding: const EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
                                 fit: BoxFit.scaleDown,
-                                child: Text(_player.department.toString(),
+                                child: Text(_player.category.toString(),
                                     style: const TextStyle(
                                         fontSize: 80,
                                         fontWeight: FontWeight.bold,
@@ -172,23 +172,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 30, right: 30),
-                              child: FittedBox(
-                                fit: BoxFit.scaleDown,
-                                child: Text(_player.category.toString(),
-                                    style: const TextStyle(
-                                        fontSize: 60,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily: 'VTFRedZone',
-                                        color: Colors.white)),
-                              ),
-                            ),*/
-                            /*Padding(
                                 padding: const EdgeInsets.only(left: 30, right: 30),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text(_player.getBattingStyle(),
+                                    Text(_player.department.toString(),
                                         style: const TextStyle(
                                             fontSize: 50,
                                             fontWeight: FontWeight.bold,
@@ -202,7 +190,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                             fontFamily: 'VTFRedZone',
                                             color: Colors.white)
                                     ),
-                                    Text(_player.getBowlingStyle(),
+                                    Text(_player.phoneNumber.toString(),
                                         style: const TextStyle(
                                             fontSize: 50,
                                             fontWeight: FontWeight.bold,
@@ -211,7 +199,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                   ],
                                 )
-                            ),*/
+                            ),
                             /*Padding(
                               padding: const EdgeInsets.only(left: 30, right: 30),
                               child: FittedBox(
