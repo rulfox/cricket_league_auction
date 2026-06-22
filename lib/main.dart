@@ -1,8 +1,12 @@
 import 'dart:ui';
+import 'package:archive/archive.dart';
 import 'package:cricket_league_auction/FullScreenImageScreen.dart';
 import 'package:cricket_league_auction/data.dart';
 import 'package:cricket_league_auction/players_popup.dart';
+import 'package:cricket_league_auction/web_download.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 List<Player> _players = [];
@@ -42,10 +46,86 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   late Player _player;
 
+  final GlobalKey _captureKey = GlobalKey();
+  bool _isCapturing = false;
+  bool _packaging = false;
+  int _captureProgress = 0;
+
+  // Resolution multiplier for exported cards. 2.0 stays crisp while cutting
+  // pixel count (and PNG-encode time) ~55% vs 3.0. Raise for sharper output.
+  static const double _capturePixelRatio = 2.0;
+
   @override
   void initState() {
     super.initState();
     _player = _players[0];
+  }
+
+  Future<void> _captureAllPlayers() async {
+    setState(() {
+      _isCapturing = true;
+      _packaging = false;
+      _captureProgress = 0;
+    });
+
+    final archive = Archive();
+    for (int i = 0; i < _players.length; i++) {
+      final player = _players[i];
+      if (!mounted) return;
+
+      // Decode the photo into the image cache FIRST, while the previous card is
+      // still on screen. This way the frame we capture paints the photo on its
+      // first build instead of a blank placeholder. Tolerate undecodable assets
+      // (e.g. .HEIC on web) so one bad image can't abort the whole export.
+      try {
+        await precacheImage(AssetImage(player.getPlayerPhoto()), context);
+      } catch (_) {}
+      if (!mounted) return;
+
+      // Switch the displayed card AND the counter together, so every painted
+      // frame shows the image with its matching number (last image -> 132/132).
+      setState(() {
+        _player = player;
+        _captureProgress = i + 1;
+      });
+      // Wait for the frame that paints this (now-cached) photo, then force one
+      // more guaranteed frame to cover a late image-stream microtask.
+      await WidgetsBinding.instance.endOfFrame;
+      WidgetsBinding.instance.scheduleFrame();
+      await WidgetsBinding.instance.endOfFrame;
+
+      final boundary =
+          _captureKey.currentContext!.findRenderObject() as RenderRepaintBoundary;
+      final image = await boundary.toImage(pixelRatio: _capturePixelRatio);
+      final bytes =
+          (await image.toByteData(format: ImageByteFormat.png))!
+              .buffer
+              .asUint8List();
+      image.dispose();
+
+      // PNG is already compressed; store it uncompressed to skip a costly,
+      // near-useless second DEFLATE pass over hundreds of MB.
+      final file =
+          ArchiveFile('${player.getPlayerId()}.png', bytes.length, bytes)
+            ..compress = false;
+      archive.addFile(file);
+    }
+
+    // Show the final count + a "Packaging" state and let it paint BEFORE the
+    // synchronous zip encode blocks the isolate (otherwise the counter looks
+    // stuck at the last value while the ZIP is built).
+    if (!mounted) return;
+    setState(() => _packaging = true);
+    await WidgetsBinding.instance.endOfFrame;
+
+    final zip = ZipEncoder().encode(archive)!;
+    downloadBytes(zip, 'players.zip');
+
+    if (!mounted) return;
+    setState(() {
+      _isCapturing = false;
+      _packaging = false;
+    });
   }
 
   void _setPlayer(Player player) {
@@ -117,7 +197,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Scaffold(
           body: Stack(
             children: <Widget>[
-              Row(children: <Widget>[
+              RepaintBoundary(
+                key: _captureKey,
+                child: Row(children: <Widget>[
                 Expanded(
                   child: Container(
                     decoration: const BoxDecoration(
@@ -201,18 +283,17 @@ class _MyHomePageState extends State<MyHomePage> {
                         );
                       },
                       child: Stack(
+                        fit: StackFit.expand,
                         children: [
-                          Expanded(
-                            child: ClipRRect(
-                              child: ImageFiltered(
-                                imageFilter:
-                                    ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-                                child: Image.asset(
-                                  _player.getPlayerPhoto(),
-                                  fit: BoxFit.cover,
-                                  width: double.infinity,
-                                  height: double.infinity,
-                                ),
+                          ClipRRect(
+                            child: ImageFiltered(
+                              imageFilter:
+                                  ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+                              child: Image.asset(
+                                _player.getPlayerPhoto(),
+                                fit: BoxFit.cover,
+                                width: double.infinity,
+                                height: double.infinity,
                               ),
                             ),
                           ),
@@ -226,26 +307,68 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     )),
               ]),
+              ),
+              if (_isCapturing)
+                Positioned.fill(
+                  child: Container(
+                    color: Colors.black.withValues(alpha: 0.6),
+                    child: Center(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const CircularProgressIndicator(
+                              color: Colors.white),
+                          const SizedBox(height: 24),
+                          Text(
+                            _packaging
+                                ? "Packaging ZIP…"
+                                : "Exporting $_captureProgress / ${_players.length}",
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
             ],
           ),
           floatingActionButtonLocation:
               FloatingActionButtonLocation.endDocked,
           floatingActionButton: Padding(
             padding: const EdgeInsets.all(16.0),
-            child: FloatingActionButton(
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => PlayersPopup(
-                    players: _players,
-                    setPlayer: (Player player) {
-                      _setPlayer(player);
-                    },
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                if (kIsWeb) ...[
+                  FloatingActionButton(
+                    heroTag: 'capture',
+                    onPressed: _isCapturing ? null : _captureAllPlayers,
+                    tooltip: 'Export all as ZIP',
+                    child: const Icon(Icons.photo_library),
                   ),
+                  const SizedBox(width: 16),
+                ],
+                FloatingActionButton(
+                  heroTag: 'search',
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PlayersPopup(
+                        players: _players,
+                        setPlayer: (Player player) {
+                          _setPlayer(player);
+                        },
+                      ),
+                    ),
+                  ),
+                  tooltip: 'Search',
+                  child: const Icon(Icons.search),
                 ),
-              ),
-              tooltip: 'Search',
-              child: const Icon(Icons.search),
+              ],
             ),
           ),
         ),
