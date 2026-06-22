@@ -95,82 +95,91 @@ class _MyHomePageState extends State<MyHomePage> {
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage(
-                            "assets/images/msl_icon_player_background.png"),
+                            "assets/images/background.png"),
                         fit: BoxFit.cover,
+                        alignment: Alignment.topCenter,
                       ),
                     ),
                     child: Column(children: <Widget>[
                       Expanded(
                         child: Center(
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 30),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                FittedBox(
-                                  fit: BoxFit.contain,
-                                  child: Text("#${_player.getPlayerId()}",
-                                      style: const TextStyle(
-                                          fontSize: 100,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: 'VTFRedZone',
-                                          color: Colors.white)),
-                                ),
-                                const SizedBox(height: 20),
-                                FittedBox(
-                                  fit: BoxFit.contain,
-                                  child: Text(_player.getPlayerName(),
-                                      style: const TextStyle(
-                                          fontSize: 110,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: 'VTFRedZone',
-                                          color: Colors.white)),
-                                ),
-                                const SizedBox(height: 16),
-                                FittedBox(
-                                  fit: BoxFit.scaleDown,
-                                  child: Text(_player.getTeam(),
-                                      style: const TextStyle(
-                                          fontSize: 80,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: 'VTFRedZone',
-                                          color: Colors.white)),
-                                ),
-                                const SizedBox(height: 12),
-                                FittedBox(
-                                  fit: BoxFit.scaleDown,
-                                  child: Text(_player.getCategory(),
-                                      style: const TextStyle(
-                                          fontSize: 60,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: 'VTFRedZone',
-                                          color: Colors.white)),
-                                ),
-                                const SizedBox(height: 12),
-                                FittedBox(
-                                  fit: BoxFit.scaleDown,
-                                  child: Text(
-                                    "${_player.getBattingStyle()} Batsman  |  ${_player.getBowlingArm()} Arm ${_player.getBowlingStyle()} Bowler",
-                                    style: const TextStyle(
-                                        fontSize: 50,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily: 'VTFRedZone',
-                                        color: Colors.white),
-                                  ),
-                                ),
-                                const SizedBox(height: 12),
-                                FittedBox(
-                                  fit: BoxFit.scaleDown,
-                                  child: Text(_player.getPhoneNumber(),
-                                      style: const TextStyle(
-                                          fontSize: 50,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: 'VTFRedZone',
-                                          color: Colors.white)),
-                                ),
-                              ],
+                          child: SizedBox(
+                            width: 200,
+                            height: 200,
+                            child: Image.asset(
+                              "assets/images/msl_logo.png",
+                              fit: BoxFit.contain,
                             ),
                           ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            left: 30, right: 30, bottom: 40),
+                        child: Column(
+                          children: <Widget>[
+                            FittedBox(
+                              fit: BoxFit.contain,
+                              child: Text("#${_player.getPlayerId()}",
+                                  style: const TextStyle(
+                                      fontSize: 100,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'VTFRedZone',
+                                      color: Colors.white)),
+                            ),
+                            const SizedBox(height: 20),
+                            FittedBox(
+                              fit: BoxFit.contain,
+                              child: Text(_player.getPlayerName(),
+                                  style: const TextStyle(
+                                      fontSize: 110,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'VTFRedZone',
+                                      color: Colors.white)),
+                            ),
+                            const SizedBox(height: 16),
+                            FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(_player.getTeam(),
+                                  style: const TextStyle(
+                                      fontSize: 80,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'VTFRedZone',
+                                      color: Colors.white)),
+                            ),
+                            const SizedBox(height: 12),
+                            FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(_player.getCategory(),
+                                  style: const TextStyle(
+                                      fontSize: 60,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'VTFRedZone',
+                                      color: Colors.white)),
+                            ),
+                            const SizedBox(height: 12),
+                            FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(
+                                "${_player.getBattingStyle()} Batsman  |  ${_player.getBowlingArm()} Arm ${_player.getBowlingStyle()} Bowler",
+                                style: const TextStyle(
+                                    fontSize: 50,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'VTFRedZone',
+                                    color: Colors.white),
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(_player.getPhoneNumber(),
+                                  style: const TextStyle(
+                                      fontSize: 50,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'VTFRedZone',
+                                      color: Colors.white)),
+                            ),
+                          ],
                         ),
                       ),
                     ]),
@@ -216,9 +225,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           floatingActionButtonLocation:
-              FloatingActionButtonLocation.centerDocked,
+              FloatingActionButtonLocation.endDocked,
           floatingActionButton: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(16.0),
             child: FloatingActionButton(
               onPressed: () => Navigator.push(
                 context,
