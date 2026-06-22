@@ -10,20 +10,20 @@ class Player {
     this.category,
     this.battingStyle,
     this.bowlingStyle,
-    this.address,
+    this.bowlingArm,
     this.photoFileName,
   });
 
   Player.fromJson(dynamic json) {
-    slNo = json['sl_no'];
+    slNo = int.tryParse(json['sl_no']?.toString() ?? '');
     name = json['name'];
-    phoneNumber = json['phone_number']?.toString();
-    team = json['current_team'] ?? json['team'];
+    phoneNumber = json['phone']?.toString();
+    team = json['team'];
     category = json['category'];
     battingStyle = json['batting_style'];
-    bowlingStyle = json['bowling_arm'] ?? json['bowling_style'];
-    address = json['address'];
-    photoFileName = json['photo_file_name'];
+    bowlingStyle = json['bowling_style'];
+    bowlingArm = json['bowling_arm'];
+    photoFileName = json['photo'];
   }
 
   int? slNo;
@@ -33,60 +33,33 @@ class Player {
   String? category;
   String? battingStyle;
   String? bowlingStyle;
-  String? address;
+  String? bowlingArm;
   String? photoFileName;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
     map['sl_no'] = slNo;
-    map['Name'] = name;
-    map['Phone Number'] = phoneNumber;
+    map['name'] = name;
+    map['phone'] = phoneNumber;
     map['team'] = team;
     map['category'] = category;
     map['batting_style'] = battingStyle;
     map['bowling_style'] = bowlingStyle;
-    map['address'] = address;
-    map['photo_file_name'] = photoFileName;
+    map['bowling_arm'] = bowlingArm;
+    map['photo'] = photoFileName;
     return map;
   }
 
-  String getPlayerPhoto() {
-    return "assets/images/player/$photoFileName";
-  }
-
-  String getPlayerName() {
-    return name ?? "";
-  }
-
-  String getPhoneNumber() {
-    return phoneNumber ?? "";
-  }
-
-  String getTeam() {
-    return team ?? "";
-  }
-
-  String getBattingStyle() {
-    return battingStyle ?? "-";
-  }
-
-  String getBowlingStyle() {
-    return bowlingStyle ?? "-";
-  }
-
-  String getAddress() {
-    return address ?? "";
-  }
-
-  String getPlayerId() {
-    return slNo?.toString() ?? "";
-  }
-
-  String getCategory() {
-    return category ?? "";
-  }
+  String getPlayerPhoto() => "assets/images/player/$photoFileName";
+  String getPlayerId() => slNo?.toString() ?? "";
+  String getPlayerName() => name ?? "";
+  String getPhoneNumber() => phoneNumber ?? "";
+  String getTeam() => team ?? "";
+  String getCategory() => category ?? "";
+  String getBattingStyle() => battingStyle ?? "-";
+  String getBowlingStyle() => bowlingStyle ?? "-";
+  String getBowlingArm() => bowlingArm ?? "-";
 }
-
 
 Player parsePlayerFromJson(String jsonString) {
   final jsonData = jsonDecode(jsonString);
@@ -94,9 +67,8 @@ Player parsePlayerFromJson(String jsonString) {
 }
 
 Future<List<Player>> getPlayersData() async {
-  // Fixed path to match pubspec.yaml
   String playersJson = await rootBundle.loadString("assets/players.json");
-  List<Player> players = (jsonDecode(playersJson) as List)
+  List<Player> players = ((jsonDecode(playersJson)['Players']) as List)
       .map((json) => Player.fromJson(json))
       .toList();
   return players;
