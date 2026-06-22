@@ -63,6 +63,34 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  Widget _buildStyledText(String text, {double fontSize = 48}) {
+    return FittedBox(
+      fit: BoxFit.scaleDown,
+      child: Text(
+        text,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: fontSize,
+          fontWeight: FontWeight.bold,
+          fontFamily: 'VTFRedZone',
+          color: Colors.white,
+          shadows: [
+            Shadow(
+              offset: const Offset(2, 2),
+              blurRadius: 4,
+              color: Colors.black.withValues(alpha: 0.7),
+            ),
+            Shadow(
+              offset: const Offset(-1, -1),
+              blurRadius: 3,
+              color: Colors.black.withValues(alpha: 0.5),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return CallbackShortcuts(
@@ -100,89 +128,65 @@ class _MyHomePageState extends State<MyHomePage> {
                         alignment: Alignment.topCenter,
                       ),
                     ),
-                    child: Column(children: <Widget>[
-                      Expanded(
-                        child: Center(
-                          child: SizedBox(
-                            width: 200,
-                            height: 200,
-                            child: Image.asset(
-                              "assets/images/msl_logo.png",
-                              fit: BoxFit.contain,
+                    child: Column(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 4,
+                          child: Padding(
+                            padding: const EdgeInsets.all(16),
+                            child: Center(
+                              child: Image.asset(
+                                "assets/images/msl_logo.png",
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            left: 30, right: 30, bottom: 40),
-                        child: Column(
-                          children: <Widget>[
-                            FittedBox(
-                              fit: BoxFit.contain,
-                              child: Text("#${_player.getPlayerId()}",
-                                  style: const TextStyle(
-                                      fontSize: 100,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'VTFRedZone',
-                                      color: Colors.white)),
-                            ),
-                            const SizedBox(height: 20),
-                            FittedBox(
-                              fit: BoxFit.contain,
-                              child: Text(_player.getPlayerName(),
-                                  style: const TextStyle(
-                                      fontSize: 110,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'VTFRedZone',
-                                      color: Colors.white)),
-                            ),
-                            const SizedBox(height: 16),
-                            FittedBox(
-                              fit: BoxFit.scaleDown,
-                              child: Text(_player.getTeam(),
-                                  style: const TextStyle(
-                                      fontSize: 80,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'VTFRedZone',
-                                      color: Colors.white)),
-                            ),
-                            const SizedBox(height: 12),
-                            FittedBox(
-                              fit: BoxFit.scaleDown,
-                              child: Text(_player.getCategory(),
-                                  style: const TextStyle(
-                                      fontSize: 60,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'VTFRedZone',
-                                      color: Colors.white)),
-                            ),
-                            const SizedBox(height: 12),
-                            FittedBox(
-                              fit: BoxFit.scaleDown,
-                              child: Text(
-                                "${_player.getBattingStyle()} Batsman  |  ${_player.getBowlingArm()} Arm ${_player.getBowlingStyle()} Bowler",
-                                style: const TextStyle(
-                                    fontSize: 50,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'VTFRedZone',
-                                    color: Colors.white),
+                        Expanded(
+                          flex: 6,
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 16, vertical: 16),
+                            child: SingleChildScrollView(
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: <Widget>[
+                                  _buildStyledText(
+                                    "#${_player.getPlayerId()}",
+                                    fontSize: 70,
+                                  ),
+                                  const SizedBox(height: 10),
+                                  _buildStyledText(
+                                    _player.getPlayerName(),
+                                    fontSize: 85,
+                                  ),
+                                  const SizedBox(height: 10),
+                                  _buildStyledText(
+                                    _player.getTeam(),
+                                    fontSize: 60,
+                                  ),
+                                  const SizedBox(height: 8),
+                                  _buildStyledText(
+                                    _player.getCategory(),
+                                    fontSize: 48,
+                                  ),
+                                  const SizedBox(height: 8),
+                                  _buildStyledText(
+                                    "${_player.getBattingStyle()} Batsman | ${_player.getBowlingArm()} ${_player.getBowlingStyle()} Bowler",
+                                    fontSize: 38,
+                                  ),
+                                  const SizedBox(height: 8),
+                                  _buildStyledText(
+                                    _player.getPhoneNumber(),
+                                    fontSize: 36,
+                                  ),
+                                ],
                               ),
                             ),
-                            const SizedBox(height: 12),
-                            FittedBox(
-                              fit: BoxFit.scaleDown,
-                              child: Text(_player.getPhoneNumber(),
-                                  style: const TextStyle(
-                                      fontSize: 50,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'VTFRedZone',
-                                      color: Colors.white)),
-                            ),
-                          ],
+                          ),
                         ),
-                      ),
-                    ]),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
