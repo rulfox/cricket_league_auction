@@ -1,5 +1,5 @@
 {
-  "Players": [
+  "Players Only": [
     {
       "sl_no": "1",
       "name": "Deepak Boche",
@@ -167,25 +167,25 @@
     },
     {
       "sl_no": "16",
-      "name": "Murad koya thangal",
-      "phone": "8893148844",
-      "team": "MCC Mannancherry ",
-      "category": "All Rounder",
-      "batting_style": "Right Hand",
-      "bowling_style": "Fast",
-      "bowling_arm": "Right",
-      "photo": "IMG-20260610-WA0164 - Sanal SK7.jpg"
-    },
-    {
-      "sl_no": "17",
-      "name": "Salman",
-      "phone": "6238294745",
-      "team": "Lords x1",
-      "category": "All Rounder",
+      "name": "Sinoj ",
+      "phone": "9847088199",
+      "team": "Three kings",
+      "category": "Batsman",
       "batting_style": "Right Hand",
       "bowling_style": "Medium",
       "bowling_arm": "Right",
-      "photo": "IMG-20260610-WA0163 - Sanal SK7.jpg"
+      "photo": "IMG-20260606-WA0126 - Sanal SK7.jpg"
+    },
+    {
+      "sl_no": "17",
+      "name": "Manaf",
+      "phone": "9747617296",
+      "team": "MT Boyz",
+      "category": "All Rounder",
+      "batting_style": "Left Hand",
+      "bowling_style": "Fast",
+      "bowling_arm": "Left",
+      "photo": "IMG-20260624-WA0206 - Sanal SK7.jpg"
     },
     {
       "sl_no": "18",
@@ -233,14 +233,14 @@
     },
     {
       "sl_no": "22",
-      "name": "Praveen",
-      "phone": "9207206967",
-      "team": "Kombanz",
-      "category": "Batsman",
+      "name": "Syam ",
+      "phone": "8590932352",
+      "team": "Spartans ",
+      "category": "All Rounder",
       "batting_style": "Right Hand",
       "bowling_style": "Medium",
       "bowling_arm": "Right",
-      "photo": "IMG-20260606-WA0100 - Sanal SK7.jpg"
+      "photo": "IMG-20260627-WA0031 - Sanal SK7.jpg"
     },
     {
       "sl_no": "23",
@@ -1102,14 +1102,14 @@
     },
     {
       "sl_no": "101",
-      "name": "Nandu",
-      "phone": "8281047037",
-      "team": "Youth wing ",
+      "name": "Zulfi",
+      "phone": "8714477985",
+      "team": "Devilz",
       "category": "All Rounder",
       "batting_style": "Right Hand",
       "bowling_style": "Fast",
       "bowling_arm": "Right",
-      "photo": "IMG-20260614-WA0055 - Sanal SK7.jpg"
+      "photo": "IMG-20241212-WA0000 - Sanal SK7.jpg"
     },
     {
       "sl_no": "102",
@@ -1124,14 +1124,14 @@
     },
     {
       "sl_no": "103",
-      "name": "Bharath",
-      "phone": "6238039102",
-      "team": "Udaya",
-      "category": "All Rounder",
+      "name": "Kiran",
+      "phone": "9037920124",
+      "team": "MT Boyz",
+      "category": "Bowler",
       "batting_style": "Right Hand",
       "bowling_style": "Fast",
       "bowling_arm": "Right",
-      "photo": "IMG-20260615-WA0023 - Sanal SK7.jpg"
+      "photo": "IMG-20260630-WA0061 - Sanal SK7.jpg"
     },
     {
       "sl_no": "104",
@@ -1421,14 +1421,14 @@
     },
     {
       "sl_no": "130",
-      "name": "Mazood",
-      "phone": "8907145242",
-      "team": "Royals",
+      "name": "Akhil",
+      "phone": "9539942652",
+      "team": "Bhavana",
       "category": "All Rounder",
       "batting_style": "Right Hand",
-      "bowling_style": "Fast",
+      "bowling_style": "Medium",
       "bowling_arm": "Right",
-      "photo": "IMG-20260606-WA0072 - Sanal SK7.jpg"
+      "photo": "IMG_20240820_110319 - Akhil Aki - Sanal SK7.jpg"
     },
     {
       "sl_no": "131",

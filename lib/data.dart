@@ -68,7 +68,7 @@ Player parsePlayerFromJson(String jsonString) {
 
 Future<List<Player>> getPlayersData() async {
   String playersJson = await rootBundle.loadString("assets/players.json");
-  List<Player> players = ((jsonDecode(playersJson)['Players']) as List)
+  List<Player> players = ((jsonDecode(playersJson)['Players Only']) as List)
       .map((json) => Player.fromJson(json))
       .toList();
   return players;
