@@ -13,6 +13,7 @@ import '../widgets/confirm_export_dialog.dart';
 import '../widgets/export_progress_overlay.dart';
 import '../widgets/overlay_icon_button.dart';
 import '../widgets/player_card_layout.dart';
+import 'auction_summary_screen.dart';
 import 'full_screen_image_screen.dart';
 import 'players_popup.dart';
 import 'settings_screen.dart';
@@ -215,6 +216,16 @@ class _HomeCardScreenState extends State<HomeCardScreen> {
                         ),
                         Row(
                           children: [
+                            OverlayIconButton(
+                              icon: Icons.dashboard_outlined,
+                              tooltip: 'Auction Summary',
+                              onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const AuctionSummaryScreen()),
+                              ),
+                            ),
+                            const SizedBox(width: 8),
                             OverlayIconButton(
                               icon: Icons.leaderboard,
                               tooltip: 'Auction Results',

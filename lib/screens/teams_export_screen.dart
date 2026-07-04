@@ -10,9 +10,9 @@ import '../services/file_naming.dart';
 import '../services/team_grouping.dart';
 import '../services/web_download.dart';
 import '../state/auction_state.dart';
-import '../theme.dart';
 import '../widgets/confirm_export_dialog.dart';
 import '../widgets/export_progress_overlay.dart';
+import '../widgets/team_purse_summary_card.dart';
 import '../widgets/team_roster_card.dart';
 
 const String _allTeamsScope = '__all__';
@@ -188,7 +188,6 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
 
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
-    final purseIsHealthy = summary != null && summary.extraPointsUsed == 0;
 
     return Scaffold(
       appBar: AppBar(title: const Text('Auction Results Export')),
@@ -214,74 +213,10 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
                 child: Padding(
                   padding: const EdgeInsets.all(16),
                   child: summary != null
-                      ? Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Icon(Icons.account_balance_wallet_outlined,
-                                    color: colorScheme.primary),
-                                const SizedBox(width: 8),
-                                Text(
-                                  auctionState.teamNameFor(_selectedScope) ?? '',
-                                  style: textTheme.titleMedium,
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 16),
-                            Text(
-                              '${summary.playersBought} / ${auctionState.settings.playersPerTeam} players bought',
-                              style: textTheme.bodySmall,
-                            ),
-                            const SizedBox(height: 6),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: LinearProgressIndicator(
-                                value: auctionState.settings.playersPerTeam == 0
-                                    ? 0
-                                    : summary.playersBought / auctionState.settings.playersPerTeam,
-                                minHeight: 8,
-                                backgroundColor: colorScheme.surfaceContainerHighest,
-                              ),
-                            ),
-                            const SizedBox(height: 16),
-                            Row(
-                              children: [
-                                Icon(Icons.savings_outlined, color: colorScheme.onSurfaceVariant),
-                                const SizedBox(width: 8),
-                                const Text('Remaining purse'),
-                                const Spacer(),
-                                Text(
-                                  '${summary.remainingPurse}',
-                                  style: textTheme.titleMedium?.copyWith(
-                                    color: purseIsHealthy ? kStatusSold : kStatusWarning,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            if (summary.extraPointsUsed > 0)
-                              Padding(
-                                padding: const EdgeInsets.only(top: 12),
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                                  decoration: BoxDecoration(
-                                    color: kStatusWarning.withValues(alpha: 0.1),
-                                    borderRadius: BorderRadius.circular(20),
-                                  ),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      const Icon(Icons.trending_up, size: 16, color: kStatusWarning),
-                                      const SizedBox(width: 6),
-                                      Text(
-                                        'Extra points used: ${summary.extraPointsUsed}',
-                                        style: textTheme.bodySmall?.copyWith(color: kStatusWarning),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                          ],
+                      ? TeamPurseSummaryCard(
+                          teamName: auctionState.teamNameFor(_selectedScope) ?? '',
+                          summary: summary,
+                          targetPlayerCount: auctionState.settings.playersPerTeam,
                         )
                       : Row(
                           children: [
