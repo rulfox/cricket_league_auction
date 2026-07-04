@@ -457,12 +457,6 @@ class _HomeCardScreenState extends State<HomeCardScreen> {
                                     ),
                                     const SizedBox(width: 8),
                                     OverlayIconButton(
-                                      icon: Icons.casino,
-                                      tooltip: 'Jackpot',
-                                      onPressed: _startJackpot,
-                                    ),
-                                    const SizedBox(width: 8),
-                                    OverlayIconButton(
                                       icon: Icons.settings,
                                       tooltip: 'Settings',
                                       onPressed: () => Navigator.push(
@@ -539,6 +533,15 @@ class _HomeCardScreenState extends State<HomeCardScreen> {
                           onPressed: () => _openSearch(auctionState.players),
                           tooltip: 'Search',
                           child: const Icon(Icons.search),
+                        ),
+                        const SizedBox(width: 16),
+                        FloatingActionButton.extended(
+                          heroTag: 'jackpot',
+                          onPressed: _startJackpot,
+                          icon: const Icon(Icons.shuffle),
+                          label: const Text('Jackpot'),
+                          backgroundColor: Theme.of(context).colorScheme.secondaryContainer,
+                          foregroundColor: Theme.of(context).colorScheme.onSecondaryContainer,
                         ),
                         const SizedBox(width: 16),
                         FloatingActionButton.extended(
