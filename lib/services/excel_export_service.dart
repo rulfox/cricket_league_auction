@@ -27,24 +27,6 @@ class ExcelExportService {
     }
   }
 
-  /// One sheet for a single team — team name as a header cell (not a
-  /// repeated column, since it's implicitly one team per workbook).
-  Uint8List buildMinimalWorkbook(String teamName, List<TeamExportRow> rows) {
-    final excel = Excel.createExcel();
-    final sheet = excel[_sheetName];
-
-    final headerRow = sheet.maxRows;
-    sheet.appendRow([TextCellValue(teamName)]);
-    sheet
-        .cell(CellIndex.indexByColumnRow(columnIndex: 0, rowIndex: headerRow))
-        .cellStyle = CellStyle(bold: true);
-
-    sheet.appendRow(_columnHeaders);
-    _appendPlayerRows(sheet, rows);
-
-    return Uint8List.fromList(excel.encode()!);
-  }
-
   /// One sheet, all teams, "teamwise categorized": a bold team-name header
   /// row precedes each team's column-header row + player rows, with a
   /// blank spacer row before the next team.

@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Chrome (release, fixed port)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "chrome",
+            "flutterMode": "release",
+            "args": [
+                "--web-port",
+                "8765"
+            ]
+        },
+        {
+            "name": "Auction Planner (Windows)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "windows"
+        },
+        {
+            "name": "Chrome (debug)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "chrome"
+        }
+    ]
+}

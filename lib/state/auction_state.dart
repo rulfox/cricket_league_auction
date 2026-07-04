@@ -56,6 +56,9 @@ class AuctionState extends ChangeNotifier {
   List<Player> get availablePlayers =>
       _players.where((p) => recordFor(keyFor(p)).status == AuctionStatus.available).toList();
 
+  List<Player> get unsoldPlayers =>
+      _players.where((p) => recordFor(keyFor(p)).status == AuctionStatus.unsold).toList();
+
   /// Guards against two roster entries with a missing/duplicate sl_no
   /// silently sharing (and corrupting) the same auction record.
   void _assignPlayerKeys() {
@@ -198,16 +201,34 @@ class AuctionState extends ChangeNotifier {
       );
 
   BidValidationResult evaluateBidFor({
+    required String playerId,
     required String teamId,
     required int bidAmount,
     required bool allowExtraBidChecked,
-  }) =>
-      evaluateBid(
-        bidAmount: bidAmount,
-        purseSummaryBeforeThisSale: purseSummaryFor(teamId),
-        settings: _settings,
-        allowExtraBidChecked: allowExtraBidChecked,
-      );
+  }) {
+    final currentRecord = recordFor(playerId);
+    final isSameTeamReassignment =
+        currentRecord.status == AuctionStatus.sold && currentRecord.teamId == teamId;
+    // Excluding the player's own current record when they're already sold to
+    // this same team means the resulting summary reflects the team as if
+    // this player's prior sale didn't exist yet — so both the squad-count
+    // cap and Strict Purse's reserve math are correct when editing an
+    // existing sale's bid amount, instead of double-counting it.
+    final relevantRecords = isSameTeamReassignment
+        ? _records.entries.where((e) => e.key != playerId).map((e) => e.value)
+        : _records.values;
+    final purseSummary = computeTeamPurseSummary(
+      teamId: teamId,
+      records: relevantRecords,
+      settings: _settings,
+    );
+    return evaluateBid(
+      bidAmount: bidAmount,
+      purseSummaryBeforeThisSale: purseSummary,
+      settings: _settings,
+      allowExtraBidChecked: allowExtraBidChecked,
+    );
+  }
 
   Future<void> resetRecordsOnly() async {
     _records.clear();
@@ -281,6 +302,22 @@ class AuctionState extends ChangeNotifier {
 
   Future<void> removeJackpotOverride(int drawIndex) async {
     _jackpotOverrides = _jackpotOverrides.where((o) => o.drawIndex != drawIndex).toList();
+    notifyListeners();
+    await _persist();
+  }
+
+  /// Moves every currently-unsold player back to Available in one batch, so
+  /// the auctioneer can run another round over just the leftovers. Safe to
+  /// call repeatedly — each call only touches records that are unsold
+  /// *right now*, which is what makes unlimited re-auction rounds possible.
+  Future<void> reauctionUnsoldPlayers() async {
+    final unsoldIds = _players
+        .map(keyFor)
+        .where((id) => recordFor(id).status == AuctionStatus.unsold)
+        .toList();
+    for (final id in unsoldIds) {
+      _records[id] = PlayerAuctionRecord.initial(id);
+    }
     notifyListeners();
     await _persist();
   }

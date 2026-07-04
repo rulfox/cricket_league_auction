@@ -113,6 +113,15 @@ BidValidationResult evaluateBid({
     );
   }
 
+  if (purseSummaryBeforeThisSale.playersBought >= settings.playersPerTeam) {
+    return BidValidationResult(
+      isAllowed: false,
+      requiresExtraBidCheckbox: false,
+      remainingPurseBeforeBid: remaining,
+      blockReason: 'Team already has the maximum ${settings.playersPerTeam} players.',
+    );
+  }
+
   if (settings.mode == AuctionMode.strictPurse) {
     final maxAllowedBid = computeMaxAllowedBid(
       purseSummaryBeforeThisSale: purseSummaryBeforeThisSale,

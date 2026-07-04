@@ -115,6 +115,24 @@ class _SettingsScreenState extends State<SettingsScreen> {
     ));
   }
 
+  Future<void> _reauctionUnsold() async {
+    final auctionState = context.read<AuctionState>();
+    final unsoldCount = auctionState.unsoldPlayers.length;
+    final confirmed = await confirmExport(
+      context,
+      title: 'Re-auction Unsold Players',
+      message:
+          'Move all $unsoldCount unsold player(s) back to Available so they can be auctioned again?',
+      confirmLabel: 'Re-auction',
+    );
+    if (!confirmed || !mounted) return;
+    await auctionState.reauctionUnsoldPlayers();
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('$unsoldCount player(s) moved back to Available.')),
+    );
+  }
+
   Future<void> _clearAllBids() async {
     final confirmed = await confirmExport(
       context,
@@ -178,7 +196,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final teams = context.watch<AuctionState>().teams;
+    final auctionState = context.watch<AuctionState>();
+    final teams = auctionState.teams;
+    final unsoldCount = auctionState.unsoldPlayers.length;
     final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
@@ -309,6 +329,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ],
                   ),
                   const SizedBox(height: 16),
+                  SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: kStatusWarning,
+                        side: const BorderSide(color: kStatusWarning),
+                      ),
+                      onPressed: unsoldCount == 0 ? null : _reauctionUnsold,
+                      icon: const Icon(Icons.autorenew),
+                      label: Text(
+                        'Re-auction unsold players${unsoldCount == 0 ? '' : ' ($unsoldCount)'}',
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 8),
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton.icon(

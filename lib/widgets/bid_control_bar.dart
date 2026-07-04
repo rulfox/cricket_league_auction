@@ -103,6 +103,7 @@ class _BidControlBarState extends State<BidControlBar> {
     BidValidationResult? validation;
     if (_selectedTeamId != null) {
       validation = auctionState.evaluateBidFor(
+        playerId: widget.playerId,
         teamId: _selectedTeamId!,
         bidAmount: bidAmount,
         allowExtraBidChecked: _allowExtraBid,
@@ -273,13 +274,15 @@ class _BidControlBarState extends State<BidControlBar> {
                 child: FilledButton.icon(
                   onPressed: (_selectedTeamId != null && (validation?.isAllowed ?? false))
                       ? () async {
+                          final navigator = Navigator.of(context);
                           await auctionState.markSold(
                             playerId: widget.playerId,
                             teamId: _selectedTeamId!,
                             bidAmount: bidAmount,
                             isExtraBid: validation!.requiresExtraBidCheckbox && _allowExtraBid,
                           );
-                          setState(() => _allowExtraBid = false);
+                          if (!mounted) return;
+                          navigator.pop();
                         }
                       : null,
                   style: FilledButton.styleFrom(
@@ -294,7 +297,12 @@ class _BidControlBarState extends State<BidControlBar> {
               Expanded(
                 flex: 2,
                 child: OutlinedButton.icon(
-                  onPressed: () => auctionState.markUnsold(widget.playerId),
+                  onPressed: () async {
+                    final navigator = Navigator.of(context);
+                    await auctionState.markUnsold(widget.playerId);
+                    if (!mounted) return;
+                    navigator.pop();
+                  },
                   style: OutlinedButton.styleFrom(
                     foregroundColor: kStatusWarning,
                     side: const BorderSide(color: kStatusWarning),
@@ -309,7 +317,12 @@ class _BidControlBarState extends State<BidControlBar> {
                 Expanded(
                   flex: 2,
                   child: TextButton.icon(
-                    onPressed: () => auctionState.resetToAvailable(widget.playerId),
+                    onPressed: () async {
+                      final navigator = Navigator.of(context);
+                      await auctionState.resetToAvailable(widget.playerId);
+                      if (!mounted) return;
+                      navigator.pop();
+                    },
                     style: TextButton.styleFrom(minimumSize: const Size(0, 48)),
                     icon: const Icon(Icons.replay),
                     label: const Text('Reopen'),

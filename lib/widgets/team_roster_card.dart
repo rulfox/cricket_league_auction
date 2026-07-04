@@ -129,35 +129,56 @@ class _RosterTile extends StatelessWidget {
     return SizedBox(
       width: TeamRosterCard._tileWidth,
       height: TeamRosterCard._tileHeight,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(12),
-            child: SizedBox(
-              height: TeamRosterCard._photoHeight,
-              child: Image.asset(
-                row.player.getPlayerPhoto(),
-                fit: BoxFit.cover,
-                alignment: alignment,
-                errorBuilder: (context, error, stackTrace) => Container(
-                  color: Colors.black26,
-                  child: const Icon(Icons.person, color: Colors.white70, size: 48),
+      // Defensive safety net: any residual overflow (e.g. an edge case not
+      // fully covered by the maxLines/ellipsis below) is silently clipped
+      // rather than painting the debug overflow stripes into the captured
+      // export image.
+      child: ClipRect(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: SizedBox(
+                height: TeamRosterCard._photoHeight,
+                child: Image.asset(
+                  row.player.getPlayerPhoto(),
+                  fit: BoxFit.cover,
+                  alignment: alignment,
+                  errorBuilder: (context, error, stackTrace) => Container(
+                    color: Colors.black26,
+                    child: const Icon(Icons.person, color: Colors.white70, size: 48),
+                  ),
                 ),
               ),
             ),
-          ),
-          const SizedBox(height: 8),
-          CardStyledText(row.player.getPlayerName(), fontSize: 28),
-          if (showPhone) ...[
-            const SizedBox(height: 4),
-            CardStyledText(row.player.getPhoneNumber(), fontSize: 18),
+            const SizedBox(height: 8),
+            CardStyledText(
+              row.player.getPlayerName(),
+              fontSize: 28,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+            if (showPhone) ...[
+              const SizedBox(height: 4),
+              CardStyledText(
+                row.player.getPhoneNumber(),
+                fontSize: 18,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ],
+            if (showPoints) ...[
+              const SizedBox(height: 4),
+              CardStyledText(
+                "${row.bidAmount} points",
+                fontSize: 20,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ],
           ],
-          if (showPoints) ...[
-            const SizedBox(height: 4),
-            CardStyledText("${row.bidAmount} points", fontSize: 20),
-          ],
-        ],
+        ),
       ),
     );
   }
