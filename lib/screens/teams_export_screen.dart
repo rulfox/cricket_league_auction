@@ -1,24 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../models/player_auction_record.dart';
 import '../models/team_export_row.dart';
+import '../models/team_roster_export_item.dart';
 import '../services/capture_service.dart';
 import '../services/excel_export_service.dart';
+import '../services/face_crop_service.dart';
 import '../services/file_naming.dart';
+import '../services/team_grouping.dart';
 import '../services/web_download.dart';
 import '../state/auction_state.dart';
 import '../theme.dart';
 import '../widgets/confirm_export_dialog.dart';
 import '../widgets/export_progress_overlay.dart';
-import '../widgets/sold_player_card.dart';
-import '../widgets/team_data_table_card.dart';
+import '../widgets/team_roster_card.dart';
 
 const String _allTeamsScope = '__all__';
 
 /// Teamwise auction-results export: pick a team (or all teams) and export
-/// Minimal (name/sl no/phone/points) or Complete (+ team + photo) as Excel
-/// or as an image/zip.
+/// Minimal (one team's roster) or Complete (every team's roster) as Excel
+/// or as a roster image/zip.
 class TeamsExportScreen extends StatefulWidget {
   const TeamsExportScreen({super.key});
 
@@ -33,24 +34,18 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
   final ExcelExportService _excelService = ExcelExportService();
 
   Widget? _captureContent;
+  double _captureHeight = 900;
   bool _isCapturing = false;
   bool _packaging = false;
   int _captureProgress = 0;
   int _captureTotal = 0;
+  bool _showPhone = true;
+  bool _showPoints = true;
 
   List<TeamExportRow> _rowsForScope(AuctionState state) {
-    final rows = <TeamExportRow>[];
-    for (final player in state.players) {
-      final record = state.recordFor(state.keyFor(player));
-      if (record.status != AuctionStatus.sold) continue;
-      if (_selectedScope != _allTeamsScope && record.teamId != _selectedScope) continue;
-      rows.add(TeamExportRow(
-        teamName: state.teamNameFor(record.teamId) ?? 'Unknown',
-        player: player,
-        bidAmount: record.soldPoints ?? 0,
-      ));
-    }
-    return rows;
+    final all = allSoldRows(state);
+    if (_selectedScope == _allTeamsScope) return all;
+    return all.where((r) => r.teamId == _selectedScope).toList();
   }
 
   String _scopeFileLabel(AuctionState state) {
@@ -58,24 +53,34 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
     return sanitizeFileSegment(state.teamNameFor(_selectedScope) ?? 'team');
   }
 
-  Future<void> _exportMinimalExcel() async {
-    if (!await confirmExport(context) || !mounted) return;
-    final auctionState = context.read<AuctionState>();
-    final bytes = _excelService.buildMinimalWorkbook(_rowsForScope(auctionState));
-    await downloadBytes(bytes, '${_scopeFileLabel(auctionState)}_minimal.xlsx');
-  }
-
-  Future<void> _exportCompleteExcel() async {
-    if (!await confirmExport(context) || !mounted) return;
-    final auctionState = context.read<AuctionState>();
-    final bytes = _excelService.buildCompleteWorkbook(_rowsForScope(auctionState));
-    await downloadBytes(bytes, '${_scopeFileLabel(auctionState)}_complete.xlsx');
+  Future<Map<String, Alignment>> _alignmentsFor(List<TeamExportRow> rows) async {
+    final entries = await Future.wait(rows.map((r) async => MapEntry(
+          r.player.getPlayerId(),
+          await FaceCropService.instance.alignmentFor(r.player),
+        )));
+    return Map.fromEntries(entries);
   }
 
   Future<void> _awaitPaintedFrame() async {
     await WidgetsBinding.instance.endOfFrame;
     WidgetsBinding.instance.scheduleFrame();
     await WidgetsBinding.instance.endOfFrame;
+  }
+
+  Future<void> _exportMinimalExcel() async {
+    if (!await confirmExport(context) || !mounted) return;
+    final auctionState = context.read<AuctionState>();
+    final teamName = auctionState.teamNameFor(_selectedScope) ?? 'Team';
+    final bytes = _excelService.buildMinimalWorkbook(teamName, _rowsForScope(auctionState));
+    await downloadBytes(bytes, '${_scopeFileLabel(auctionState)}_minimal.xlsx');
+  }
+
+  Future<void> _exportCompleteExcel() async {
+    if (!await confirmExport(context) || !mounted) return;
+    final auctionState = context.read<AuctionState>();
+    final teams = groupRowsByTeam(allSoldRows(auctionState), auctionState);
+    final bytes = _excelService.buildCompleteWorkbook(teams);
+    await downloadBytes(bytes, 'all_teams_complete.xlsx');
   }
 
   Future<void> _exportMinimalPhoto() async {
@@ -85,11 +90,37 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
     final teamName = auctionState.teamNameFor(_selectedScope);
     if (teamName == null) return;
     final rows = _rowsForScope(auctionState);
+    if (rows.isEmpty) return;
 
-    setState(() => _captureContent = TeamDataTableCard(teamName: teamName, rows: rows));
+    setState(() {
+      _isCapturing = true;
+      // Reuse the "Packaging…" caption while face detection runs, since it's
+      // the closest existing label to "preparing image" and this is a
+      // single-image export (no per-item progress count to show).
+      _packaging = true;
+    });
+
+    final alignments = await _alignmentsFor(rows);
+    if (!mounted) return;
+    setState(() {
+      _captureContent = TeamRosterCard(
+        teamName: teamName,
+        rows: rows,
+        alignments: alignments,
+        showPhone: _showPhone,
+        showPoints: _showPoints,
+      );
+      _captureHeight = TeamRosterCard.heightFor(rows.length);
+    });
     await _awaitPaintedFrame();
     final bytes = await _captureService.captureBoundary(_captureKey);
-    setState(() => _captureContent = null);
+
+    if (!mounted) return;
+    setState(() {
+      _captureContent = null;
+      _isCapturing = false;
+      _packaging = false;
+    });
 
     await downloadBytes(bytes, '${sanitizeFileSegment(teamName)}_minimal.png');
   }
@@ -97,37 +128,41 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
   Future<void> _exportCompletePhoto() async {
     if (!await confirmExport(context) || !mounted) return;
     final auctionState = context.read<AuctionState>();
-    final rows = _rowsForScope(auctionState);
-    if (rows.isEmpty) return;
+    final teams = groupRowsByTeam(allSoldRows(auctionState), auctionState);
+    if (teams.isEmpty) return;
 
     setState(() {
       _isCapturing = true;
       _packaging = false;
       _captureProgress = 0;
-      _captureTotal = rows.length;
+      _captureTotal = teams.length;
     });
 
-    final zipBytes = await _captureService.captureSequenceAsZip<TeamExportRow>(
-      items: rows,
+    final zipBytes = await _captureService.captureSequenceAsZip<TeamRosterExportItem>(
+      items: teams,
       boundaryKey: _captureKey,
-      prepareFrame: (row) async {
-        setState(() => _captureContent = SoldPlayerCard(
-              player: row.player,
-              teamName: row.teamName,
-              bidAmount: row.bidAmount,
-            ));
+      prepareFrame: (team) async {
+        final alignments = await _alignmentsFor(team.rows);
+        setState(() {
+          _captureContent = TeamRosterCard(
+            teamName: team.teamName,
+            rows: team.rows,
+            alignments: alignments,
+            showPhone: _showPhone,
+            showPoints: _showPoints,
+          );
+          _captureHeight = TeamRosterCard.heightFor(team.rows.length);
+        });
         await _awaitPaintedFrame();
       },
-      fileNameFor: (row) => _selectedScope == _allTeamsScope
-          ? '${sanitizeFileSegment(row.teamName)}/${row.player.getPlayerId()}.png'
-          : '${row.player.getPlayerId()}.png',
+      fileNameFor: (team) => '${sanitizeFileSegment(team.teamName)}.png',
       onProgress: (completed, total) => setState(() => _captureProgress = completed),
     );
 
     setState(() => _packaging = true);
     await WidgetsBinding.instance.endOfFrame;
 
-    await downloadBytes(zipBytes, '${_scopeFileLabel(auctionState)}_complete.zip');
+    await downloadBytes(zipBytes, 'all_teams_complete.zip');
 
     setState(() {
       _isCapturing = false;
@@ -268,14 +303,48 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
                     children: [
                       Row(
                         children: [
+                          Icon(Icons.image_outlined, color: colorScheme.primary),
+                          const SizedBox(width: 8),
+                          Text('Roster image options', style: textTheme.titleMedium),
+                        ],
+                      ),
+                      CheckboxListTile(
+                        value: _showPhone,
+                        onChanged: (value) => setState(() => _showPhone = value ?? true),
+                        title: const Text('Show phone number'),
+                        controlAffinity: ListTileControlAffinity.leading,
+                        contentPadding: EdgeInsets.zero,
+                      ),
+                      CheckboxListTile(
+                        value: _showPoints,
+                        onChanged: (value) => setState(() => _showPoints = value ?? true),
+                        title: const Text('Show bid points'),
+                        controlAffinity: ListTileControlAffinity.leading,
+                        contentPadding: EdgeInsets.zero,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
                           Icon(Icons.description_outlined, color: colorScheme.primary),
                           const SizedBox(width: 8),
-                          Text('Minimal', style: textTheme.titleMedium),
+                          Text('Minimal — this team only', style: textTheme.titleMedium),
                         ],
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 4, left: 28),
-                        child: Text('Name, sl no, phone number, points', style: textTheme.bodySmall),
+                        child: Text(
+                          'Excel: table for this team · Photo: roster image for this team',
+                          style: textTheme.bodySmall,
+                        ),
                       ),
                       const SizedBox(height: 12),
                       Row(
@@ -313,13 +382,13 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
                         children: [
                           Icon(Icons.fact_check_outlined, color: colorScheme.primary),
                           const SizedBox(width: 8),
-                          Text('Complete', style: textTheme.titleMedium),
+                          Text('Complete — all teams', style: textTheme.titleMedium),
                         ],
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 4, left: 28),
                         child: Text(
-                          'Team name, player photo, name, phone number, bid amount',
+                          'Excel: one sheet, teamwise · Photo: one roster image per team, zipped',
                           style: textTheme.bodySmall,
                         ),
                       ),
@@ -338,7 +407,7 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
                             child: FilledButton.tonalIcon(
                               onPressed: rows.isEmpty ? null : _exportCompletePhoto,
                               icon: const Icon(Icons.photo_library_outlined),
-                              label: const Text('Photo (ZIP)'),
+                              label: const Text('All teams (ZIP)'),
                             ),
                           ),
                         ],
@@ -351,13 +420,15 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
           ),
           // Off-screen capture host: must be laid out/painted at least once for
           // RepaintBoundary.toImage to work, but stays outside the visible
-          // viewport and outside every visible export control.
+          // viewport and outside every visible export control. Height is
+          // dynamic (see TeamRosterCard.heightFor) since a roster grid's size
+          // depends on how many players are on the team being captured.
           Positioned(
             left: -5000,
             top: 0,
             child: SizedBox(
               width: 1600,
-              height: 900,
+              height: _captureHeight,
               child: Material(
                 child: RepaintBoundary(
                   key: _captureKey,

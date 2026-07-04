@@ -4,11 +4,13 @@ import 'player.dart';
 /// photo/zip export services so they don't need to know about [AuctionState].
 class TeamExportRow {
   const TeamExportRow({
+    required this.teamId,
     required this.teamName,
     required this.player,
     required this.bidAmount,
   });
 
+  final String teamId;
   final String teamName;
   final Player player;
   final int bidAmount;

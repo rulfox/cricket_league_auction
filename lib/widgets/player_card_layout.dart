@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 import '../models/player.dart';
+import 'card_styled_text.dart';
 
 /// One line of styled text on a player card, e.g. `CardLine("#12", 70)`.
 class CardLine {
@@ -66,7 +67,7 @@ class PlayerCardLayout extends StatelessWidget {
                         children: <Widget>[
                           for (int i = 0; i < lines.length; i++) ...[
                             if (i > 0) const SizedBox(height: 10),
-                            _StyledText(lines[i].text, fontSize: lines[i].fontSize),
+                            CardStyledText(lines[i].text, fontSize: lines[i].fontSize),
                           ],
                         ],
                       ),
@@ -79,42 +80,6 @@ class PlayerCardLayout extends StatelessWidget {
         ),
         Expanded(child: _PlayerPhotoPanel(player: player, onTap: onPhotoTap)),
       ],
-    );
-  }
-}
-
-class _StyledText extends StatelessWidget {
-  const _StyledText(this.text, {this.fontSize = 48});
-
-  final String text;
-  final double fontSize;
-
-  @override
-  Widget build(BuildContext context) {
-    return FittedBox(
-      fit: BoxFit.scaleDown,
-      child: Text(
-        text,
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          fontSize: fontSize,
-          fontWeight: FontWeight.bold,
-          fontFamily: 'VTFRedZone',
-          color: Colors.white,
-          shadows: [
-            Shadow(
-              offset: const Offset(2, 2),
-              blurRadius: 4,
-              color: Colors.black.withValues(alpha: 0.7),
-            ),
-            Shadow(
-              offset: const Offset(-1, -1),
-              blurRadius: 3,
-              color: Colors.black.withValues(alpha: 0.5),
-            ),
-          ],
-        ),
-      ),
     );
   }
 }
