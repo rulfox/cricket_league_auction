@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../models/auction_settings.dart';
 import '../models/team.dart';
 import '../state/auction_state.dart';
+import '../theme.dart';
 import '../widgets/confirm_export_dialog.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -168,97 +169,192 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     final teams = context.watch<AuctionState>().teams;
+    final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
       appBar: AppBar(title: const Text('Settings')),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Text('Teams', style: Theme.of(context).textTheme.titleLarge),
-          const SizedBox(height: 8),
-          for (final team in teams)
-            _TeamTile(
-              key: ValueKey(team.id),
-              team: team,
-              onRename: (name) => _renameTeam(team, name),
-              onDelete: () => _removeTeam(team),
-            ),
-          Row(
+          _SectionCard(
+            icon: Icons.groups,
+            title: 'Teams',
             children: [
-              Expanded(
-                child: TextField(
-                  controller: _addTeamController,
-                  focusNode: _addTeamFocusNode,
-                  decoration: const InputDecoration(labelText: 'New team name'),
-                  onSubmitted: (_) => _addTeam(),
+              for (final team in teams)
+                _TeamTile(
+                  key: ValueKey(team.id),
+                  team: team,
+                  onRename: (name) => _renameTeam(team, name),
+                  onDelete: () => _removeTeam(team),
                 ),
+              Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      controller: _addTeamController,
+                      focusNode: _addTeamFocusNode,
+                      decoration: const InputDecoration(hintText: 'Add a new team…'),
+                      onSubmitted: (_) => _addTeam(),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  IconButton.filled(icon: const Icon(Icons.add), onPressed: _addTeam),
+                ],
               ),
-              const SizedBox(width: 8),
-              IconButton(icon: const Icon(Icons.add), onPressed: _addTeam),
             ],
           ),
-          const Divider(height: 32),
-          Text('Purse & Rules', style: Theme.of(context).textTheme.titleLarge),
-          const SizedBox(height: 8),
-          TextField(
-            controller: _purseController,
-            keyboardType: TextInputType.number,
-            decoration: const InputDecoration(labelText: 'Total purse per team'),
-          ),
-          const SizedBox(height: 8),
-          TextField(
-            controller: _minBaseController,
-            keyboardType: TextInputType.number,
-            decoration: const InputDecoration(labelText: 'Minimum base point'),
-          ),
-          const SizedBox(height: 8),
-          TextField(
-            controller: _playersPerTeamController,
-            keyboardType: TextInputType.number,
-            decoration: const InputDecoration(labelText: 'Players per team'),
-          ),
-          const SizedBox(height: 16),
-          Text('Auction Mode', style: Theme.of(context).textTheme.titleMedium),
-          RadioGroup<AuctionMode>(
-            groupValue: _mode,
-            onChanged: (value) => setState(() => _mode = value!),
-            child: const Column(
-              children: [
-                RadioListTile<AuctionMode>(
-                  value: AuctionMode.standard,
-                  title: Text('Standard'),
-                  subtitle: Text(
-                      'Extra bidding is allowed (with confirmation) once a team\'s purse is exhausted.'),
+          _SectionCard(
+            icon: Icons.account_balance_wallet_outlined,
+            title: 'Purse & Rules',
+            children: [
+              TextField(
+                controller: _purseController,
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  labelText: 'Total purse per team',
+                  prefixIcon: Icon(Icons.savings_outlined),
                 ),
-                RadioListTile<AuctionMode>(
-                  value: AuctionMode.strictPurse,
-                  title: Text('Strict Purse Mode'),
-                  subtitle: Text(
-                      'Purse is a hard cap. Points are always reserved for remaining player slots; extra bidding is never allowed.'),
+              ),
+              const SizedBox(height: 12),
+              TextField(
+                controller: _minBaseController,
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  labelText: 'Minimum base point',
+                  prefixIcon: Icon(Icons.trending_up),
                 ),
-              ],
+              ),
+              const SizedBox(height: 12),
+              TextField(
+                controller: _playersPerTeamController,
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  labelText: 'Players per team',
+                  prefixIcon: Icon(Icons.groups_2_outlined),
+                ),
+              ),
+              const SizedBox(height: 16),
+              Text('Auction Mode', style: Theme.of(context).textTheme.titleMedium),
+              const SizedBox(height: 4),
+              RadioGroup<AuctionMode>(
+                groupValue: _mode,
+                onChanged: (value) => setState(() => _mode = value!),
+                child: Column(
+                  children: [
+                    RadioListTile<AuctionMode>(
+                      value: AuctionMode.standard,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      title: const Text('Standard'),
+                      subtitle: const Text(
+                          'Extra bidding is allowed (with confirmation) once a team\'s purse is exhausted.'),
+                    ),
+                    RadioListTile<AuctionMode>(
+                      value: AuctionMode.strictPurse,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      title: const Text('Strict Purse Mode'),
+                      subtitle: const Text(
+                          'Purse is a hard cap. Points are always reserved for remaining player slots; extra bidding is never allowed.'),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 16),
+              SizedBox(
+                width: double.infinity,
+                child: FilledButton.icon(
+                  onPressed: _saveRules,
+                  icon: const Icon(Icons.save_outlined),
+                  label: const Text('Save Purse & Rules'),
+                ),
+              ),
+            ],
+          ),
+          Card(
+            color: colorScheme.errorContainer.withValues(alpha: 0.25),
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      const Icon(Icons.warning_amber_rounded, color: kStatusDanger),
+                      const SizedBox(width: 8),
+                      Text(
+                        'Danger Zone',
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleLarge
+                            ?.copyWith(color: kStatusDanger),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: kStatusWarning,
+                        side: const BorderSide(color: kStatusWarning),
+                      ),
+                      onPressed: _clearAllBids,
+                      icon: const Icon(Icons.restart_alt),
+                      label: const Text('Clear all bids'),
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: kStatusDanger,
+                        side: const BorderSide(color: kStatusDanger),
+                      ),
+                      onPressed: _fullReset,
+                      icon: const Icon(Icons.delete_forever_outlined),
+                      label: const Text('Full reset (teams, settings & bids)'),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-          const SizedBox(height: 16),
-          FilledButton(onPressed: _saveRules, child: const Text('Save Purse & Rules')),
-          const Divider(height: 48),
-          Text(
-            'Danger Zone',
-            style: Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.red),
-          ),
-          const SizedBox(height: 8),
-          OutlinedButton(
-            style: OutlinedButton.styleFrom(foregroundColor: Colors.orange),
-            onPressed: _clearAllBids,
-            child: const Text('Clear all bids'),
-          ),
-          const SizedBox(height: 8),
-          OutlinedButton(
-            style: OutlinedButton.styleFrom(foregroundColor: Colors.red),
-            onPressed: _fullReset,
-            child: const Text('Full reset (teams, settings & bids)'),
-          ),
         ],
+      ),
+    );
+  }
+}
+
+/// Consistent icon + title header, divider, then section content — the one
+/// pattern shared by every Settings section.
+class _SectionCard extends StatelessWidget {
+  const _SectionCard({required this.icon, required this.title, required this.children});
+
+  final IconData icon;
+  final String title;
+  final List<Widget> children;
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(icon, color: Theme.of(context).colorScheme.primary),
+                const SizedBox(width: 8),
+                Text(title, style: Theme.of(context).textTheme.titleLarge),
+              ],
+            ),
+            const SizedBox(height: 8),
+            const Divider(),
+            const SizedBox(height: 8),
+            ...children,
+          ],
+        ),
       ),
     );
   }
@@ -287,18 +383,30 @@ class _TeamTileState extends State<_TeamTile> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.only(left: 12),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.surfaceContainerHighest.withValues(alpha: 0.3),
+        borderRadius: BorderRadius.circular(12),
+      ),
       child: Row(
         children: [
           Expanded(
             child: TextField(
               controller: _controller,
               onSubmitted: widget.onRename,
+              decoration: const InputDecoration(
+                isDense: true,
+                border: InputBorder.none,
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
+                filled: false,
+              ),
             ),
           ),
           IconButton(
-            icon: const Icon(Icons.delete_outline),
+            icon: Icon(Icons.delete_outline, color: Theme.of(context).colorScheme.error),
             onPressed: widget.onDelete,
           ),
         ],

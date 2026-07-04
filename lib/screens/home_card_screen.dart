@@ -131,7 +131,7 @@ class _HomeCardScreenState extends State<HomeCardScreen> {
     );
   }
 
-  void _openBidSheet(String playerId) {
+  void _openBidSheet(String playerId, Player player) {
     showModalBottomSheet(
       context: context,
       // The default bottom sheet caps at ~half screen height; BidControlBar's
@@ -145,7 +145,7 @@ class _HomeCardScreenState extends State<HomeCardScreen> {
         // doesn't add that automatically, so the caller must.
         padding: EdgeInsets.only(bottom: MediaQuery.viewInsetsOf(sheetContext).bottom),
         child: SingleChildScrollView(
-          child: BidControlBar(playerId: playerId),
+          child: BidControlBar(playerId: playerId, player: player),
         ),
       ),
     );
@@ -305,7 +305,7 @@ class _HomeCardScreenState extends State<HomeCardScreen> {
                 const SizedBox(width: 16),
                 FloatingActionButton.extended(
                   heroTag: 'bid',
-                  onPressed: () => _openBidSheet(playerId),
+                  onPressed: () => _openBidSheet(playerId, _player),
                   icon: Icon(isDecided ? Icons.edit : Icons.gavel),
                   label: Text(isDecided ? 'Edit' : 'Bid'),
                   backgroundColor: Theme.of(context).colorScheme.primary,

@@ -62,88 +62,77 @@ class _PlayersPopupState extends State<PlayersPopup> {
   Widget build(BuildContext context) {
     _players.clear();
     _players.addAll(widget.players);
+    final colorScheme = Theme.of(context).colorScheme;
+
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('PLAYERS LIST'),
-      ),
-      body: Stack(
+      appBar: AppBar(title: const Text('Search Players')),
+      body: Column(
         children: [
-          SizedBox(
-            width: double.infinity,
-            height: double.infinity,
-            child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/images/background.jpg"),
-                  fit: BoxFit.cover,
-                ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+            child: TextField(
+              controller: _searchController,
+              focusNode: _searchFocusNode,
+              decoration: InputDecoration(
+                hintText: 'Search by name or number',
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: _searchController.text.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () => _searchController.clear(),
+                      )
+                    : null,
               ),
+              onSubmitted: (text) {
+                if (_searchResults.isNotEmpty) {
+                  // Select the first suggestion
+                  widget.setPlayer(_searchResults[0]);
+                  Navigator.pop(context);
+                }
+              },
             ),
           ),
-          Center(
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(
-                      left: 20.0, right: 20.0, top: 30.0, bottom: 40.0),
-                  child: TextField(
-                    controller: _searchController,
-                    focusNode: _searchFocusNode,
-                    style: const TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.normal,
-                        fontFamily: 'VTFRedZone',
-                        color: Colors.white),
-                    decoration: const InputDecoration(
-                      labelText: 'Search Players',
-                      labelStyle: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.normal,
-                          fontFamily: 'VTFRedZone',
-                          color: Colors.white),
-                      enabledBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.white),
-                      ),
-                      focusedBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.white),
-                      ),
-                    ),
-                    onSubmitted: (text) {
-                      if (_searchResults.isNotEmpty) {
-                        // Select the first suggestion
-                        widget.setPlayer(_searchResults[0]);
-                        Navigator.pop(context);
-                      }
-                    },
-                  ),
-                ),
-                const SizedBox(height: 16.0),
-                Expanded(
-                  child: ListView.builder(
-                    itemCount: _searchResults.length,
-                    itemBuilder: (context, index) {
-                      Player player = _searchResults[index];
-                      return GestureDetector(
-                        child: ListTile(
-                          title: Text(
-                              "${player.getPlayerId()} - ${player.getPlayerName()}",
-                              style: const TextStyle(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: 'VTFRedZone',
-                                  color: Colors.white)),
+          Expanded(
+            child: _searchResults.isEmpty
+                ? Center(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(Icons.person_search_outlined,
+                            size: 48, color: colorScheme.onSurfaceVariant),
+                        const SizedBox(height: 8),
+                        Text(
+                          'No players found',
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodyMedium
+                              ?.copyWith(color: colorScheme.onSurfaceVariant),
                         ),
-                        onTap: () => {
-                          Navigator.pop(context),
-                          widget.setPlayer(player)
+                      ],
+                    ),
+                  )
+                : ListView.separated(
+                    itemCount: _searchResults.length,
+                    separatorBuilder: (_, __) => const Divider(indent: 72),
+                    itemBuilder: (context, index) {
+                      final player = _searchResults[index];
+                      return ListTile(
+                        leading: CircleAvatar(
+                          radius: 22,
+                          backgroundImage: AssetImage(player.getPlayerPhoto()),
+                          onBackgroundImageError: (_, __) {},
+                        ),
+                        title: Text(player.getPlayerName()),
+                        subtitle: Text('#${player.getPlayerId()} · ${player.getCategory()}'),
+                        trailing: Icon(Icons.chevron_right, color: colorScheme.onSurfaceVariant),
+                        onTap: () {
+                          Navigator.pop(context);
+                          widget.setPlayer(player);
                         },
                       );
                     },
                   ),
-                ),
-              ],
-            ),
-          )
+          ),
         ],
       ),
     );

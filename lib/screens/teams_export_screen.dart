@@ -8,6 +8,7 @@ import '../services/excel_export_service.dart';
 import '../services/file_naming.dart';
 import '../services/web_download.dart';
 import '../state/auction_state.dart';
+import '../theme.dart';
 import '../widgets/confirm_export_dialog.dart';
 import '../widgets/export_progress_overlay.dart';
 import '../widgets/sold_player_card.dart';
@@ -150,6 +151,10 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
         ? null
         : auctionState.purseSummaryFor(_selectedScope);
 
+    final colorScheme = Theme.of(context).colorScheme;
+    final textTheme = Theme.of(context).textTheme;
+    final purseIsHealthy = summary != null && summary.extraPointsUsed == 0;
+
     return Scaffold(
       appBar: AppBar(title: const Text('Auction Results Export')),
       body: Stack(
@@ -160,80 +165,187 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
               DropdownButtonFormField<String>(
                 key: ValueKey(_selectedScope),
                 initialValue: _selectedScope,
-                decoration: const InputDecoration(labelText: 'Team'),
+                decoration: const InputDecoration(
+                  labelText: 'Team',
+                  prefixIcon: Icon(Icons.groups_outlined),
+                ),
                 items: [
                   const DropdownMenuItem(value: _allTeamsScope, child: Text('All Teams')),
                   ...teams.map((t) => DropdownMenuItem(value: t.id, child: Text(t.name))),
                 ],
                 onChanged: (value) => setState(() => _selectedScope = value ?? _allTeamsScope),
               ),
-              const SizedBox(height: 16),
-              if (summary != null)
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                            'Players bought: ${summary.playersBought} / ${auctionState.settings.playersPerTeam}'),
-                        Text('Remaining purse: ${summary.remainingPurse}'),
-                        if (summary.extraPointsUsed > 0)
-                          Text('Extra points used: ${summary.extraPointsUsed}',
-                              style: const TextStyle(color: Colors.orange)),
-                      ],
-                    ),
-                  ),
-                )
-              else
-                Text('${rows.length} sold player(s) across all teams.'),
-              const SizedBox(height: 24),
-              Text('Minimal', style: Theme.of(context).textTheme.titleMedium),
-              const Text('Name, sl no, phone number, points'),
-              const SizedBox(height: 8),
-              Row(
-                children: [
-                  Expanded(
-                    child: OutlinedButton.icon(
-                      onPressed: rows.isEmpty ? null : _exportMinimalExcel,
-                      icon: const Icon(Icons.grid_on),
-                      label: const Text('Excel'),
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: OutlinedButton.icon(
-                      onPressed: (_selectedScope == _allTeamsScope || rows.isEmpty)
-                          ? null
-                          : _exportMinimalPhoto,
-                      icon: const Icon(Icons.image),
-                      label: const Text('Photo'),
-                    ),
-                  ),
-                ],
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: summary != null
+                      ? Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Icon(Icons.account_balance_wallet_outlined,
+                                    color: colorScheme.primary),
+                                const SizedBox(width: 8),
+                                Text(
+                                  auctionState.teamNameFor(_selectedScope) ?? '',
+                                  style: textTheme.titleMedium,
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 16),
+                            Text(
+                              '${summary.playersBought} / ${auctionState.settings.playersPerTeam} players bought',
+                              style: textTheme.bodySmall,
+                            ),
+                            const SizedBox(height: 6),
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: LinearProgressIndicator(
+                                value: auctionState.settings.playersPerTeam == 0
+                                    ? 0
+                                    : summary.playersBought / auctionState.settings.playersPerTeam,
+                                minHeight: 8,
+                                backgroundColor: colorScheme.surfaceContainerHighest,
+                              ),
+                            ),
+                            const SizedBox(height: 16),
+                            Row(
+                              children: [
+                                Icon(Icons.savings_outlined, color: colorScheme.onSurfaceVariant),
+                                const SizedBox(width: 8),
+                                const Text('Remaining purse'),
+                                const Spacer(),
+                                Text(
+                                  '${summary.remainingPurse}',
+                                  style: textTheme.titleMedium?.copyWith(
+                                    color: purseIsHealthy ? kStatusSold : kStatusWarning,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            if (summary.extraPointsUsed > 0)
+                              Padding(
+                                padding: const EdgeInsets.only(top: 12),
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                  decoration: BoxDecoration(
+                                    color: kStatusWarning.withValues(alpha: 0.1),
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      const Icon(Icons.trending_up, size: 16, color: kStatusWarning),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        'Extra points used: ${summary.extraPointsUsed}',
+                                        style: textTheme.bodySmall?.copyWith(color: kStatusWarning),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                          ],
+                        )
+                      : Row(
+                          children: [
+                            Icon(Icons.emoji_events_outlined, color: colorScheme.primary, size: 32),
+                            const SizedBox(width: 12),
+                            Text('${rows.length}', style: textTheme.headlineSmall),
+                            const SizedBox(width: 8),
+                            const Expanded(child: Text('sold player(s) across all teams')),
+                          ],
+                        ),
+                ),
               ),
-              const SizedBox(height: 24),
-              Text('Complete', style: Theme.of(context).textTheme.titleMedium),
-              const Text('Team name, player photo, name, phone number, bid amount'),
               const SizedBox(height: 8),
-              Row(
-                children: [
-                  Expanded(
-                    child: OutlinedButton.icon(
-                      onPressed: rows.isEmpty ? null : _exportCompleteExcel,
-                      icon: const Icon(Icons.grid_on),
-                      label: const Text('Excel'),
-                    ),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.description_outlined, color: colorScheme.primary),
+                          const SizedBox(width: 8),
+                          Text('Minimal', style: textTheme.titleMedium),
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 4, left: 28),
+                        child: Text('Name, sl no, phone number, points', style: textTheme.bodySmall),
+                      ),
+                      const SizedBox(height: 12),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: FilledButton.tonalIcon(
+                              onPressed: rows.isEmpty ? null : _exportMinimalExcel,
+                              icon: const Icon(Icons.grid_on),
+                              label: const Text('Excel'),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: FilledButton.tonalIcon(
+                              onPressed: (_selectedScope == _allTeamsScope || rows.isEmpty)
+                                  ? null
+                                  : _exportMinimalPhoto,
+                              icon: const Icon(Icons.image_outlined),
+                              label: const Text('Photo'),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: OutlinedButton.icon(
-                      onPressed: rows.isEmpty ? null : _exportCompletePhoto,
-                      icon: const Icon(Icons.photo_library),
-                      label: const Text('Photo (ZIP)'),
-                    ),
+                ),
+              ),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.fact_check_outlined, color: colorScheme.primary),
+                          const SizedBox(width: 8),
+                          Text('Complete', style: textTheme.titleMedium),
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 4, left: 28),
+                        child: Text(
+                          'Team name, player photo, name, phone number, bid amount',
+                          style: textTheme.bodySmall,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: FilledButton.tonalIcon(
+                              onPressed: rows.isEmpty ? null : _exportCompleteExcel,
+                              icon: const Icon(Icons.grid_on),
+                              label: const Text('Excel'),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: FilledButton.tonalIcon(
+                              onPressed: rows.isEmpty ? null : _exportCompletePhoto,
+                              icon: const Icon(Icons.photo_library_outlined),
+                              label: const Text('Photo (ZIP)'),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                ],
+                ),
               ),
             ],
           ),

@@ -5,6 +5,7 @@ import 'models/player.dart';
 import 'screens/home_card_screen.dart';
 import 'services/persistence_service.dart';
 import 'state/auction_state.dart';
+import 'theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,10 +28,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Auction Planner',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
+        theme: buildAppTheme(),
         home: const HomeCardScreen(title: 'Auction Planner'),
       ),
     );
