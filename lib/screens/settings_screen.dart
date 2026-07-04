@@ -18,6 +18,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   late final TextEditingController _purseController;
   late final TextEditingController _minBaseController;
   late final TextEditingController _playersPerTeamController;
+  late final TextEditingController _jackpotDurationController;
   final TextEditingController _addTeamController = TextEditingController();
   final FocusNode _addTeamFocusNode = FocusNode();
   late AuctionMode _mode;
@@ -30,6 +31,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
     _minBaseController = TextEditingController(text: settings.minBasePoint.toString());
     _playersPerTeamController =
         TextEditingController(text: settings.playersPerTeam.toString());
+    _jackpotDurationController =
+        TextEditingController(text: settings.jackpotDurationSeconds.toString());
     _mode = settings.mode;
   }
 
@@ -38,6 +41,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     _purseController.dispose();
     _minBaseController.dispose();
     _playersPerTeamController.dispose();
+    _jackpotDurationController.dispose();
     _addTeamController.dispose();
     _addTeamFocusNode.dispose();
     super.dispose();
@@ -48,14 +52,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final purse = int.tryParse(_purseController.text);
     final minBase = int.tryParse(_minBaseController.text);
     final playersPerTeam = int.tryParse(_playersPerTeamController.text);
+    final jackpotDuration = int.tryParse(_jackpotDurationController.text);
     if (purse == null ||
         purse <= 0 ||
         minBase == null ||
         minBase <= 0 ||
         playersPerTeam == null ||
-        playersPerTeam <= 0) {
+        playersPerTeam <= 0 ||
+        jackpotDuration == null ||
+        jackpotDuration <= 0) {
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-        content: Text('Enter valid positive numbers for purse, min base point, and players per team.'),
+        content: Text(
+            'Enter valid positive numbers for purse, min base point, players per team, and jackpot duration.'),
       ));
       return;
     }
@@ -64,6 +72,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       minBasePoint: minBase,
       playersPerTeam: playersPerTeam,
       mode: _mode,
+      jackpotDurationSeconds: jackpotDuration,
     ));
     if (!mounted) return;
     ScaffoldMessenger.of(context)
@@ -160,6 +169,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       _purseController.text = defaults.totalPurse.toString();
       _minBaseController.text = defaults.minBasePoint.toString();
       _playersPerTeamController.text = defaults.playersPerTeam.toString();
+      _jackpotDurationController.text = defaults.jackpotDurationSeconds.toString();
       _mode = defaults.mode;
     });
     ScaffoldMessenger.of(context)
@@ -231,6 +241,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 decoration: const InputDecoration(
                   labelText: 'Players per team',
                   prefixIcon: Icon(Icons.groups_2_outlined),
+                ),
+              ),
+              const SizedBox(height: 12),
+              TextField(
+                controller: _jackpotDurationController,
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  labelText: 'Jackpot shuffle duration (seconds)',
+                  prefixIcon: Icon(Icons.casino_outlined),
                 ),
               ),
               const SizedBox(height: 16),

@@ -51,11 +51,52 @@ class AuctionSummaryScreen extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
 
+    final totalSold = rowsByTeamId.values.fold(0, (sum, rows) => sum + rows.length);
+    final totalRemainingPurse = teams.fold(
+      0,
+      (sum, t) => sum + auctionState.purseSummaryFor(t.id).remainingPurse,
+    );
+    final totalPlayers = auctionState.players.length;
+    final decidedPlayers = totalSold + unsold.length;
+    final completionPercent =
+        totalPlayers == 0 ? 0 : ((decidedPlayers / totalPlayers) * 100).round();
+
     return Scaffold(
       appBar: AppBar(title: const Text('Auction Summary')),
       body: CustomScrollView(
         slivers: [
           const SliverToBoxAdapter(child: SizedBox(height: 16)),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      _KpiStat(
+                        icon: Icons.emoji_events_outlined,
+                        value: '$totalSold',
+                        label: 'Players Sold',
+                      ),
+                      _KpiStat(
+                        icon: Icons.savings_outlined,
+                        value: '$totalRemainingPurse',
+                        label: 'Purse Remaining',
+                      ),
+                      _KpiStat(
+                        icon: Icons.pending_actions_outlined,
+                        value: '$completionPercent%',
+                        label: 'Complete',
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+          const SliverToBoxAdapter(child: SizedBox(height: 8)),
           if (teams.isEmpty)
             const SliverToBoxAdapter(
               child: Padding(
@@ -75,6 +116,7 @@ class AuctionSummaryScreen extends StatelessWidget {
                         summary: auctionState.purseSummaryFor(team.id),
                         targetPlayerCount: auctionState.settings.playersPerTeam,
                         rows: rowsByTeamId[team.id] ?? const [],
+                        auctionState: auctionState,
                       ),
                   ],
                 ),
@@ -104,7 +146,11 @@ class AuctionSummaryScreen extends StatelessWidget {
                           spacing: 12,
                           runSpacing: 12,
                           children: [
-                            for (final player in unsold) AuctionPlayerTile(player: player),
+                            for (final player in unsold)
+                              AuctionPlayerTile(
+                                key: ValueKey(auctionState.keyFor(player)),
+                                player: player,
+                              ),
                           ],
                         ),
                       ],
@@ -152,8 +198,14 @@ class AuctionSummaryScreen extends StatelessWidget {
                   childAspectRatio: 0.68,
                 ),
                 delegate: SliverChildBuilderDelegate(
-                  (context, index) =>
-                      AuctionPlayerTile(player: notAuctioned[index], compact: true),
+                  (context, index) {
+                    final player = notAuctioned[index];
+                    return AuctionPlayerTile(
+                      key: ValueKey(auctionState.keyFor(player)),
+                      player: player,
+                      compact: true,
+                    );
+                  },
                   childCount: notAuctioned.length,
                 ),
               ),
@@ -171,12 +223,14 @@ class _TeamSection extends StatelessWidget {
     required this.summary,
     required this.targetPlayerCount,
     required this.rows,
+    required this.auctionState,
   });
 
   final String teamName;
   final TeamPurseSummary summary;
   final int targetPlayerCount;
   final List<TeamExportRow> rows;
+  final AuctionState auctionState;
 
   @override
   Widget build(BuildContext context) {
@@ -216,13 +270,44 @@ class _TeamSection extends StatelessWidget {
                 spacing: 12,
                 runSpacing: 12,
                 children: [
-                  for (final row in rows)
-                    AuctionPlayerTile(player: row.player, bidAmount: row.bidAmount),
+                  for (final (index, row) in rows.indexed)
+                    AuctionPlayerTile(
+                      key: ValueKey(auctionState.keyFor(row.player)),
+                      player: row.player,
+                      bidAmount: row.bidAmount,
+                      isTopBid: index == 0,
+                    ),
                 ],
               ),
           ],
         ),
       ),
+    );
+  }
+}
+
+class _KpiStat extends StatelessWidget {
+  const _KpiStat({required this.icon, required this.value, required this.label});
+
+  final IconData icon;
+  final String value;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+    final textTheme = Theme.of(context).textTheme;
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(icon, color: colorScheme.primary),
+        const SizedBox(height: 4),
+        Text(
+          value,
+          style: textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
+        ),
+        Text(label, style: textTheme.bodySmall),
+      ],
     );
   }
 }

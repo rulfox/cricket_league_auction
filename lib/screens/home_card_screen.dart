@@ -15,6 +15,7 @@ import '../widgets/overlay_icon_button.dart';
 import '../widgets/player_card_layout.dart';
 import 'auction_summary_screen.dart';
 import 'full_screen_image_screen.dart';
+import 'jackpot_screen.dart';
 import 'players_popup.dart';
 import 'settings_screen.dart';
 import 'teams_export_screen.dart';
@@ -112,6 +113,14 @@ class _HomeCardScreenState extends State<HomeCardScreen> {
 
   void _setPlayer(Player player) {
     setState(() => _player = player);
+  }
+
+  Future<void> _openJackpot() async {
+    final drawn = await Navigator.push<Player>(
+      context,
+      MaterialPageRoute(builder: (context) => const JackpotScreen()),
+    );
+    if (drawn != null) _setPlayer(drawn);
   }
 
   void _navigatePlayer(int direction) {
@@ -234,6 +243,12 @@ class _HomeCardScreenState extends State<HomeCardScreen> {
                                 MaterialPageRoute(
                                     builder: (context) => const TeamsExportScreen()),
                               ),
+                            ),
+                            const SizedBox(width: 8),
+                            OverlayIconButton(
+                              icon: Icons.casino,
+                              tooltip: 'Jackpot',
+                              onPressed: () => _openJackpot(),
                             ),
                             const SizedBox(width: 8),
                             OverlayIconButton(

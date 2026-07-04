@@ -1,4 +1,5 @@
 import 'auction_settings.dart';
+import 'jackpot_override.dart';
 import 'player_auction_record.dart';
 import 'team.dart';
 
@@ -9,6 +10,8 @@ class AuctionSnapshot {
     required this.settings,
     required this.teams,
     required this.records,
+    this.jackpotDrawCount = 0,
+    this.jackpotOverrides = const [],
   });
 
   static const currentSchemaVersion = 1;
@@ -16,6 +19,8 @@ class AuctionSnapshot {
   final AuctionSettings settings;
   final List<Team> teams;
   final Map<String, PlayerAuctionRecord> records;
+  final int jackpotDrawCount;
+  final List<JackpotOverride> jackpotOverrides;
 
   static AuctionSnapshot empty() => const AuctionSnapshot(
         settings: AuctionSettings.defaults,
@@ -38,6 +43,12 @@ class AuctionSnapshot {
           PlayerAuctionRecord.fromJson(playerId, value as Map<String, dynamic>),
         ),
       ),
+      // Absent in any snapshot saved before this feature existed — default to
+      // a fresh counter and no pending overrides rather than failing to load.
+      jackpotDrawCount: json['jackpotDrawCount'] as int? ?? 0,
+      jackpotOverrides: ((json['jackpotOverrides'] as List?) ?? [])
+          .map((o) => JackpotOverride.fromJson(o as Map<String, dynamic>))
+          .toList(),
     );
   }
 
@@ -46,5 +57,7 @@ class AuctionSnapshot {
         'settings': settings.toJson(),
         'teams': teams.map((t) => t.toJson()).toList(),
         'records': records.map((playerId, record) => MapEntry(playerId, record.toJson())),
+        'jackpotDrawCount': jackpotDrawCount,
+        'jackpotOverrides': jackpotOverrides.map((o) => o.toJson()).toList(),
       };
 }

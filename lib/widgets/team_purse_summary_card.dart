@@ -48,19 +48,53 @@ class TeamPurseSummaryCard extends StatelessWidget {
             value: targetPlayerCount == 0 ? 0 : summary.playersBought / targetPlayerCount,
             minHeight: 8,
             backgroundColor: colorScheme.surfaceContainerHighest,
+            color: summary.playersBought >= targetPlayerCount ? kStatusSold : null,
           ),
         ),
         const SizedBox(height: 16),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(Icons.savings_outlined, color: colorScheme.onSurfaceVariant),
-            const SizedBox(width: 8),
-            const Text('Remaining purse'),
-            const Spacer(),
-            Text(
-              '${summary.remainingPurse}',
-              style: textTheme.titleMedium?.copyWith(
-                color: purseIsHealthy ? kStatusSold : kStatusWarning,
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.payments_outlined, size: 16, color: colorScheme.onSurfaceVariant),
+                      const SizedBox(width: 6),
+                      Text('Spent', style: textTheme.bodySmall),
+                    ],
+                  ),
+                  const SizedBox(height: 2),
+                  Text('${summary.totalSpent}', style: textTheme.titleLarge),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 40,
+              child: VerticalDivider(width: 24, color: colorScheme.outlineVariant),
+            ),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.savings_outlined, size: 16, color: colorScheme.onSurfaceVariant),
+                      const SizedBox(width: 6),
+                      Text('Remaining', style: textTheme.bodySmall),
+                    ],
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    '${summary.remainingPurse}',
+                    style: textTheme.headlineSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: purseIsHealthy ? kStatusSold : kStatusWarning,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],

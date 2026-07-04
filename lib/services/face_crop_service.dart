@@ -19,7 +19,13 @@ class FaceCropService {
 
   static final FaceCropService instance = FaceCropService._();
 
-  FaceDetector? _detector;
+  // Cache the in-flight Future itself (not the resolved value) so concurrent
+  // callers racing to create the detector all await the same Future instead
+  // of each independently spawning its own isolate + reloading the models —
+  // `_detector ??= await FaceDetector.create()` would be racy since the
+  // null-check happens synchronously but the assignment only after the
+  // `await` resolves.
+  Future<FaceDetector>? _detectorFuture;
   final Map<String, Alignment> _cache = {};
 
   /// Fixed upper-center bias used when no face is detected — most headshot
@@ -39,18 +45,21 @@ class FaceCropService {
     return alignment;
   }
 
+  /// Created once and kept alive for the app's session — memoizing the
+  /// Future (not the value) means every concurrent caller awaits the same
+  /// in-flight creation instead of each spawning its own isolate.
+  Future<FaceDetector> _getDetector() => _detectorFuture ??= FaceDetector.create();
+
   Future<Alignment> _computeAlignment(Player player) async {
     try {
-      // Created once and kept alive for the app's session — re-creating per
-      // export would reload the ~26-40MB of bundled model assets every time.
-      _detector ??= await FaceDetector.create();
+      final detector = await _getDetector();
 
       final data = await rootBundle.load(player.getPlayerPhoto());
       final bytes = data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
 
       // `fast` mode skips mesh/iris computation we don't need — bounding
       // box only, which is all this service uses.
-      final faces = await _detector!.detectFacesFromBytes(
+      final faces = await detector.detectFacesFromBytes(
         bytes,
         mode: FaceDetectionMode.fast,
       );

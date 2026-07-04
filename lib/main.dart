@@ -6,6 +6,7 @@ import 'screens/home_card_screen.dart';
 import 'services/persistence_service.dart';
 import 'state/auction_state.dart';
 import 'theme.dart';
+import 'widgets/secret_jackpot_gesture_detector.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: buildAppTheme(),
         home: const HomeCardScreen(title: 'Auction Planner'),
+        builder: (context, child) => SecretJackpotGestureDetector(child: child!),
       ),
     );
   }

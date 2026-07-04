@@ -1,7 +1,10 @@
+import 'dart:math' as math;
+
 import 'package:flutter/foundation.dart';
 
 import '../models/auction_settings.dart';
 import '../models/auction_snapshot.dart';
+import '../models/jackpot_override.dart';
 import '../models/player.dart';
 import '../models/player_auction_record.dart';
 import '../models/team.dart';
@@ -39,11 +42,19 @@ class AuctionState extends ChangeNotifier {
   List<Team> _teams = [];
   AuctionSettings _settings = AuctionSettings.defaults;
   bool _isLoaded = false;
+  int _jackpotDrawCount = 0;
+  List<JackpotOverride> _jackpotOverrides = [];
+  final math.Random _random = math.Random();
 
   List<Player> get players => List.unmodifiable(_players);
   List<Team> get teams => List.unmodifiable(_teams);
   AuctionSettings get settings => _settings;
   bool get isLoaded => _isLoaded;
+  int get jackpotDrawCount => _jackpotDrawCount;
+  List<JackpotOverride> get jackpotOverrides => List.unmodifiable(_jackpotOverrides);
+
+  List<Player> get availablePlayers =>
+      _players.where((p) => recordFor(keyFor(p)).status == AuctionStatus.available).toList();
 
   /// Guards against two roster entries with a missing/duplicate sl_no
   /// silently sharing (and corrupting) the same auction record.
@@ -89,13 +100,21 @@ class AuctionState extends ChangeNotifier {
       _records
         ..clear()
         ..addAll(snapshot.records);
+      _jackpotDrawCount = snapshot.jackpotDrawCount;
+      _jackpotOverrides = List.of(snapshot.jackpotOverrides);
     }
     _isLoaded = true;
     notifyListeners();
   }
 
   Future<void> _persist() => _persistence.save(
-        AuctionSnapshot(settings: _settings, teams: _teams, records: Map.of(_records)),
+        AuctionSnapshot(
+          settings: _settings,
+          teams: _teams,
+          records: Map.of(_records),
+          jackpotDrawCount: _jackpotDrawCount,
+          jackpotOverrides: List.of(_jackpotOverrides),
+        ),
       );
 
   Future<void> updateSettings(AuctionSettings next) async {
@@ -200,6 +219,68 @@ class AuctionState extends ChangeNotifier {
     _records.clear();
     _teams = [];
     _settings = AuctionSettings.defaults;
+    _jackpotDrawCount = 0;
+    _jackpotOverrides = [];
+    notifyListeners();
+    await _persist();
+  }
+
+  /// Draws the next random player for the Jackpot selector. If a hidden
+  /// override is scheduled for this draw and its player is still available,
+  /// returns that player instead of a true-random pick (falling back to
+  /// random and dropping the stale override if that player was already
+  /// sold/unsold through the normal bidding flow in the meantime). Returns
+  /// `null`, without consuming a draw or any override, if no players remain.
+  Future<Player?> drawRandomPlayer() async {
+    final available = availablePlayers;
+    if (available.isEmpty) return null;
+
+    final nextDraw = _jackpotDrawCount + 1;
+
+    JackpotOverride? overrideForThisDraw;
+    for (final o in _jackpotOverrides) {
+      if (o.drawIndex == nextDraw) {
+        overrideForThisDraw = o;
+        break;
+      }
+    }
+
+    Player? chosen;
+    if (overrideForThisDraw != null) {
+      for (final p in available) {
+        if (keyFor(p) == overrideForThisDraw.playerId) {
+          chosen = p;
+          break;
+        }
+      }
+      // If not found: the overridden player is no longer available — falls
+      // through to a true-random pick below.
+    }
+    chosen ??= available[_random.nextInt(available.length)];
+
+    _jackpotDrawCount = nextDraw;
+    // This draw's override slot is consumed either way — used or stale —
+    // since it no longer applies to any future draw.
+    _jackpotOverrides = _jackpotOverrides.where((o) => o.drawIndex != nextDraw).toList();
+
+    notifyListeners();
+    await _persist();
+    return chosen;
+  }
+
+  /// Schedules [playerId] to be the deterministic outcome of draw
+  /// [drawIndex], replacing any existing override for that same draw.
+  Future<void> addJackpotOverride({required int drawIndex, required String playerId}) async {
+    _jackpotOverrides = [
+      ..._jackpotOverrides.where((o) => o.drawIndex != drawIndex),
+      JackpotOverride(drawIndex: drawIndex, playerId: playerId),
+    ];
+    notifyListeners();
+    await _persist();
+  }
+
+  Future<void> removeJackpotOverride(int drawIndex) async {
+    _jackpotOverrides = _jackpotOverrides.where((o) => o.drawIndex != drawIndex).toList();
     notifyListeners();
     await _persist();
   }

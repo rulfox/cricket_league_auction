@@ -15,6 +15,7 @@ class AuctionSettings {
     required this.minBasePoint,
     required this.playersPerTeam,
     required this.mode,
+    this.jackpotDurationSeconds = 5,
   });
 
   final int totalPurse;
@@ -22,11 +23,16 @@ class AuctionSettings {
   final int playersPerTeam;
   final AuctionMode mode;
 
+  /// Duration (seconds) of the shuffle/reveal animation on the Jackpot
+  /// random-player-selection screen.
+  final int jackpotDurationSeconds;
+
   static const defaults = AuctionSettings(
     totalPurse: 20000,
     minBasePoint: 100,
     playersPerTeam: 15,
     mode: AuctionMode.standard,
+    jackpotDurationSeconds: 5,
   );
 
   AuctionSettings copyWith({
@@ -34,12 +40,14 @@ class AuctionSettings {
     int? minBasePoint,
     int? playersPerTeam,
     AuctionMode? mode,
+    int? jackpotDurationSeconds,
   }) =>
       AuctionSettings(
         totalPurse: totalPurse ?? this.totalPurse,
         minBasePoint: minBasePoint ?? this.minBasePoint,
         playersPerTeam: playersPerTeam ?? this.playersPerTeam,
         mode: mode ?? this.mode,
+        jackpotDurationSeconds: jackpotDurationSeconds ?? this.jackpotDurationSeconds,
       );
 
   factory AuctionSettings.fromJson(Map<String, dynamic> json) => AuctionSettings(
@@ -50,6 +58,7 @@ class AuctionSettings {
           (m) => m.name == json['mode'],
           orElse: () => AuctionMode.standard,
         ),
+        jackpotDurationSeconds: json['jackpotDurationSeconds'] as int? ?? 5,
       );
 
   Map<String, dynamic> toJson() => {
@@ -57,5 +66,6 @@ class AuctionSettings {
         'minBasePoint': minBasePoint,
         'playersPerTeam': playersPerTeam,
         'mode': mode.name,
+        'jackpotDurationSeconds': jackpotDurationSeconds,
       };
 }

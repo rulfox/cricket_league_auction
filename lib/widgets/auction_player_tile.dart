@@ -14,6 +14,7 @@ class AuctionPlayerTile extends StatelessWidget {
     required this.player,
     this.bidAmount,
     this.compact = false,
+    this.isTopBid = false,
   });
 
   final Player player;
@@ -23,6 +24,9 @@ class AuctionPlayerTile extends StatelessWidget {
 
   /// Smaller tile, used only by the Not-Auctioned grid.
   final bool compact;
+
+  /// True for a team's single most expensive sale — shows a small badge.
+  final bool isTopBid;
 
   static const double _standardWidth = 148;
   static const double _compactWidth = 92;
@@ -43,12 +47,29 @@ class AuctionPlayerTile extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: AspectRatio(
-              aspectRatio: 1,
-              child: _FaceAlignedPlayerPhoto(player: player),
-            ),
+          Stack(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8),
+                child: AspectRatio(
+                  aspectRatio: 1,
+                  child: _FaceAlignedPlayerPhoto(player: player),
+                ),
+              ),
+              if (isTopBid)
+                Positioned(
+                  top: 4,
+                  right: 4,
+                  child: Container(
+                    padding: const EdgeInsets.all(4),
+                    decoration: const BoxDecoration(
+                      color: kStatusWarning,
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(Icons.star, size: 14, color: Colors.white),
+                  ),
+                ),
+            ],
           ),
           const SizedBox(height: 6),
           Text(
