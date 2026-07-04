@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:face_detection_tflite/face_detection_tflite.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -28,6 +30,18 @@ class FaceCropService {
   Future<FaceDetector>? _detectorFuture;
   final Map<String, Alignment> _cache = {};
 
+  // Strict FIFO queue so only one `detectFacesFromBytes` call is ever
+  // actually in flight at a time. Necessary specifically because
+  // `face_detection_tflite` has NO background isolate on Flutter Web
+  // (confirmed in the package's own web source) — every detection runs
+  // WebGPU/WASM inference on the same JS thread Flutter's UI uses. Firing
+  // ~130 of them "concurrently" (one per tile's initState) saturates that
+  // single thread with no gaps to paint/respond, which is what a sustained
+  // freeze looks like. Serializing them lets the browser breathe between
+  // each detection instead — photos snap into better framing progressively
+  // rather than all at once, but the UI never locks up while it happens.
+  Future<void>? _queueTail;
+
   /// Fixed upper-center bias used when no face is detected — most headshot
   /// photos place the face in the upper portion of the frame.
   static const _fallbackAlignment = Alignment(0, -0.3);
@@ -40,9 +54,14 @@ class FaceCropService {
     final cached = _cache[key];
     if (cached != null) return cached;
 
-    final alignment = await _computeAlignment(player);
-    _cache[key] = alignment;
-    return alignment;
+    final completer = Completer<Alignment>();
+    final previous = _queueTail ?? Future.value();
+    _queueTail = previous.then((_) async {
+      final alignment = await _computeAlignment(player);
+      _cache[key] = alignment;
+      completer.complete(alignment);
+    });
+    return completer.future;
   }
 
   /// Created once and kept alive for the app's session — memoizing the
