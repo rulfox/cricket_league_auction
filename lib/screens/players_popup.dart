@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'data.dart';
+import '../models/player.dart';
 
 class PlayersPopup extends StatefulWidget {
   final Function(Player) setPlayer;
