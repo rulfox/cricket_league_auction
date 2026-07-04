@@ -297,7 +297,7 @@ class _HomeCardScreenState extends State<HomeCardScreen> {
                 const SizedBox(width: 12),
                 FloatingActionButton(
                   heroTag: 'search',
-                  mini: true,
+                  shape: const CircleBorder(),
                   onPressed: () => _openSearch(auctionState.players),
                   tooltip: 'Search',
                   child: const Icon(Icons.search),

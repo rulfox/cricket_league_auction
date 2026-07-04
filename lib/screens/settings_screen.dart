@@ -18,6 +18,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   late final TextEditingController _minBaseController;
   late final TextEditingController _playersPerTeamController;
   final TextEditingController _addTeamController = TextEditingController();
+  final FocusNode _addTeamFocusNode = FocusNode();
   late AuctionMode _mode;
 
   @override
@@ -37,6 +38,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     _minBaseController.dispose();
     _playersPerTeamController.dispose();
     _addTeamController.dispose();
+    _addTeamFocusNode.dispose();
     super.dispose();
   }
 
@@ -72,6 +74,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
     if (name.isEmpty) return;
     await context.read<AuctionState>().addTeam(name);
     _addTeamController.clear();
+    if (!mounted) return;
+    // Re-request focus after the rebuild the new team triggers, so the
+    // auctioneer can keep typing team names one after another without
+    // manually re-clicking the field each time.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _addTeamFocusNode.requestFocus();
+    });
   }
 
   Future<void> _renameTeam(Team team, String newName) async {
@@ -179,6 +188,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               Expanded(
                 child: TextField(
                   controller: _addTeamController,
+                  focusNode: _addTeamFocusNode,
                   decoration: const InputDecoration(labelText: 'New team name'),
                   onSubmitted: (_) => _addTeam(),
                 ),
