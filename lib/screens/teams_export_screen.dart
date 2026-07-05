@@ -84,7 +84,7 @@ class _TeamsExportScreenState extends State<TeamsExportScreen> {
         for (final row in team.rows) {
           if (!mounted) return;
           try {
-            await precacheImage(AssetImage(row.player.getPlayerPhoto()), context);
+            await precacheImage(TeamRosterCard.photoProviderFor(row.player), context);
           } catch (_) {}
         }
         if (!mounted) return;

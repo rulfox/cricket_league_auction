@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../models/player.dart';
 import '../models/team_export_row.dart';
 import 'card_styled_text.dart';
 
@@ -45,6 +46,21 @@ class TeamRosterCard extends StatelessWidget {
     final gridHeight = rowCount * _tileHeight + (rowCount - 1) * _rowSpacing;
     return _headerHeight + _outerPadding * 2 + gridHeight;
   }
+
+  /// Shared by the tile's `Image` and by the export screen's precache loop —
+  /// both MUST use this exact same provider config, since `ImageCache` keys
+  /// on the full provider (including any `ResizeImage` wrapping), not just
+  /// the asset path. `ResizeImage` tells the decoder to target this tile's
+  /// actual on-screen size (at the capture pipeline's 2x pixel ratio)
+  /// instead of decoding the source photo at its native resolution — source
+  /// photos here are raw, undownsized phone-camera images (some 15-17MB,
+  /// decoding to 45MB+ uncompressed), and decoding several of those
+  /// sequentially blows through Flutter's ~100MB default image cache
+  /// budget, evicting the earliest-cached photos before they're ever
+  /// painted. Decoding at the size actually needed keeps an entire
+  /// roster's worth of photos comfortably within budget.
+  static ImageProvider photoProviderFor(Player player) =>
+      ResizeImage(AssetImage(player.getPlayerPhoto()), width: (_tileWidth * 2).round());
 
   @override
   Widget build(BuildContext context) {
@@ -141,8 +157,8 @@ class _RosterTile extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
               child: SizedBox(
                 height: TeamRosterCard._photoHeight,
-                child: Image.asset(
-                  row.player.getPlayerPhoto(),
+                child: Image(
+                  image: TeamRosterCard.photoProviderFor(row.player),
                   fit: BoxFit.cover,
                   alignment: alignment,
                   errorBuilder: (context, error, stackTrace) => Container(

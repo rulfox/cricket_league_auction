@@ -539,7 +539,7 @@ class _HomeCardScreenState extends State<HomeCardScreen> {
                           heroTag: 'jackpot',
                           onPressed: _startJackpot,
                           icon: const Icon(Icons.shuffle),
-                          label: const Text('Jackpot'),
+                          label: const Text('Shuffle'),
                           backgroundColor: Theme.of(context).colorScheme.secondaryContainer,
                           foregroundColor: Theme.of(context).colorScheme.onSecondaryContainer,
                         ),
